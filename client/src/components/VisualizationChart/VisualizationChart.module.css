@@ -1,0 +1,12 @@
+/* /client/src/components/VisualizationChart/VisualizationChart.module.css */
+.chartContainer {
+  width: 90vw;
+  max-width: 1200px;
+  height: 600px;
+  background-color: #242424; /* Dark box for the chart */
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 0 auto;
+  /* This will be the parent element for the D3 SVG */
+}
+

@@ -1,0 +1,48 @@
+/* /client/src/components/Header/Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+  background-color: #1a1a1a; /* Same as body or slightly different */
+  border-bottom: 1px solid #333; /* Subtle separator */
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ffffff;
+  flex: 1;
+}
+
+.logoMain {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logoDotCom {
+  font-weight: normal;
+  color: #aaa; /* Nhạt hơn */
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navLink {
+  font-size: 1.1rem;
+  color: #aaa; /* Dimmed color by default */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* This is the hover "brighten" effect */
+.navLink:hover {
+  color: #ffffff; /* Brighten to full white */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional glow */
+}
+
