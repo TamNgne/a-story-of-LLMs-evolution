@@ -244,7 +244,7 @@ This project is for educational purposes.
 
 ## 👥 Team
 
-[Add your team members here]
+[chưa có xog nhma push trước nhe hehe]
 
 ---
 
