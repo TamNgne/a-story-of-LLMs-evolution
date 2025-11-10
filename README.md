@@ -75,13 +75,13 @@ cd a-story-of-LLMs-evolution
    npm run dev
    ```
    
-   The frontend will run on `http://localhost:3000`
+   The frontend will run on `http://localhost:3000` 
 
 ### 4. Access the Application
 
 Open your browser and navigate to:
 ```
-http://localhost:3000
+http://localhost:3000 (mở này lên là thấy nhe)
 ```
 
 ## 📁 Project Structure
