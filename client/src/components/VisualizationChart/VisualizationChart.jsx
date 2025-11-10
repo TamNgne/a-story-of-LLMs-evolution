@@ -1,5 +1,5 @@
 // /client/src/components/VisualizationChart/VisualizationChart.jsx
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import styles from './VisualizationChart.module.css';
 
@@ -29,13 +29,6 @@ const VisualizationChart = () => {
   const [data, setData] = useState([]);
   const [trendLineData, setTrendLineData] = useState([]);
 
-  // Get min/max years for slider
-  const allDates = MOCK_DATA.map(d => new Date(d.releaseDate));
-  const minYear = d3.min(allDates, d => d.getFullYear());
-  const maxYear = d3.max(allDates, d => d.getFullYear());
-
-  const [selectedYear, setSelectedYear] = useState(maxYear);
-
   useEffect(() => {
     // --- BACKEND_HOOKUP_POINT ---
     // In a real app, you would fetch data here and call setData() and setTrendLineData()
@@ -62,7 +55,7 @@ const VisualizationChart = () => {
       d3.select('body').selectAll('.llm-tooltip').remove();
 
       // Setup dimensions
-      const margin = { top: 20, right: 30, bottom: 80, left: 50 }; // Increased bottom margin for slider
+      const margin = { top: 20, right: 30, bottom: 120, left: 50 };
       const width = 1100 - margin.left - margin.right;
       const height = 500 - margin.top - margin.bottom;
 
@@ -142,7 +135,7 @@ const VisualizationChart = () => {
         .attr('cx', d => x(d.releaseDate))
         .attr('cy', d => y(d.performanceScore))
         .attr('r', 7.8) // 30% larger: 6 * 1.3 = 7.8
-        .attr('opacity', d => (d.year === selectedYear ? 1.0 : 0.2)) // Highlighting logic
+        .attr('opacity', 0.2) // will be updated by scrubber highlight
         .on('mouseover', function(event, d) {
           // Get SVG position relative to page
           const svgRect = d3Container.current.getBoundingClientRect();
@@ -195,64 +188,55 @@ const VisualizationChart = () => {
         .attr('y', d => y(d.performanceScore) - 15) // Position above the dot
         .attr('text-anchor', 'middle')
         .text(d => d.modelName)
-        .attr('opacity', d => (d.year === selectedYear ? 1.0 : 0.2)); // Match dot opacity
+        .attr('opacity', 0.2);
       
       labels.exit().remove();
+
+      // --- Draggable scrubber (time handle) ---
+      const maxDateVal = d3.max(data, d => d.releaseDate);
+      const startingX = x(maxDateVal);
+      const timeWindow = 30 * 24 * 60 * 60 * 1000; // 30 days
+
+      const scrubber = svg.append('g')
+        .attr('class', styles.scrubber)
+        .attr('transform', `translate(${startingX}, 0)`)
+        .style('cursor', 'ew-resize');
+
+      // Circle handle on x-axis baseline
+      scrubber.append('circle')
+        .attr('class', styles.scrubberHandle)
+        .attr('cy', height)
+        .attr('r', 8);
+
+      const updateHighlight = (currentDate) => {
+        dots.attr('opacity', d => (Math.abs(d.releaseDate - currentDate) < timeWindow ? 1.0 : 0.2));
+        svg.selectAll('.modelLabel')
+          .attr('opacity', d => (Math.abs(d.releaseDate - currentDate) < timeWindow ? 1.0 : 0.2));
+      };
+
+      const dragged = (event) => {
+        const constrainedX = Math.max(0, Math.min(width, event.x));
+        const currentDate = x.invert(constrainedX);
+        scrubber.attr('transform', `translate(${constrainedX}, 0)`);
+        updateHighlight(currentDate);
+      };
+
+      scrubber.call(d3.drag().on('drag', dragged));
+
+      // Initial highlight at starting position
+      updateHighlight(maxDateVal);
       
       // Cleanup function
       return () => {
         d3.select('body').selectAll('.llm-tooltip').remove();
       };
     }
-  }, [data, trendLineData, selectedYear]); // Redraw on data or year change
-
-  // Update function for highlighting
-  useEffect(() => {
-    if (d3Container.current && data.length > 0) {
-      const svg = d3.select(d3Container.current).select('g');
-      if (svg.empty()) return;
-      
-      // Helper function to check if a model is on the trend line
-      const isOnTrendLine = (model) => {
-        return trendLineData.some(trendPoint => {
-          const dateMatch = Math.abs(trendPoint.releaseDate.getTime() - model.releaseDate.getTime()) < 86400000;
-          const scoreMatch = Math.abs(trendPoint.performanceScore - model.performanceScore) < 1;
-          return dateMatch && scoreMatch;
-        });
-      };
-      
-      const modelsOnTrendLine = data.filter(isOnTrendLine);
-      
-      svg.selectAll('.modelDot')
-        .data(data)
-        .transition()
-        .duration(300)
-        .attr('opacity', d => (d.year === selectedYear ? 1.0 : 0.2));
-      
-      // Update label opacity to match dots
-      svg.selectAll('.modelLabel')
-        .data(modelsOnTrendLine)
-        .transition()
-        .duration(300)
-        .attr('opacity', d => (d.year === selectedYear ? 1.0 : 0.2));
-    }
-  }, [selectedYear, data, trendLineData]);
+  }, [data, trendLineData]);
 
   return (
     <div className={styles.chartContainer}>
       <div className={styles.chartWrapper}>
         <svg ref={d3Container} className={styles.d3Svg}></svg>
-        <div className={styles.sliderContainer}>
-          <label className={styles.sliderLabel}>Select Year: {selectedYear}</label>
-          <input
-            type="range"
-            min={minYear}
-            max={maxYear}
-            value={selectedYear}
-            onChange={(e) => setSelectedYear(Number(e.target.value))}
-            className={styles.yearSlider}
-          />
-        </div>
       </div>
     </div>
   );

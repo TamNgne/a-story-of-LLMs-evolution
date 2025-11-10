@@ -13,15 +13,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #242424;
+  background-color: #1a1a1a; /* Match landing page */
   border-radius: 8px;
-  border: 1px solid #444;
+  border: 1px solid #333;
   padding: 20px;
 }
 
 .d3Svg {
   width: 100%;
   height: auto;
+  overflow: visible; /* Ensure rotated tick labels aren't clipped */
 }
 
 .axis path,
@@ -63,63 +64,17 @@
   pointer-events: none;
 }
 
-.sliderContainer {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 10px;
-  width: 100%;
-  padding: 0 50px;
-  color: #f0f0f0;
-  font-family: 'Kelvinch', sans-serif;
-  box-sizing: border-box;
+/* Scrubber styles */
+.scrubberLine {
+  stroke: #00bcd4;
+  stroke-width: 1px;
+  stroke-dasharray: 3 3;
 }
 
-.yearSlider {
-  flex: 1;
-  max-width: 1000px;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-  height: 6px;
-  background: #444;
-  border-radius: 3px;
-  outline: none;
-}
-
-.yearSlider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  background: #61dafb;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.yearSlider::-webkit-slider-thumb:hover {
-  background: #4fa8c5;
-}
-
-.yearSlider::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  background: #61dafb;
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-  transition: background 0.3s ease;
-}
-
-.yearSlider::-moz-range-thumb:hover {
-  background: #4fa8c5;
-}
-
-.sliderLabel {
-  font-weight: bold;
-  min-width: 150px;
-  font-size: 1.1rem;
+.scrubberHandle {
+  fill: #00bcd4;
+  stroke: #ffffff;
+  stroke-width: 2px;
 }
 
 .tooltip {

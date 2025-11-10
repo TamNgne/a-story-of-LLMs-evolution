@@ -5,8 +5,8 @@
   align-items: center;
   padding: 20px 40px;
   width: 100%;
-  background-color: #1a1a1a; /* Same as body or slightly different */
-  border-bottom: 1px solid #333; /* Subtle separator */
+  background-color: #0f0f0f; /* Same as body or slightly different */
+  border-bottom: 1px solid #101010; /* Subtle separator */
   position: relative;
 }
 
