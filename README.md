@@ -35,7 +35,7 @@ cd a-story-of-LLMs-evolution
    cd server
    ```
 
-2. Install dependencies:
+2. Install dependencies: (tới đây thui, chưa cần tạo virtual env ở mấy bước sau để chạy back-end)
    ```bash
    npm install
    ```
@@ -58,7 +58,7 @@ cd a-story-of-LLMs-evolution
    
    The backend server will run on `http://localhost:5001`
 
-### 3. Frontend Setup
+### 3. Frontend Setup (chủ yếu là chạy cái này nè)
 
 1. Open a **new terminal** and navigate to the client directory:
    ```bash
