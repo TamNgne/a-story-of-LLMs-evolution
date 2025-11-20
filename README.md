@@ -1,251 +1,227 @@
 # A Story of LLMs Evolution
 
-A Data Science & Data Visualization Project about how Large Language Models evolve through years.
+Data storytelling for the rise of Large Language Models. Frontend renders interactive D3 visuals, backend aggregates MongoDB collections, everything ships in a MERN stack.
 
 ## 🚀 Tech Stack
 
-- **Backend:** Node.js, Express, MongoDB/Mongoose
-- **Frontend:** React, Vite, D3.js, React Router DOM
-- **Architecture:** MERN Stack
-- **Styling:** CSS Modules, Dark Theme
-- **Font:** Kelvinch
+- Backend: Node.js, Express, MongoDB (Mongoose)
+- Frontend: React 18, Vite, React Router DOM, D3.js v7
+- Styling: CSS Modules, Kelvinch font, dark-first theme
 
-## 📋 Prerequisites
+## 📦 Prerequisites
 
-Before you begin, ensure you have the following installed:
+- Node.js 18+
+- npm (bundled with Node)
+- MongoDB instance (local or Atlas)
+- Git
 
-- **Node.js** (v18 or higher recommended)
-- **MongoDB** database (local or cloud - MongoDB Atlas)
-- **npm** or **yarn** package manager
-- **Git**
-
-## 🛠️ Installation & Setup
-
-### 1. Clone the Repository
+## ⚙️ Setup
 
 ```bash
 git clone <repository-url>
 cd a-story-of-LLMs-evolution
 ```
 
-### 2. Backend Setup
+### Backend
 
-1. Navigate to the server directory:
-   ```bash
-   cd server
-   ```
+```bash
+cd server
+npm install
 
-2. Install dependencies: (tới đây thui, chưa cần tạo virtual env ở mấy bước sau để chạy back-end)
-   ```bash
-   npm install
-   ```
+# Create .env here
 
-3. Create `.env` file in the `server` directory:
-   ```bash
-   # Create .env file
-   MONGODB_URI="your_mongodb_connection_string_here"
-   PORT=5001
-   ```
-   
-   **Example MongoDB connection strings:**
-   - Local: `MONGODB_URI="mongodb://localhost:27017/llm-database"`
-   - MongoDB Atlas: `MONGODB_URI="mongodb+srv://username:password@cluster.mongodb.net/database"`
+echo PORT=5001 >> .env
 
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   
-   The backend server will run on `http://localhost:5001`
-
-### 3. Frontend Setup (chủ yếu là chạy cái này nè)
-
-1. Open a **new terminal** and navigate to the client directory:
-   ```bash
-   cd client
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-   
-   The frontend will run on `http://localhost:3000` 
-
-### 4. Access the Application
-
-Open your browser and navigate to:
-```
-http://localhost:3000 (mở này lên là thấy nhe)
+npm run dev
+# http://localhost:5001
 ```
 
-## 📁 Project Structure
+### Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+# http://localhost:3000
+```
+
+Run both servers in parallel (two terminals) for full functionality.
+
+## 🗂️ Project Structure (key bits)
 
 ```
 a-story-of-LLMs-evolution/
-├── server/                 # Backend API
-│   ├── models/            # Mongoose models
-│   │   ├── LlmModel.js
-│   │   └── BenchmarkModel.js
-│   ├── routes/            # API routes
-│   │   └── api.js
-│   ├── .env              # Environment variables (create this)
-│   ├── package.json
-│   └── server.js
-│
-└── client/                # Frontend React App
-    ├── public/
-    │   └── fonts/        # Font files (Kelvinch)
+├── server/
+│   ├── models/
+│   │   ├── BenchmarkModel.js
+│   │   └── LlmModel.js
+│   ├── routes/api.js
+│   ├── server.js
+│   └── package.json
+└── client/
+    ├── public/fonts/
     ├── src/
+    │   ├── App.jsx
     │   ├── components/
+    │   │   ├── BenchmarkDashboard/
     │   │   ├── Header/
+    │   │   ├── TaskSpecializationChart/
     │   │   └── VisualizationChart/
     │   ├── pages/
-    │   │   └── HomePage/
-    │   ├── hooks/
-    │   ├── App.jsx
-    │   ├── main.jsx
-    │   └── index.css
-    ├── package.json
-    └── vite.config.js
+    │   │   ├── HomePage/
+    │   │   └── PlaygroundPage/
+    │   └── hooks/
+    └── package.json
 ```
+
+## 📊 Data Integration Checklist
+
+These notes consolidate all component-level READMEs. Use them as TODO anchors for backend + data engineering handoff.
+
+### 1. Timeline & Existing Visuals
+
+- Endpoint: `GET /api/llms` → drives timeline chart (`VisualizationChart`).
+- Fields expected: `name`, `releaseDate`, `organization`, `parameters`, `architecture`, `description`.
+- TODO (BE): ensure query sorts by `releaseDate` ascending.
+
+### 2. TaskSpecializationChart (`/playground`, top card)
+
+Replace the mock data inside `client/src/components/TaskSpecializationChart/TaskSpecializationChart.jsx`.
+
+```js
+// TODO[data]: inject real dataset
+const MOCK_DATA = [];
+
+// Expected payload
+[
+  {
+    task: 'Web searching',
+    percentage: 33.3,
+    models: ['Model label 1', 'Model label 2']
+  }
+]
+
+// Suggested integration hook
+// props: <TaskSpecializationChart data={yourArray} />
+```
+
+**Data engineer notes**
+
+- Fetch from backend endpoint `GET /api/task-specialization` (TODO create).
+- Ensure percentages sum to ~100 (front end does no normalization).
+- Each entry’s `models` array renders verbatim inside tooltip `<li>` items—sanitize text before returning.
+
+### 3. BenchmarkDashboard (`/playground`, bottom card)
+
+Replace `MOCK_DATA`, `BENCHMARK_INFO`, and `BENCHMARK_KEYS` in `client/src/components/BenchmarkDashboard/BenchmarkDashboard.jsx`.
+
+```js
+// TODO[data]: hydrate via API response
+const MOCK_DATA = {};
+const BENCHMARK_INFO = {};
+const BENCHMARK_KEYS = [];
+const BENCHMARK_COLORS = {}; // optional override per benchmark id
+
+/* Expected shape:
+{
+  "General": [
+    { "model": "Chat GPT-4", "writingbench": 90, "scienceqa": 70 }
+  ],
+  "Coding": [ ... ]
+}
+
+Benchmarks metadata:
+{
+  "writingbench": {
+    "label": "Writing Bench",
+    "description": "...",
+    "color": "#1f77b4"
+  }
+}
+*/
+```
+
+**Integration steps**
+
+1. Provide endpoint `GET /api/benchmarks/dashboard` returning `{ categories, dataByCategory, benchmarkMeta }`.
+2. Map `benchmarkMeta` to component constants:
+   - `BENCHMARK_KEYS = benchmarkMeta.order`
+   - `BENCHMARK_COLORS[key] = benchmarkMeta[key].color`
+   - `BENCHMARK_INFO[key] = benchmarkMeta[key].description`
+3. Optional search/filter already handled in component; ensure model names stay human readable.
+
+### 4. Shared Notes
+
+- All charts expect numbers (not strings) for scores/percentages.
+- If API errors occur, surfaces stay empty; add error boundaries when connecting.
+- Keep character set ASCII-safe to match font pipeline.
 
 ## 🗄️ Database Collections
 
-The backend expects the following MongoDB collections:
+1. **LLM overall info**
+   - `name`: String
+   - `releaseDate`: Date
+   - `organization`: String
+   - `parameters`: Number (billions)
+   - `architecture`: String
+   - `description`: String
 
-### 1. "LLM overall info"
-Contains LLM information with fields:
-- `name` (String) - LLM name
-- `releaseDate` (Date) - Release date
-- `organization` (String) - Organization/company
-- `parameters` (Number) - Number of parameters in billions
-- `architecture` (String) - Model architecture
-- `description` (String) - Description
+2. **Benchmark MD**
+   - `llmName`: String
+   - `benchmarkName`: String
+   - `score`: Number
+   - `metric`: String
+   - `date`: Date
 
-### 2. "Benchmark MD"
-Contains benchmark data with fields:
-- `llmName` (String) - Name of the LLM
-- `benchmarkName` (String) - Name of the benchmark
-- `score` (Number) - Benchmark score
-- `metric` (String) - Metric type
-- `date` (Date) - Date of benchmark
+Add new collections for task specialization and dashboard aggregation if required.
 
-**Note:** If your collection names or field names differ, update the schemas in:
-- `server/models/LlmModel.js`
-- `server/models/BenchmarkModel.js`
+## 🔌 HTTP API (current)
 
-## 🔌 API Endpoints
+| Method | Endpoint | Notes |
+| ------ | -------- | ----- |
+| GET | `/health` | uptime check |
+| GET | `/api/llms` | timeline data |
+| GET | `/api/llms/:id` | detail view |
+| GET | `/api/benchmarks` | raw benchmark list |
+| GET | `/api/benchmarks/:llmName` | filter by model |
 
-### Backend API (http://localhost:5001)
+> TODO[data]: add endpoints for `/api/task-specialization` and `/api/benchmarks/dashboard`.
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/health` | Health check endpoint |
-| GET | `/api/llms` | Fetch all LLM documents |
-| GET | `/api/llms/:id` | Fetch a single LLM by ID |
-| GET | `/api/benchmarks` | Fetch all benchmark data |
-| GET | `/api/benchmarks/:llmName` | Fetch benchmarks for a specific LLM |
+## 🧪 Development Tips
 
-## 🎨 Features
+- Backend uses `nodemon` (via `npm run dev`).
+- Frontend served by Vite (`npm run dev`).
+- Vite proxy forwards `/api` to `http://localhost:5001` (see `client/vite.config.js`).
+- Kelvinch font lives in `client/public/fonts/`; check browser console if missing.
 
-- **Dark Theme UI** with Kelvinch font
-- **Interactive Header** with navigation links
-- **Timeline Visualization** of LLM evolution (D3.js)
-- **Benchmark Performance** comparisons
-- **RESTful API** for data access
-- **Real-time data fetching** from MongoDB
-- **Responsive Design**
+## 🔐 Environment Variables
 
-## 🛠️ Development
+`server/.env`
 
-### Backend Development
-- Uses `nodemon` for auto-restart on file changes
-- Server runs on port 5001 (configurable in `.env`)
-- MongoDB connection with Mongoose
-
-### Frontend Development
-- Uses Vite for fast development
-- Hot Module Replacement (HMR) enabled
-- API proxy configured in `vite.config.js` to forward `/api` requests to backend
-- Runs on port 3000
-
-### Running Both Servers
-
-You need to run both servers simultaneously:
-
-**Terminal 1 (Backend):**
-```bash
-cd server
-npm run dev
-```
-
-**Terminal 2 (Frontend):**
-```bash
-cd client
-npm run dev
+```env
+MONGODB_URI=your_mongodb_connection_string
+PORT=5001
 ```
 
 ## 🐛 Troubleshooting
 
-### MongoDB Connection Error
-- ✅ Verify your MongoDB connection string in `server/.env`
-- ✅ Ensure MongoDB is running (if local)
-- ✅ Check network/firewall settings (if using MongoDB Atlas)
-- ✅ Verify credentials are correct
-
-### CORS Errors
-- ✅ Backend has CORS enabled in `server/server.js`
-- ✅ Vite proxy handles API requests automatically
-- ✅ Check that backend is running on port 5001
-
-### Empty Data / No Data Displayed
-- ✅ Verify MongoDB collections exist and contain data
-- ✅ Check collection names match exactly: `"LLM overall info"` and `"Benchmark MD"`
-- ✅ Use MongoDB Compass or mongo shell to verify data structure
-- ✅ Check browser console for API errors
-
-### Port Already in Use
-- ✅ Change `PORT` in `server/.env` for backend
-- ✅ Change `port` in `client/vite.config.js` for frontend
-
-### Font Not Loading
-- ✅ Ensure `kelvinch.regular.otf` is in `client/public/fonts/`
-- ✅ Check browser console for font loading errors
-- ✅ Verify font path in `client/src/index.css`
-
-## 📝 Environment Variables
-
-Create a `.env` file in the `server` directory:
-
-```env
-MONGODB_URI="your_mongodb_connection_string"
-PORT=5001
-```
-
-**⚠️ Important:** Never commit `.env` files to Git! They are already in `.gitignore`.
+- **Mongo connection fails** → verify URI, allow IPs in Atlas, ensure service is running.
+- **Vite launches Python binary** → run `npm install` inside `client` to grab Node Vite.
+- **Empty charts** → confirm API returns JSON in shapes above; inspect network tab.
+- **Port conflicts** → change `PORT` in `.env` or update Vite config.
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is for educational purposes.
+1. Fork & clone
+2. `git checkout -b feature/<name>`
+3. Commit (`git commit -m "feat: describe change"`)
+4. Push & open PR
 
 ## 👥 Team
 
-[chưa có xog nhma push trước nhe hehe]
+_Đang cập nhật, push tiếp nha 😄_
 
 ---
 
-**Happy Coding! 🚀**
+Happy coding & keep the LLM lore alive! 🚀
+MONGODB_URI="your_mongodb_connection_string"
