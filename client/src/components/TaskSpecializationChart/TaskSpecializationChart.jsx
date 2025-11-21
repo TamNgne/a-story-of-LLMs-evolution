@@ -59,12 +59,19 @@ const TaskSpecializationChart = () => {
         .style('stroke-width', '3px')
         .on('mouseover', (event, d) => {
           tooltip.style('opacity', 1);
+          const [x, y] = d3.pointer(event, d3Container.current.parentElement);
           tooltip
             .html(
               `\n        <strong>${d.data.task}</strong>\n        <ul>\n          ${d.data.models.map((m) => `<li>${m}</li>`).join('')}\n        </ul>\n      `,
             )
-            .style('left', `${event.pageX + 20}px`)
-            .style('top', `${event.pageY - 20}px`);
+            .style('left', `${x + 20}px`)
+            .style('top', `${y - 20}px`);
+        })
+        .on('mousemove', (event) => {
+          const [x, y] = d3.pointer(event, d3Container.current.parentElement);
+          tooltip
+            .style('left', `${x + 20}px`)
+            .style('top', `${y - 20}px`);
         })
         .on('mouseout', () => {
           tooltip.style('opacity', 0);

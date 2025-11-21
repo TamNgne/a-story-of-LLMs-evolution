@@ -111,7 +111,22 @@ const MOCK_DATA = [];
 - Ensure percentages sum to ~100 (front end does no normalization).
 - Each entry’s `models` array renders verbatim inside tooltip `<li>` items—sanitize text before returning.
 
-### 3. BenchmarkDashboard (`/playground`, bottom card)
+### 3. ComparisonChart (`/playground`, top card)
+
+This chart uses a static data file for now.
+
+**Data engineer notes**
+
+- Edit `client/src/data/comparisonData.js` to update the models and metrics.
+- Format:
+  ```js
+  export const comparisonData = [
+    { model: 'Model Name', cost: 10, performance: 90, build: 50 },
+    // ...
+  ];
+  ```
+
+### 4. BenchmarkDashboard (`/playground`, bottom card)
 
 Replace `MOCK_DATA`, `BENCHMARK_INFO`, and `BENCHMARK_KEYS` in `client/src/components/BenchmarkDashboard/BenchmarkDashboard.jsx`.
 

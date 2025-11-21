@@ -2,8 +2,8 @@
 .dashboardContainer {
   width: 90%;
   max-width: 1200px;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
@@ -20,7 +20,7 @@
   font-family: 'Kelvinch', sans-serif;
   font-size: 2rem;
   margin: 0;
-  color: #000;
+  color: #fff;
 }
 
 .controls {
@@ -29,6 +29,7 @@
   margin: 20px 0;
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
+  align-items: flex-end;
 }
 
 .controls label {
@@ -70,11 +71,11 @@
 
 .axis path,
 .axis line {
-  stroke: #333;
+  stroke: #e0e0e0;
 }
 
 .axis text {
-  fill: #333;
+  fill: #e0e0e0;
   font-family: 'Kelvinch', sans-serif;
   font-size: 11px;
 }
@@ -95,5 +96,5 @@
 .legendColorBox {
   width: 15px;
   height: 15px;
-  border: 1px solid #333;
+  border: 1px solid #e0e0e0;
 }
