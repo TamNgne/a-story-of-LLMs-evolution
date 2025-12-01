@@ -1,4 +1,5 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import LlmModel from '../models/LlmModel.js';
 import BenchmarkModel from '../models/BenchmarkModel.js';
 
@@ -87,5 +88,69 @@ router.get('/benchmarks/:llmName', async (req, res) => {
   }
 });
 
-export default router;
+// GET /api/comparison - Fetch comparison data
+router.get('/comparison', async (req, res) => {
+  try {
+    const db = mongoose.connection.db;
+    const collection = db.collection('LLM overall info');
+    const docs = await collection
+      .find({})
+      .project({
+        _id: 0,
+        Model: 1,
+        Provider: 1,
+        'Speed (tokens/sec)': 1,
+        'Latency (sec)': 1,
+        'Benchmark (MMLU)': 1,
+        'Benchmark (Chatbot Arena)': 1,
+        'Price / Million Tokens': 1,
+        'Energy Efficiency': 1,
+        'Quality Rating': 1,
+        'Speed Rating': 1,
+        'Price Rating': 1,
+        'Context Window': 1,
+        'Training Dataset Size': 1,
+        'Compute Power': 1,
+        'Open-Source': 1,
+      })
+      .toArray();
 
+    const data = docs.map((d) => ({
+      model: d.Model,
+      provider: d.Provider,
+      contextWindow: d['Context Window'],
+      openSource: d['Open-Source'] === 1,
+
+      // Các metric chính cho scatter plot:
+      performance: d['Quality Rating'], 
+      cost: d['Price / Million Tokens'],
+      speed: d['Speed (tokens/sec)'],
+      latency: d['Latency (sec)'],
+
+      // Metric phụ
+      benchmarkMmlu: d['Benchmark (MMLU)'],
+      benchmarkArena: d['Benchmark (Chatbot Arena)'],
+      energyEfficiency: d['Energy Efficiency'],
+      qualityRating: d['Quality Rating'],
+      speedRating: d['Speed Rating'],
+      priceRating: d['Price Rating'],
+      trainingDatasetSize: d['Training Dataset Size'],
+      computePower: d['Compute Power'],
+    }));
+
+    res.json({
+      success: true,
+      count: data.length,
+      data,
+    });
+  } catch (error) {
+    console.error('Error fetching comparison data:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch comparison data',
+      message: error.message,
+    });
+  }
+});
+
+export default router;

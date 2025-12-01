@@ -61,3 +61,29 @@ export const useBenchmarkData = () => {
   return { data, loading, error };
 };
 
+export const useComparisonData = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get('/api/comparison');
+        setData(response.data.data);
+        setError(null);
+      } catch (err) {
+        setError(err.message || 'Failed to fetch comparison data');
+        setData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return { data, loading, error };
+};
+

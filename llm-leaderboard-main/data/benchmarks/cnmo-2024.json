@@ -1,0 +1,16 @@
+{
+  "benchmark_id": "cnmo-2024",
+  "name": "CNMO 2024",
+  "parent_benchmark_id": null,
+  "category": "math",
+  "modality": "text",
+  "multilingual": false,
+  "max_score": 1.0,
+  "language": "en",
+  "description": "China Mathematical Olympiad 2024 - A challenging mathematics competition.",
+  "paper_link": null,
+  "implementation_link": null,
+  "verified": false,
+  "created_at": "2025-09-05T00:00:00.000000+00:00",
+  "updated_at": "2025-09-05T00:00:00.000000+00:00"
+}

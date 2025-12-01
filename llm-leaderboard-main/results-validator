@@ -1,0 +1,780 @@
+🔍 Validating LLM Stats Data Structure...
+
+============================================================
+Phase 1: Schema Validation
+============================================================
+
+Validating organization...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ai21/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/cohere/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/unknown/organization.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/organization.json
+
+Validating model...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ai21/models/jamba-1.5-large/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ai21/models/jamba-1.5-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/models/nova-lite/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/models/nova-micro/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/models/nova-pro/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-5-haiku-20241022/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-5-sonnet-20240620/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-5-sonnet-20241022/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-7-sonnet-20250219/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-haiku-20240307/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-opus-20240229/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-sonnet-20240229/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-opus-4-1-20250805/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-opus-4-20250514/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-sonnet-4-20250514/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/cohere/models/command-r-plus-04-2024/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-0528/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-llama-70b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-llama-8b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-1.5b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-14b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-32b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-7b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-zero/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-v2.5/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-v3-0324/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-v3/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-vl2-small/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-vl2-tiny/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-vl2/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.0-pro/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.5-flash-8b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.5-flash/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.5-pro/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.0-flash-lite/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.0-flash-thinking/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.0-flash/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-flash-lite/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-flash/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-pro-preview-06-05/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-pro/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-diffusion/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-2-27b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-2-9b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-12b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-1b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-27b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-4b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e2b-it-litert-preview/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e2b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e2b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e4b-it-litert-preview/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e4b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e4b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/medgemma-4b-it/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/models/granite-3.3-8b-base/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/models/granite-3.3-8b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/models/granite-4.0-tiny-preview/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.1-405b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.1-70b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.1-8b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.2-11b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.2-3b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.2-90b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.3-70b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-4-maverick/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-4-scout/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-3.5-mini-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-3.5-moe-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-3.5-vision-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-mini-reasoning/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-multimodal-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-reasoning-plus/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-reasoning/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/codestral-22b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/devstral-medium-2507/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/devstral-small-2507/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/magistral-medium/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/magistral-small-2506/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/ministral-8b-instruct-2410/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-large-2-2407/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-nemo-instruct-2407/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-2409/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-24b-base-2501/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-24b-instruct-2501/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-3.1-24b-base-2503/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-3.1-24b-instruct-2503/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-3.2-24b-instruct-2506/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/pixtral-12b-2409/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/pixtral-large/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/models/kimi-k1.5/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/models/kimi-k2-base/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/models/kimi-k2-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.1-nemotron-70b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.1-nemotron-nano-8b-v1/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.1-nemotron-ultra-253b-v1/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.3-nemotron-super-49b-v1/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-3.5-turbo-0125/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4-0613/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4-turbo-2024-04-09/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.1-2025-04-14/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.1-mini-2025-04-14/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.1-nano-2025-04-14/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.5/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4o-2024-05-13/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4o-2024-08-06/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4o-mini-2024-07-18/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-2025-08-01/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-2025-08-07/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-mini-2025-08-07/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-nano-2025-08-07/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-oss-120b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-oss-20b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-2024-12-17/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-preview/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-pro/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o3-2025-04-16/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o3-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o3-pro-2025-06-10/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o4-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qvq-72b-preview/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-14b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-32b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-72b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-7b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-coder-32b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-coder-7b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2-72b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2-7b-instruct/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2-vl-72b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-omni-7b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-vl-32b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-vl-72b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-vl-7b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-235b-a22b-instruct-2507/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-235b-a22b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-30b-a3b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-32b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwq-32b-preview/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwq-32b/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-1.5/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-1.5v/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-2-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-2/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-3-mini/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-3/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-4-heavy/model.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-4/model.json
+
+Validating license...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/apache_2_0.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/cc_by_nc.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/creative_commons_attribution_4_0_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/deepseek.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/gemma.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/health_ai_developer_foundations_terms_of_use.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/jamba_open_model_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/llama_3_1_community_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/llama_3_2_community_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/llama_3_3_community_license_agreement.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/llama_4_community_license_agreement.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/llama3_2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/mistral_research_license_(mrl)_for_research;_mistral_commercial_license_for_commercial_use.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/mistral_research_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/mit_+_model_license_(commercial_use_allowed).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/mit_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/mit.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/mnpl_0_1.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/modified_mit_license.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/proprietary.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/qwen.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/tongyi_qianwen.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/licenses/unknown.json
+
+Validating benchmark...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/acebench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/activitynet.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/agieval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ai2-reasoning-challenge-(arc).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ai2d.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aider-polyglot-edit.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aider-polyglot.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aime-2024.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aime-2025.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aime.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aime25.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/aitz-em.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/alignbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/alpacaeval-2.0.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/amc-2022-23.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/android-control-high-em.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/android-control-low-em.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/androidworld-sr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/api-bank.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arc-agi-v2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arc-agi.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arc-c.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arc-e.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arc.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arena-hard-v2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/arena-hard.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/attaq.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/autologi.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bbh.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bfcl-v2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bfcl-v3-multiturn.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bfcl-v3.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bfcl.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/big-bench-extra-hard.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/big-bench-hard.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/big-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bigcodebench-full.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bigcodebench-hard.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bigcodebench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/bird-sql-(dev).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/blink.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/boolq.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/browsecomp-long-128k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/browsecomp-long-256k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/browsecomp.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/c-eval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cbnsl.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cc-ocr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/charadessta.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/chartqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/charxiv-d.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/charxiv-r.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/chexpert-cxr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cluewsc.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cmmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cnmo-2024.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/codeforces.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/codegolf-v2.2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/collie.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/common-voice-15.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/commonsenseqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/complexfuncbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/covost2-en-zh.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/covost2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/crag.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/creative-writing-v3.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/crperelation.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/crux-o.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cruxeval-input-cot.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cruxeval-o.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cruxeval-output-cot.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/csimpleqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/cybersecurity-ctfs.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/dermmcqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/docvqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/docvqatest.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/drop.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ds-arena-code.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ds-fim-eval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/eclektic.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/egoschema.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/erqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/evalplus.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/facts-grounding.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/factscore.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/finqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/flenqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/fleurs.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/frames.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/french-mmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/frontiermath.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/functionalmath.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/giantsteps-tempo.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/global-mmlu-lite.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/global-mmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gorilla-benchmark-api-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/govreport.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gpqa-biology.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gpqa-chemistry.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gpqa-diamond.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gpqa-physics.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gpqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/graphwalks-bfs-<128k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/graphwalks-bfs->128k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/graphwalks-parents-<128k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/graphwalks-parents->128k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/groundui-1k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gsm-8k-(cot).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gsm8k-chat.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/gsm8k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/hallusion-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/healthbench-hard.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/healthbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/hellaswag.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/hiddenmath.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/hmmt-2025.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/hmmt25.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humaneval-average.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humaneval-er.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humaneval-mul.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humaneval-plus.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humaneval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humaneval+.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humanevalfim-average.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/humanity's-last-exam.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/if.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ifeval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/include.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/infinitebench-en.mc.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/infinitebench-en.qa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/infographicsqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/infovqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/infovqatest.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/instruct-humaneval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/intergps.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/internal-api-instruction-following-(hard).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/lbpp-(v2).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livebench-20241125.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livebench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livecodebench-v5-24.12-25.2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livecodebench-v5.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livecodebench-v6.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livecodebench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/livecodebench(01-09).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/longbench-v2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/longfact-concepts.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/longfact-objects.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/longvideobench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/lsat.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/lvbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/math-(cot).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/math-500.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/math.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mathvision.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mathvista-mini.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mathvista.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp-++-base-version.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp-evalplus-(base).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp-evalplus.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp-pass@1.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp-plus.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mbpp+.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/medxpertqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mega-mlqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mega-tydi-qa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mega-udpos.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mega-xcopa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mega-xstorycloze.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/meld.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mgsm.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mimic-cxr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mlvu-m.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mlvu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mm-if-eval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mm-mind2web.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mm-mt-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmau-music.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmau-sound.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmau-speech.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmau.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmbench-test.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmbench-v1.1.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmbench-video.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mme-realworld.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mme.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-(cot).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-base.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-chat.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-french.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-pro.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-prox.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-redux-2.0.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-redux.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu-stem.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmmu-(val).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmmu-(validation).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmmu-pro.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmmu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmmuval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmstar.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmt-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmvet.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mmvetgpt4turbo.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mobileminiwob++-sr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mrcr-1m-(pointwise).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mrcr-1m.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mrcr-v2-(8-needle).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mrcr-v2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mrcr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mt-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mtvqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/muirbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multi-if.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multichallenge-(o3-mini-grader).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multichallenge.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multilf.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multilingual-mgsm-(cot).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multilingual-mmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multipl-e-humaneval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multipl-e-mbpp.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/multipl-e.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/musiccaps.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/musr.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/mvbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/natural-questions.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/natural2code.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/nexus.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/nih-multi-needle.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/nmos.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/nq.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ocrbench-v2-(en).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ocrbench-v2-(zh).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ocrbench-v2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ocrbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/odinw.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ojbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/olympiadbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/omnibench-music.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/omnibench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/omnimath.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/open-rewrite.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/openai-mmlu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/openai-mrcr:-2-needle-128k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/openai-mrcr:-2-needle-1m.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/openai-mrcr%3A-2-needle-256k.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/openbookqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/osworld-extended.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/osworld-screenshot-only.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/osworld.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/pathmcqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/perceptiontest.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/phibench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/physicsfinals.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/piqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/pointgrounding.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/polymath-en.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/polymath.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/pope.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/popqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/qasper.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/qmsum.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/realworldqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/repobench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/repoqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/ruler.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/sat-math.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/scale-multichallenge.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/scienceqa-visual.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/scienceqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/screenspot-pro.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/screenspot.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/simpleqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/slakevqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/social-iqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/spider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/squality.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/stem.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/summscreenfd.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/superglue.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/supergpqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-bench-multilingual.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-bench-verified-(agentic-coding).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-bench-verified-(agentless).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-bench-verified-(multiple-attempts).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-bench-verified.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-lancer-(ic-diamond-subset).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/swe-lancer.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tau-bench-airline.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tau-bench-retail.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tau-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tau2-airline.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tau2-retail.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tau2-telecom.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tempcompass.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/terminal-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/terminus.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/textvqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/theoremqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tldr9+-(test).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/translation-en→set1-comet22.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/translation-en→set1-spbleu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/translation-set1→en-comet22.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/translation-set1→en-spbleu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/triviaqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/truthfulqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/tydiqa.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/uniform-bar-exam.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/usamo25.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vatex.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vcr-en-easy.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vibe-eval.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/video-mme-(long,-no-subtitles).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/video-mme.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/video-mmew-sub.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/videomme-w-o-sub..json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/videomme-w-sub..json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/videommmu.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/visualwebbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vocalsound.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/voicebench-avg.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vqa-rad.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vqav2-(test).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vqav2-(val).json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/vqav2.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/wild-bench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/winogrande.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/wmt23.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/wmt24++.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/writingbench.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/xlsum-english.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/xstest.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/benchmarks/zebralogic.json
+
+Validating provider...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/anthropic/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/azure/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/bedrock/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/cerebras/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/cohere/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/deepinfra/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/deepseek/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/fireworks/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/google/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/groq/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/hyperbolic/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/lambda/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/mistral/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/novita/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/openai/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/replicate/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/sambanova/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/together/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/xai/provider.json
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/zeroeval/provider.json
+
+Validating benchmark-results...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ai21/models/jamba-1.5-large/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ai21/models/jamba-1.5-mini/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/models/nova-lite/benchmarks.json (27 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/models/nova-micro/benchmarks.json (17 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/amazon/models/nova-pro/benchmarks.json (27 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-5-haiku-20241022/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-5-sonnet-20240620/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-5-sonnet-20241022/benchmarks.json (19 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-7-sonnet-20250219/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-haiku-20240307/benchmarks.json (10 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-opus-20240229/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-3-sonnet-20240229/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-opus-4-1-20250805/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-opus-4-20250514/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/anthropic/models/claude-sonnet-4-20250514/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/cohere/models/command-r-plus-04-2024/benchmarks.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-0528/benchmarks.json (16 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-llama-70b/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-llama-8b/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-1.5b/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-14b/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-32b/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-distill-qwen-7b/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1-zero/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-r1/benchmarks.json (20 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-v2.5/benchmarks.json (15 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-v3-0324/benchmarks.json (5 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-v3/benchmarks.json (20 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-vl2-small/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-vl2-tiny/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/deepseek/models/deepseek-vl2/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.0-pro/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.5-flash-8b/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.5-flash/benchmarks.json (22 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-1.5-pro/benchmarks.json (23 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.0-flash-lite/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.0-flash-thinking/benchmarks.json (3 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.0-flash/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-flash-lite/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-flash/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-pro-preview-06-05/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-2.5-pro/benchmarks.json (16 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemini-diffusion/benchmarks.json (10 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-2-27b-it/benchmarks.json (16 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-2-9b-it/benchmarks.json (16 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-12b-it/benchmarks.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-1b-it/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-27b-it/benchmarks.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3-4b-it/benchmarks.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e2b-it-litert-preview/benchmarks.json (28 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e2b-it/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e2b/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e4b-it-litert-preview/benchmarks.json (28 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e4b-it/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/gemma-3n-e4b/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/google/models/medgemma-4b-it/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/models/granite-3.3-8b-base/benchmarks.json (20 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/models/granite-3.3-8b-instruct/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/ibm/models/granite-4.0-tiny-preview/benchmarks.json (12 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.1-405b-instruct/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.1-70b-instruct/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.1-8b-instruct/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.2-11b-instruct/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.2-3b-instruct/benchmarks.json (15 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.2-90b-instruct/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-3.3-70b-instruct/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-4-maverick/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/meta/models/llama-4-scout/benchmarks.json (12 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-3.5-mini-instruct/benchmarks.json (31 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-3.5-moe-instruct/benchmarks.json (31 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-3.5-vision-instruct/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-mini-reasoning/benchmarks.json (3 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-mini/benchmarks.json (17 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-multimodal-instruct/benchmarks.json (15 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-reasoning-plus/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4-reasoning/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/microsoft/models/phi-4/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/codestral-22b/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/devstral-medium-2507/benchmarks.json (1 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/devstral-small-2507/benchmarks.json (1 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/magistral-medium/benchmarks.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/magistral-small-2506/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/ministral-8b-instruct-2410/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-large-2-2407/benchmarks.json (5 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-nemo-instruct-2407/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-24b-base-2501/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-24b-instruct-2501/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-3.1-24b-base-2503/benchmarks.json (5 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-3.1-24b-instruct-2503/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/mistral-small-3.2-24b-instruct-2506/benchmarks.json (16 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/pixtral-12b-2409/benchmarks.json (12 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/mistral/models/pixtral-large/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/models/kimi-k1.5/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/models/kimi-k2-base/benchmarks.json (13 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/moonshotai/models/kimi-k2-instruct/benchmarks.json (38 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.1-nemotron-70b-instruct/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.1-nemotron-nano-8b-v1/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.1-nemotron-ultra-253b-v1/benchmarks.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/nvidia/models/llama-3.3-nemotron-super-49b-v1/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-3.5-turbo-0125/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4-0613/benchmarks.json (12 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4-turbo-2024-04-09/benchmarks.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.1-2025-04-14/benchmarks.json (30 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.1-mini-2025-04-14/benchmarks.json (29 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.1-nano-2025-04-14/benchmarks.json (25 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4.5/benchmarks.json (27 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4o-2024-05-13/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4o-2024-08-06/benchmarks.json (39 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-4o-mini-2024-07-18/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-2025-08-01/benchmarks.json (56 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-2025-08-07/benchmarks.json (61 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-mini-2025-08-07/benchmarks.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-5-nano-2025-08-07/benchmarks.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-oss-120b/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/gpt-oss-20b/benchmarks.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-2024-12-17/benchmarks.json (19 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-mini/benchmarks.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-preview/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o1-pro/benchmarks.json (2 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o3-2025-04-16/benchmarks.json (25 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o3-mini/benchmarks.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/openai/models/o4-mini/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qvq-72b-preview/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-14b-instruct/benchmarks.json (16 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-32b-instruct/benchmarks.json (18 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-72b-instruct/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-7b-instruct/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-coder-32b-instruct/benchmarks.json (15 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen-2.5-coder-7b-instruct/benchmarks.json (19 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2-72b-instruct/benchmarks.json (17 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2-7b-instruct/benchmarks.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2-vl-72b/benchmarks.json (15 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-omni-7b/benchmarks.json (45 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-vl-32b/benchmarks.json (28 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-vl-72b/benchmarks.json (30 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen2.5-vl-7b/benchmarks.json (32 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-235b-a22b-instruct-2507/benchmarks.json (25 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-235b-a22b/benchmarks.json (23 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-30b-a3b/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwen3-32b/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwq-32b-preview/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/qwen/models/qwq-32b/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-1.5/benchmarks.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-1.5v/benchmarks.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-2-mini/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-2/benchmarks.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-3-mini/benchmarks.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-3/benchmarks.json (5 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-4-heavy/benchmarks.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/organizations/xai/models/grok-4/benchmarks.json (7 items)
+
+Validating provider-models...
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/anthropic/models.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/azure/models.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/bedrock/models.json (22 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/cerebras/models.json (3 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/cohere/models.json (1 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/deepinfra/models.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/deepseek/models.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/fireworks/models.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/google/models.json (26 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/groq/models.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/hyperbolic/models.json (9 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/lambda/models.json (7 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/mistral/models.json (11 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/novita/models.json (8 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/openai/models.json (21 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/replicate/models.json (2 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/sambanova/models.json (6 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/together/models.json (14 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/xai/models.json (4 items)
+✅ Valid: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data/providers/zeroeval/models.json (14 items)
+
+✅ All schemas are valid! 🎉
+
+============================================================
+Phase 2: Data Integrity Validation
+============================================================
+🔍 Running Data Integrity Validation...
+
+Data directory: /Users/jonathanchavez/dev/zeroeval/llm-stats/my-app/data/data
+
+
+📂 Loading all data files...
+
+✅ Loaded 16 organizations
+✅ Loaded 152 models
+✅ Loaded 337 benchmarks
+✅ Loaded 23 licenses
+✅ Loaded 20 providers
+
+🔍 Checking for duplicate names...
+
+✅ No duplicate benchmark names found
+
+🔗 Checking references...
+
+✅ All references are valid
+
+👻 Checking for orphaned data...
+
+
+============================================================
+📊 Validation Summary
+============================================================
+
+⚠️  Found 3 warnings:
+
+⚠️  2 models have no benchmark results
+⚠️  1 benchmarks are not used by any model
+⚠️  1 licenses are not used by any model
+
+============================================================
+
+🎉 All validations passed successfully!
