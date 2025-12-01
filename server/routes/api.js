@@ -4,10 +4,39 @@ import BenchmarkModel from '../models/BenchmarkModel.js';
 
 const router = express.Router();
 
-// GET /api/llms - Fetch all LLM documents
+/**
+ * Optional: GET /api/llms/avg_score
+ * Fetch LLMs with avg_benchmark_score
+ */
+router.get('/llms/avg_score', async (req, res) => {
+  try {
+    const llms = await LlmModel.find(
+      {},
+      {name: 1, model_id: 1, release_date:1, avg_benchmark_score: 1, _id: 0 }
+    )
+
+    res.json({
+      success: true,
+      count: llms.length,
+      data: llms,
+    });
+  } catch (error) {
+    console.error('Error fetching LLM average scores:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch average benchmark scores',
+      message: error.message,
+    });
+  }
+});
+
+/**
+ * GET /api/llms
+ * Fetch all LLM documents from merged collection, sorted by released_date
+ */
 router.get('/llms', async (req, res) => {
   try {
-    const llms = await LlmModel.find({}).sort({ releaseDate: 1 });
+    const llms = await LlmModel.find({}).sort({ released_date: 1 });
     res.json({
       success: true,
       count: llms.length,
@@ -23,10 +52,13 @@ router.get('/llms', async (req, res) => {
   }
 });
 
-// GET /api/llms/:id - Fetch a single LLM by ID
-router.get('/llms/:id', async (req, res) => {
+/**
+ * GET /api/llms/:id
+ * Fetch a single LLM by model_id (instead of Mongo _id)
+ */
+router.get('/llms/:model_id', async (req, res) => {
   try {
-    const llm = await LlmModel.findById(req.params.id);
+    const llm = await LlmModel.findOne({ model_id: req.params.model_id });
     if (!llm) {
       return res.status(404).json({
         success: false,
@@ -47,7 +79,10 @@ router.get('/llms/:id', async (req, res) => {
   }
 });
 
-// GET /api/benchmarks - Fetch all benchmark data
+/**
+ * GET /api/benchmarks
+ * Fetch all benchmark documents, sorted by date
+ */
 router.get('/benchmarks', async (req, res) => {
   try {
     const benchmarks = await BenchmarkModel.find({}).sort({ date: 1 });
@@ -66,7 +101,10 @@ router.get('/benchmarks', async (req, res) => {
   }
 });
 
-// GET /api/benchmarks/:llmName - Fetch benchmarks for a specific LLM
+/**
+ * GET /api/benchmarks/:llmName
+ * Fetch benchmarks for a specific LLM by name
+ */
 router.get('/benchmarks/:llmName', async (req, res) => {
   try {
     const benchmarks = await BenchmarkModel.find({
@@ -87,5 +125,6 @@ router.get('/benchmarks/:llmName', async (req, res) => {
   }
 });
 
-export default router;
 
+
+export default router;

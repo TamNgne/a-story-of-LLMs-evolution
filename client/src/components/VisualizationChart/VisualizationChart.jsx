@@ -5,46 +5,74 @@ import styles from './VisualizationChart.module.css';
 
 // --- BACKEND_HOOKUP_POINT ---
 // This mock data should be replaced by data fetched from the API (e.g., props.data)
-const MOCK_DATA = [
-  { id: 'm1', modelName: 'GPT-3.5 Turbo', releaseDate: '2023-03-01', performanceScore: 40, provider: 'OpenAI' },
-  { id: 'm2', modelName: 'Llama 2', releaseDate: '2023-07-18', performanceScore: 45, provider: 'Meta AI' },
-  { id: 'm3', modelName: 'Gemini 1.0 Pro', releaseDate: '2023-12-06', performanceScore: 50, provider: 'Google' },
-  { id: 'm4', modelName: 'Claude 3 Opus', releaseDate: '2024-03-04', performanceScore: 55, provider: 'Anthropic' },
-  { id: 'm5', modelName: 'GPT-4o', releaseDate: '2024-05-13', performanceScore: 88, provider: 'OpenAI' },
-  { id: 'm6', modelName: 'Gemini 2.5 Pro', releaseDate: '2024-06-15', performanceScore: 90, provider: 'Google' },
-  { id: 'm7', modelName: 'Llama 3', releaseDate: '2024-04-18', performanceScore: 78, provider: 'Meta AI' },
-];
+// const MOCK_DATA = [
+//   { id: 'm1', modelName: 'GPT-3.5 Turbo', releaseDate: '2023-03-01', performanceScore: 40, provider: 'OpenAI' },
+//   { id: 'm2', modelName: 'Llama 2', releaseDate: '2023-07-18', performanceScore: 45, provider: 'Meta AI' },
+//   { id: 'm3', modelName: 'Gemini 1.0 Pro', releaseDate: '2023-12-06', performanceScore: 50, provider: 'Google' },
+//   { id: 'm4', modelName: 'Claude 3 Opus', releaseDate: '2024-03-04', performanceScore: 55, provider: 'Anthropic' },
+//   { id: 'm5', modelName: 'GPT-4o', releaseDate: '2024-05-13', performanceScore: 88, provider: 'OpenAI' },
+//   { id: 'm6', modelName: 'Gemini 2.5 Pro', releaseDate: '2024-06-15', performanceScore: 90, provider: 'Google' },
+//   { id: 'm7', modelName: 'Llama 3', releaseDate: '2024-04-18', performanceScore: 78, provider: 'Meta AI' },
+// ];
 
-// --- BACKEND_HOOKUP_POINT ---
-// This data defines the trend line. This could be calculated or provided by the backend.
-const MOCK_TREND_LINE_DATA = [
-  { releaseDate: '2023-03-01', performanceScore: 40 },
-  { releaseDate: '2024-03-04', performanceScore: 55 },
-  { releaseDate: '2024-05-13', performanceScore: 88 },
-  { releaseDate: '2024-06-15', performanceScore: 90 },
-];
+// // --- BACKEND_HOOKUP_POINT ---
+// // This data defines the trend line. This could be calculated or provided by the backend.
+// const MOCK_TREND_LINE_DATA = [
+//   { releaseDate: '2023-03-01', performanceScore: 40 },
+//   { releaseDate: '2024-03-04', performanceScore: 55 },
+//   { releaseDate: '2024-05-13', performanceScore: 88 },
+//   { releaseDate: '2024-06-15', performanceScore: 90 },
+// ];
 
-const VisualizationChart = () => {
+const VisualizationChart = ({apiBaseUrl = "http://localhost:5001/api"}) => {
   const d3Container = useRef(null);
   const [data, setData] = useState([]);
   const [trendLineData, setTrendLineData] = useState([]);
 
   useEffect(() => {
-    // --- BACKEND_HOOKUP_POINT ---
-    // In a real app, you would fetch data here and call setData() and setTrendLineData()
-    const parsedData = MOCK_DATA.map(d => ({
-      ...d,
-      releaseDate: new Date(d.releaseDate),
-      year: new Date(d.releaseDate).getFullYear()
-    }));
-    setData(parsedData);
+    const fetchLLMData = async () => {
+      try {
+        const llmresponse = await fetch(`${apiBaseUrl}/llms`);
+        const llmJson = await llmresponse.json();
+        const data = (llmJson.success ? llmJson.data : [])
+          .filter(d => d.release_date && d.avg_benchmark_score != null)
+          .map(d => ({
+            ...d,
+            releaseDate: new Date(d.release_date),
+            // year: new Date(d.releaseDate).getFullYear()
+            performanceScore: d.avg_benchmark_score,
+            modelName: d.name,
+            provider: d.provider_id || 'Unknown',
+            organization: d.organization_id || 'Unknown',
+          }));
 
-    const parsedTrendData = MOCK_TREND_LINE_DATA.map(d => ({
-      ...d,
-      releaseDate: new Date(d.releaseDate)
-    }));
-    setTrendLineData(parsedTrendData);
-  }, []);
+        setData(data);
+        
+
+        const trendresponse = await fetch(`${apiBaseUrl}/llms/avg_score`);
+        const trendJson = await trendresponse.json();
+
+        const trendData = (trendJson.success ? trendJson.data : [])
+            .filter(d => d.release_date && d.avg_benchmark_score != null)
+            .map(d => ({
+              ...d,
+              releaseDate: new Date(d.release_date),
+              performanceScore: d.avg_benchmark_score,
+        }));
+
+        setTrendLineData(trendData);;
+        
+      } catch (error) {
+          console.error('Failed to fetch LLM data:', llmJson.error);
+        }
+    };
+
+    fetchLLMData();
+
+  }, [apiBaseUrl]);
+
+  console.log(trendLineData);
+
 
   useEffect(() => {
     if (data.length > 0 && d3Container.current) {
@@ -66,13 +94,13 @@ const VisualizationChart = () => {
         .append('g')
         .attr('transform', `translate(${margin.left},${margin.top})`);
 
-      // --- X-Axis (Time) - Fixed domain 2023-2025, monthly ticks ---
-      const xDomain = [new Date('2023-01-01'), new Date('2025-12-31')];
+      //X-Axis (Time) 
+      const xDomain = [new Date('2023-03-01'), new Date('2025-12-31')];
       const x = d3.scaleTime()
         .domain(xDomain)
         .range([0, width]);
 
-      // Create monthly ticks for 2023-2025 (36 months total, but we'll show every 3 months for readability)
+      
       const xAxis = d3.axisBottom(x)
         .ticks(d3.timeMonth.every(3)) // Every 3 months
         .tickFormat(d3.timeFormat('%Y-%m'));
@@ -89,7 +117,7 @@ const VisualizationChart = () => {
 
       // --- Y-Axis (Performance) ---
       const y = d3.scaleLinear()
-        .domain([0, 100]) // Assuming performance is 0-100
+        .domain([0, 1]) 
         .range([height, 0]);
 
       svg.append('g')
@@ -150,7 +178,8 @@ const VisualizationChart = () => {
             .style('left', `${xPos + 15}px`)
             .style('top', `${yPos - 15}px`)
             .html(`
-              <div>Average Performance score: ${scoreStr}</div>
+              <div>Model: ${d.modelName}</div>
+              <div>Avg Score: ${d.performanceScore?.toFixed(2)}</div>
               <div>Released: ${dateStr}</div>
             `)
             .transition()

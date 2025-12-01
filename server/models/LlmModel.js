@@ -2,37 +2,41 @@ import mongoose from 'mongoose';
 
 const llmSchema = new mongoose.Schema(
   {
-    // Basic LLM information fields
+    // Unique identifier for the model
+    model_id: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     name: {
       type: String,
       required: true,
     },
-    releaseDate: {
+    provider_id: {
+      type: String,
+    },
+    organization_id: {
+      type: String,
+    },
+    release_date: {
       type: Date,
     },
-    organization: {
-      type: String,
-    },
-    parameters: {
-      type: Number, // in billions
-    },
-    architecture: {
-      type: String,
+
+    avg_benchmark_score: {
+      type: Number,
     },
     description: {
       type: String,
-    },
-    // Additional fields can be added based on your actual database schema
+    }
+   
   },
   {
-    timestamps: true, // Adds createdAt and updatedAt fields
-    collection: 'LLM overall info', // Specify the collection name
+    timestamps: true,
+    collection: 'LLM Merged Organization and Provider', // Merged collection
   }
 );
 
-// If your collection name is different, you can adjust it
 // The model will use the collection name specified above
 const LlmModel = mongoose.model('LLM', llmSchema);
 
 export default LlmModel;
-
