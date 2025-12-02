@@ -70,11 +70,30 @@ export const useComparisonData = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
+        setError(null);
+        console.log('🔄 Fetching comparison data from /api/comparison...');
         const response = await axios.get('/api/comparison');
-        setData(response.data.data);
+        console.log('✅ Comparison data received:', {
+          success: response.data.success,
+          count: response.data.count,
+          dataLength: response.data.data?.length,
+        });
+        
+        if (response.data.success && response.data.data) {
+          setData(response.data.data);
+          console.log('📊 Sample data point:', response.data.data[0]);
+        } else {
+          throw new Error('Invalid response format');
+        }
         setError(null);
       } catch (err) {
-        setError(err.message || 'Failed to fetch comparison data');
+        console.error('❌ Error fetching comparison data:', err);
+        console.error('Error details:', {
+          message: err.message,
+          response: err.response?.data,
+          status: err.response?.status,
+        });
+        setError(err.response?.data?.message || err.message || 'Failed to fetch comparison data');
         setData(null);
       } finally {
         setLoading(false);
