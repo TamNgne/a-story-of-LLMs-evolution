@@ -8,41 +8,70 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const [selectedOrganization, setSelectedOrganization] = useState('All');
   const [selectedProvider, setSelectedProvider] = useState('All');
 
-  // Extract unique organizations and providers for filters
-  const organizations = useMemo(() => {
-    const orgs = new Set(data.map(d => d.organization).filter(Boolean));
-    return ['All', ...Array.from(orgs).sort()];
-  }, [data]);
-
-  const providers = useMemo(() => {
-    const provs = new Set(data.map(d => d.provider).filter(Boolean));
-    return ['All', ...Array.from(provs).sort()];
-  }, [data]);
-
   const filteredData = useMemo(() => {
     return data.filter(d => {
-      const matchOrg = selectedOrganization === 'All' || d.organization === selectedOrganization;
-      const matchProv = selectedProvider === 'All' || d.provider === selectedProvider;
+      const matchOrg = selectedOrganization === 'All' || d.organization_id === selectedOrganization;
+      const matchProv = selectedProvider === 'All' || d.provider_id === selectedProvider;
       return matchOrg && matchProv;
     });
   }, [data, selectedOrganization, selectedProvider]);
 
-  const sotaData = useMemo(() => {
-    if (!filteredData || filteredData.length === 0) return [];
+  // Extract unique organizations and providers for filters
+  // const organizations = useMemo(() => {
+  //   const orgs = new Set(data.map(d => d.organization_id).filter(Boolean));
+  //   return ['All', ...Array.from(orgs).sort()];
+  // }, [data]);
 
-    const sortedData = [...filteredData].sort((a, b) => a.releaseDate - b.releaseDate);
-    const trend = [];
-    let currentMaxScore = -1;
+  // const providers = useMemo(() => {
+  //   const provs = new Set(data.map(d => d.provider_id).filter(Boolean));
+  //   return ['All', ...Array.from(provs).sort()];
+  // }, [data]);
 
-    sortedData.forEach(d => {
-      if (d.performanceScore >= currentMaxScore) {
-        currentMaxScore = d.performanceScore;
-        trend.push(d);
-      }
-    });
 
-    return trend;
-  }, [filteredData]);
+  const availableProviders = useMemo(() => {
+    if (selectedOrganization === 'All') {
+      return [...new Set(data.map(d => d.provider_id).filter(Boolean))];
+    }
+    const filteredByOrg = data.filter(d => d.organization_id === selectedOrganization);
+    return [...new Set(filteredByOrg.map(d => d.provider_id).filter(Boolean))]; 
+  }, [data, selectedOrganization]);
+
+  const availableOrganizations = useMemo(() => {
+    if (selectedProvider === 'All') {
+      return [...new Set(data.map(d => d.organization_id).filter(Boolean))];
+    }
+    const filteredByProv = data.filter(d => d.provider_id === selectedProvider);
+    return [...new Set(filteredByProv.map(d => d.organization_id).filter(Boolean))]; 
+  }, [data, selectedProvider]);
+
+  // const sotaData = useMemo(() => {
+  //   if (!filteredData || filteredData.length === 0) return [];
+
+  //   const sortedData = [...filteredData].sort((a, b) => a.releaseDate - b.releaseDate);
+  //   const trend = [];
+  //   let currentMaxScore = -1;
+
+  //   sortedData.forEach(d => {
+  //     if (d.performanceScore >= currentMaxScore) {
+  //       currentMaxScore = d.performanceScore;
+  //       trend.push(d);
+  //     }
+  //   });
+
+  //   return trend;
+  // }, [filteredData]);
+
+  useEffect(() => {
+    if (selectedOrganization !== 'All' && !availableOrganizations.includes(selectedOrganization)) {
+      setSelectedOrganization('All');
+    }
+  }, [availableOrganizations, selectedOrganization]);
+
+  useEffect(() => {
+    if (selectedProvider !== 'All' && !availableProviders.includes(selectedProvider)) {
+      setSelectedProvider('All');
+    }
+  }, [availableProviders, selectedProvider]);
 
   useEffect(() => {
     const fetchLLMData = async () => {
@@ -57,9 +86,9 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             releaseDate: new Date(d.release_date),
             performanceScore: parseFloat(d.avg_benchmark_score),
             modelName: d.name,
-            // TODO: Backend Team - Please ensure the API returns 'organization' and 'provider' fields
-            organization: d.organization || 'Unknown',
-            provider: d.provider || 'Unknown',
+           
+            organization: d.organization_id || 'Unknown',
+            provider: d.provider_id || 'Unknown',
           }));
 
         setData(formattedData);
@@ -70,6 +99,9 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
 
     fetchLLMData();
   }, [apiBaseUrl]);
+
+  // Date formatter for tooltip
+  const formatDate = d3.timeFormat('%Y-%m-%d');
 
   useEffect(() => {
     if (filteredData.length > 0 && d3Container.current) {
@@ -114,22 +146,22 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         .call(d3.axisLeft(y))
         .attr('class', styles.axis);
 
-      // --- TREND LINE ---
-      const line = d3.line()
-        .x(d => x(d.releaseDate))
-        .y(d => y(d.performanceScore))
+      // // --- TREND LINE ---
+      // const line = d3.line()
+      //   .x(d => x(d.releaseDate))
+      //   .y(d => y(d.performanceScore))
 
-      svg.append('path')
-        .datum(sotaData)
-        .attr('class', styles.trendLine)
-        .attr('fill', 'none')
-        .attr('stroke', '#ff6b6b')
-        .attr('stroke-width', 2.5)
-        .attr('d', line);
+      // svg.append('path')
+      //   .datum(sotaData)
+      //   .attr('class', styles.trendLine)
+      //   .attr('fill', 'none')
+      //   .attr('stroke', '#ff6b6b')
+      //   .attr('stroke-width', 2.5)
+      //   .attr('d', line);
 
-      const isOnTrendLine = (model) => {
-        return sotaData.some(s => s.modelName === model.modelName && s.releaseDate.getTime() === model.releaseDate.getTime());
-      };
+      // const isOnTrendLine = (model) => {
+      //   return sotaData.some(s => s.modelName === model.modelName && s.releaseDate.getTime() === model.releaseDate.getTime());
+      // };
 
       // --- Tooltip ---
       const tooltipDiv = d3.select('body').append('div')
@@ -156,13 +188,13 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
           tooltipDiv
             .style('left', `${xPos + 10}px`)
             .style('top', `${yPos - 10}px`)
-            .html(`<div><strong>${d.modelName}</strong></div><div>Score: ${d.performanceScore?.toFixed(2)}</div><div>Org: ${d.organization}</div><div>Prov: ${d.provider}</div>`)
+            .html(`<div><strong>${d.modelName}</strong></div><div>Score: ${d.performanceScore?.toFixed(2)}</div><div>Organization: ${d.organization}</div><div>Provider: ${d.provider}</div><div>Release Date: ${formatDate(d.releaseDate)}</div>`)
             .transition().duration(200).style('opacity', 1);
         })
         .on('mouseout', () => tooltipDiv.transition().duration(200).style('opacity', 0))
         .on('mousemove', function (event, d) {
           const svgRect = d3Container.current.getBoundingClientRect();
-          const xPos = svgRect.left + window.scrollX + margin.left + x(d.releaseDate);
+          const xPos = svgRect.left + window.scrollX + margin.left + x(formatDate(d.releaseDate));
           const yPos = svgRect.top + window.scrollY + margin.top + y(d.performanceScore);
 
           tooltipDiv.style('left', `${xPos + 10}px`)
@@ -170,26 +202,29 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         });
 
       // --- Labels ---
-      const modelsOnTrendLine = filteredData.filter(isOnTrendLine);
-      const labels = svg.selectAll('.modelLabel').data(modelsOnTrendLine);
+      // const modelsOnTrendLine = filteredData.filter(isOnTrendLine);
+      // const labels = svg.selectAll('.modelLabel').data(modelsOnTrendLine);
+      const labels = svg.selectAll('.modelLabel').data(filteredData, d => d.modelName);
 
       labels.enter()
         .append('text')
         .attr('class', styles.modelLabel)
-        .merge(labels)
         .attr('x', d => x(d.releaseDate))
         .attr('y', d => y(d.performanceScore) - 15)
         .attr('text-anchor', 'middle')
-        .style('fill', '#fff')
+        .style('fill', '#333')
         .style('font-size', '10px')
+        .style('pointer-events', 'none')
         .text(d => d.modelName)
-        .attr('opacity', 0.6);
+        .attr('opacity', 0.2)
+        .merge(labels)
 
       labels.exit().remove();
 
       // --- Scrubber ---
+      const formatScrubberDate = d3.timeFormat('%Y-%m');
       const maxDateVal = d3.max(filteredData, d => d.releaseDate);
-      const startingX = x(maxDateVal);
+      const startingX = maxDateVal ? x(maxDateVal) : width;
       const timeWindow = 30 * 24 * 60 * 60 * 1000;
 
       const scrubber = svg.append('g')
@@ -205,8 +240,8 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         .style('stroke', '#ffffff')
         .style('stroke-width', '2px');
 
-      scrubber.append('text')
-        .text("Drag Time")
+      const scrubberText = scrubber.append('text')
+        .text(formatScrubberDate(maxDateVal))
         .attr('x', 0)
         .attr('y', height - 18)
         .attr('text-anchor', 'middle')
@@ -214,20 +249,33 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         .style('font-size', '11px')
         .style('font-weight', 'bold')
         .style('pointer-events', 'none')
-        .style('text-shadow', '0px 0px 4px rgba(0,0,0,0.8)');
+        .style('text-shadow', '0px 0px 4px rgba(255,255,255,0.8)');
 
-      // --- Update Highlight Logic --- ( It doesn't work :< )
+      // --- Update Highlight Logic --- 
       const updateHighlight = (currentDate) => {
-        dots.attr('opacity', d => (Math.abs(d.releaseDate - currentDate) < timeWindow ? 1.0 : 0.2));
 
-        svg.selectAll('.modelLabel')
-          .attr('opacity', d => (Math.abs(d.releaseDate - currentDate) < timeWindow ? 1.0 : 0.6));
+        const isSameMonthYear = (dDate, cDate) => {
+          const d1 = new Date(dDate);
+          const d2 = new Date(cDate);
+          return d1.getMonth() === d2.getMonth() && 
+                 d1.getFullYear() === d2.getFullYear();
+        };
+
+        dots.attr('opacity', d => (isSameMonthYear(d.releaseDate, currentDate) ? 1.0 : 0.2));
+
+        svg.selectAll(`.${styles.modelLabel ||'modelLabel'}`)
+          .attr('opacity', d => (isSameMonthYear(d.releaseDate, currentDate) ? 1.0 : 0))
+          .raise();
       };
 
       const dragged = (event) => {
         const constrainedX = Math.max(0, Math.min(width, event.x));
         const currentDate = x.invert(constrainedX);
+        
+
         scrubber.attr('transform', `translate(${constrainedX}, 0)`);
+        scrubberText.text(formatScrubberDate(currentDate));
+
         updateHighlight(currentDate);
       };
 
@@ -239,7 +287,7 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         d3.select('body').selectAll('.llm-tooltip').remove();
       };
     }
-  }, [filteredData, sotaData]);
+  }, [filteredData]);
 
   return (
     <div className={styles.chartContainer}>
@@ -252,7 +300,8 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             onChange={(e) => setSelectedOrganization(e.target.value)}
             className={styles.filterSelect}
           >
-            {organizations.map(org => (
+            <option value="All">All</option>
+            {availableOrganizations.map(org => (
               <option key={org} value={org}>{org}</option>
             ))}
           </select>
@@ -265,7 +314,8 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             onChange={(e) => setSelectedProvider(e.target.value)}
             className={styles.filterSelect}
           >
-            {providers.map(prov => (
+            <option value="All">All</option>
+            {availableProviders.map(prov => (
               <option key={prov} value={prov}>{prov}</option>
             ))}
           </select>
