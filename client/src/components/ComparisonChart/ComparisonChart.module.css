@@ -24,6 +24,7 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  margin-bottom: 12px;
 }
 
 .controlGroup {
@@ -32,9 +33,17 @@
   gap: 8px;
 }
 
+.providerFilter {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
 .label {
-  color: #a0a0a0;
+  color: #fff;  /* đổi từ #a0a0a0 sang #fff */
   font-size: 0.9rem;
+  font-weight: bold;  /* thêm dòng này */
+  margin-right: 8px;  /* thêm khoảng cách */
 }
 
 .select {

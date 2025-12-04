@@ -1,5 +1,5 @@
 // client/src/components/ComparisonChart/ComparisonChart.jsx
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from 'd3';
 import styles from './ComparisonChart.module.css';
 import { useComparisonData } from '../../hooks/useData';
@@ -10,10 +10,12 @@ const ComparisonChart = () => {
 
   const [xAxis, setXAxis] = useState('cost');
   const [yAxis, setYAxis] = useState('performance');
+  const [selectedProvider, setSelectedProvider] = useState('all');
 
   // Lựa chọn hiện tại trong dropdown
   const [pendingX, setPendingX] = useState('cost');
   const [pendingY, setPendingY] = useState('performance');
+  const [pendingProvider, setPendingProvider] = useState('all');
 
   const { data: comparisonData, loading, error } = useComparisonData();
 
@@ -37,11 +39,26 @@ const ComparisonChart = () => {
   const handleBuild = () => {
     setXAxis(pendingX);
     setYAxis(pendingY);
+    setSelectedProvider(pendingProvider);
   };
+
+  // Lấy danh sách providers duy nhất từ data
+  const providers = useMemo(() => {
+    if (!comparisonData || comparisonData.length === 0) return [];
+    const uniqueProviders = [...new Set(comparisonData.map((d) => d.provider).filter(Boolean))];
+    return uniqueProviders.sort();
+  }, [comparisonData]);
+
+  // Lọc data theo provider
+  const filteredData = useMemo(() => {
+    if (!comparisonData || comparisonData.length === 0) return [];
+    if (selectedProvider === 'all') return comparisonData;
+    return comparisonData.filter((d) => d.provider === selectedProvider);
+  }, [comparisonData, selectedProvider]);
 
   // Vẽ chart
   useEffect(() => {
-    if (!comparisonData || comparisonData.length === 0 || !d3Container.current) return;
+    if (!filteredData || filteredData.length === 0 || !d3Container.current) return;
 
     // Xoá chart cũ
     d3.select(d3Container.current).selectAll('*').remove();
@@ -57,8 +74,8 @@ const ComparisonChart = () => {
       .append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    const xExtent = d3.extent(comparisonData, (d) => d[xAxis]);
-    const yExtent = d3.extent(comparisonData, (d) => d[yAxis]);
+    const xExtent = d3.extent(filteredData, (d) => d[xAxis]);
+    const yExtent = d3.extent(filteredData, (d) => d[yAxis]);
 
     const x = d3
       .scaleLinear()
@@ -118,7 +135,7 @@ const ComparisonChart = () => {
     svg
       .append('g')
       .selectAll('circle')
-      .data(comparisonData)
+      .data(filteredData)
       .join('circle')
       .attr('cx', (d) => x(d[xAxis]))
       .attr('cy', (d) => y(d[yAxis]))
@@ -148,7 +165,7 @@ const ComparisonChart = () => {
         d3.select(event.currentTarget).style('fill', '#999').style('opacity', 0.8);
         tooltip.style('opacity', 0);
       });
-  }, [comparisonData, xAxis, yAxis]);
+  }, [filteredData, xAxis, yAxis]);
 
   return (
     <div className={styles.chartWrapper}>
@@ -192,6 +209,23 @@ const ComparisonChart = () => {
           >
             Build
           </button>
+        </div>
+        <div className={styles.providerFilter}>
+          <div className={styles.controlGroup}>
+            <label className={styles.label}>     Provider:</label>
+            <select
+              className={styles.select}
+              value={pendingProvider}
+              onChange={(e) => setPendingProvider(e.target.value)}
+            >
+              <option value="all">All Provider</option>
+              {providers.map((provider) => (
+                <option key={provider} value={provider}>
+                  {provider}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
