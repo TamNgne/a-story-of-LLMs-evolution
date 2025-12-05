@@ -23,10 +23,7 @@ router.get('/llm', async (req, res) => {
   }
 });
 
-/**
- * GET /api/benchmarks
- * Fetch all benchmark documents, sorted by date
- */
+//benchmark master data
 router.get('/benchmark', async (req, res) => {
   try {
     const benchmarks = await BenchmarkModel.find({});
@@ -34,6 +31,25 @@ router.get('/benchmark', async (req, res) => {
       success: true,
       count: benchmarks.length,
       data: benchmarks,
+    });
+  } catch (error) {
+    console.error('Error fetching benchmarks:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch benchmark data',
+      message: error.message,
+    });
+  }
+});
+
+//performance chart 
+router.get('/performance', async (req, res) => {
+  try {
+    const performances = await PerformanceModel.find({});
+    res.json({
+      success: true,
+      count: performances.length,
+      data: performances,
     });
   } catch (error) {
     console.error('Error fetching benchmarks:', error);
