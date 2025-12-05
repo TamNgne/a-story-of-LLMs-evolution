@@ -1,7 +1,24 @@
+
+import dotenv from 'dotenv';
+import path from 'path'; 
+import { fileURLToPath } from 'url';
+
+// Get the directory of the current file
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load .env from the same folder as server.js
+const envPath = path.join(__dirname, '.env'); 
+console.log('DOTENV is looking for .env at:', envPath); // <-- WATCH THIS OUTPUT!
+
+dotenv.config({ path: envPath });
+
+console.log('✅ Loaded MONGODB_URI:', process.env.MONGODB_URI); 
+console.log('✅ Loaded PORT:', process.env.PORT); // <-- NEW TEST LINE
+
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import apiRoutes from './routes/api.js';
 
 // Load environment variables
