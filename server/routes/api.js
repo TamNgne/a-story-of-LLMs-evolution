@@ -2,10 +2,11 @@ import express from 'express';
 import LlmModel from '../models/LlmModel.js';
 import BenchmarkModel from '../models/BenchmarkModel.js';
 import PercentageModel from '../models/Percentage.js';
-import PerformanceModel from '../models/LlmPerformance.js';
 const router = express.Router();
 
-router.get('/llm', async (req, res) => {
+
+// GET /api/llms - Fetch all LLM documents
+router.get('/llms', async (req, res) => {
   try {
     const llms = await LlmModel.find({}).sort({ released_date: 1 });
     res.json({
@@ -61,8 +62,27 @@ router.get('/performance', async (req, res) => {
   }
 });
 
-
-
-
-
+router.get('/percentage', async (req, res) => {
+  try {
+    const percentages = await PercentageModel.find(
+      {},{
+        task: 1,
+        percentage: 1,
+        models: 1
+      }
+    )
+    res.json({
+      success: true,
+      data: percentages,
+    });
+  } catch (error) {
+    console.error('Error fetching Percentages:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch Percentage data',
+      message: error.message,
+    });
+  }
+}); 
 export default router;
+
