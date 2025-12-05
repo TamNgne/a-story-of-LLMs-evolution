@@ -21,14 +21,21 @@ const llmSchema = new mongoose.Schema(
     release_date: {
       type: Date,
     },
-
     avg_benchmark_score: {
       type: Number,
     },
     description: {
       type: String,
+    },
+    source_api_ref: {
+        type: String,
+    },
+    source_scorecard_blog_link: {
+        type: String,
+    },
+    source_weights_link: {
+        type: String,
     }
-   
   },
   {
     timestamps: true,
