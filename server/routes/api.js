@@ -1,9 +1,10 @@
 import express from 'express';
 import LlmModel from '../models/LlmModel.js';
-import BenchmarkModel from '../models/BenchmarkModel.js';
+import BenchmarkModel from '../models/Benchmark.js';
 import PercentageModel from '../models/Percentage.js';
-const router = express.Router();
+import PerformanceModel from '../models/LlmPerformance.js';
 
+const router = express.Router();
 
 // GET /api/llms - Fetch all LLM documents
 router.get('/llms', async (req, res) => {
@@ -62,6 +63,7 @@ router.get('/performance', async (req, res) => {
   }
 });
 
+//feature proportion chart
 router.get('/percentage', async (req, res) => {
   try {
     const percentages = await PercentageModel.find(
@@ -84,5 +86,6 @@ router.get('/percentage', async (req, res) => {
     });
   }
 }); 
+
 export default router;
 

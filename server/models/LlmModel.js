@@ -43,7 +43,7 @@ const llmSchema = new mongoose.Schema(
   }
 );
 
-// The model will use the collection name specified above
+
 const LlmModel = mongoose.model('LLM', llmSchema);
 
 export default LlmModel;
