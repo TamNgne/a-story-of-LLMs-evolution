@@ -38,3 +38,12 @@ lerna-debug.log*
 # Client
 /client/node_modules/
 /client/dist/
+/client/data/
+/client/hook/
+
+# Temporary files
+llm-leaderboard-main.zip
+/llm-leaderboard-main/
+data_loader.ipynb
+dsdv data.zip
+
