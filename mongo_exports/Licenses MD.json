@@ -1,0 +1,255 @@
+[
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e88"
+    },
+    "license_id": "mistral_research_license_(mrl)_for_research;_mistral_commercial_license_for_commercial_use",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.911442+00:00",
+    "description": "Mistral Research License (MRL) for research; Mistral Commercial License for commercial use license",
+    "name": "Mistral Research License (MRL) for research; Mistral Commercial License for commercial use",
+    "updated_at": "2025-07-19T19:49:05.911442+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e8a"
+    },
+    "license_id": "tongyi_qianwen",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.618579+00:00",
+    "description": "tongyi-qianwen license",
+    "name": "tongyi-qianwen",
+    "updated_at": "2025-07-19T19:49:05.618579+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e8c"
+    },
+    "license_id": "llama_3_2_community_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.587308+00:00",
+    "description": "Llama 3.2 Community License license",
+    "name": "Llama 3.2 Community License",
+    "updated_at": "2025-07-19T19:49:05.587308+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e8e"
+    },
+    "license_id": "llama_3_1_community_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.574080+00:00",
+    "description": "Llama 3.1 Community License license",
+    "name": "Llama 3.1 Community License",
+    "updated_at": "2025-07-19T19:49:05.574080+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e90"
+    },
+    "license_id": "gemma",
+    "allow_commercial": true,
+    "created_at": "2025-07-19T19:49:05.442645+00:00",
+    "description": "Google Gemma Terms of Use",
+    "name": "Gemma",
+    "updated_at": "2025-07-19T19:49:05.442645+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e92"
+    },
+    "license_id": "mnpl_0_1",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.804469+00:00",
+    "description": "MNPL-0.1 license",
+    "name": "MNPL-0.1",
+    "updated_at": "2025-07-19T19:49:05.804469+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9083a6d7100bb5da9e94"
+    },
+    "license_id": "creative_commons_attribution_4_0_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.471773+00:00",
+    "description": "Creative Commons Attribution 4.0 License license",
+    "name": "Creative Commons Attribution 4.0 License",
+    "updated_at": "2025-07-19T19:49:05.471773+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9e96"
+    },
+    "license_id": "llama_4_community_license_agreement",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.593881+00:00",
+    "description": "Llama 4 Community License Agreement license",
+    "name": "Llama 4 Community License Agreement",
+    "updated_at": "2025-07-19T19:49:05.593881+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9e98"
+    },
+    "license_id": "jamba_open_model_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.763778+00:00",
+    "description": "Jamba Open Model License license",
+    "name": "Jamba Open Model License",
+    "updated_at": "2025-07-19T19:49:05.763778+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9e9a"
+    },
+    "license_id": "qwen",
+    "allow_commercial": true,
+    "created_at": "2025-07-19T19:49:05.626726+00:00",
+    "description": "Alibaba Qwen License",
+    "name": "Qwen",
+    "updated_at": "2025-07-19T19:49:05.626726+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9e9c"
+    },
+    "license_id": "mit_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.897679+00:00",
+    "description": "MIT License license",
+    "name": "MIT License",
+    "updated_at": "2025-07-19T19:49:05.897679+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9e9e"
+    },
+    "license_id": "cc_by_nc",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.408956+00:00",
+    "description": "Creative Commons Non-Commercial",
+    "name": "CC BY-NC",
+    "updated_at": "2025-07-19T19:49:05.408956+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9ea0"
+    },
+    "license_id": "llama_3_3_community_license_agreement",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.602167+00:00",
+    "description": "Llama 3.3 Community License Agreement license",
+    "name": "Llama 3.3 Community License Agreement",
+    "updated_at": "2025-07-19T19:49:05.602167+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9ea2"
+    },
+    "license_id": "unknown",
+    "allow_commercial": false,
+    "created_at": "2025-08-03T22:06:10.793734+00:00",
+    "description": "Unknown license",
+    "name": "Unknown",
+    "updated_at": "2025-08-03T22:06:10.793734+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9ea4"
+    },
+    "license_id": "mit",
+    "allow_commercial": true,
+    "created_at": "2025-07-19T19:49:05.544627+00:00",
+    "description": "MIT License - allows commercial use",
+    "name": "MIT",
+    "updated_at": "2025-07-19T19:49:05.544627+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9ea6"
+    },
+    "license_id": "deepseek",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.656652+00:00",
+    "description": "deepseek license",
+    "name": "deepseek",
+    "updated_at": "2025-07-19T19:49:05.656652+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9ea8"
+    },
+    "license_id": "mistral_research_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.785093+00:00",
+    "description": "Mistral Research License license",
+    "name": "Mistral Research License",
+    "updated_at": "2025-07-19T19:49:05.785093+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9eaa"
+    },
+    "license_id": "mit_+_model_license_(commercial_use_allowed)",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.676049+00:00",
+    "description": "MIT + Model License (Commercial use allowed) license",
+    "name": "MIT + Model License (Commercial use allowed)",
+    "updated_at": "2025-07-19T19:49:05.676049+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9eac"
+    },
+    "license_id": "health_ai_developer_foundations_terms_of_use",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.510423+00:00",
+    "description": "Health AI Developer Foundations terms of use license",
+    "name": "Health AI Developer Foundations terms of use",
+    "updated_at": "2025-07-19T19:49:05.510423+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9eae"
+    },
+    "license_id": "llama3_2",
+    "allow_commercial": true,
+    "created_at": "2025-07-19T19:49:05.578287+00:00",
+    "description": "Meta Llama 3.2 Community License",
+    "name": "Llama 3.2",
+    "updated_at": "2025-07-19T19:49:05.578287+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9eb0"
+    },
+    "license_id": "proprietary",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.425183+00:00",
+    "description": "Proprietary license - usage restrictions apply",
+    "name": "Proprietary",
+    "updated_at": "2025-07-19T19:49:05.425183+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9eb2"
+    },
+    "license_id": "apache_2_0",
+    "allow_commercial": true,
+    "created_at": "2025-07-19T19:49:05.605369+00:00",
+    "description": "Apache License 2.0 - allows commercial use",
+    "name": "Apache 2.0",
+    "updated_at": "2025-07-19T19:49:05.605369+00:00"
+  },
+  {
+    "_id": {
+      "$oid": "692a9084a6d7100bb5da9eb4"
+    },
+    "license_id": "modified_mit_license",
+    "allow_commercial": false,
+    "created_at": "2025-07-19T19:49:05.420757+00:00",
+    "description": "Modified MIT License license",
+    "name": "Modified MIT License",
+    "updated_at": "2025-07-19T19:49:05.420757+00:00"
+  }
+]

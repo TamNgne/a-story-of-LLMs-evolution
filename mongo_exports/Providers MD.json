@@ -1,0 +1,202 @@
+[
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba13"
+    },
+    "provider_id": "cohere",
+    "created_at": "2025-07-19T19:49:16.663117+00:00",
+    "name": "Cohere",
+    "updated_at": "2025-07-19T19:49:16.663117+00:00",
+    "website": "https://cohere.ai"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba15"
+    },
+    "provider_id": "sambanova",
+    "created_at": "2025-07-19T19:49:16.697204+00:00",
+    "name": "Sambanova",
+    "updated_at": "2025-07-19T19:49:16.697204+00:00",
+    "website": "https://sambanova.ai/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba17"
+    },
+    "provider_id": "together",
+    "created_at": "2025-07-19T19:49:16.714534+00:00",
+    "name": "Together",
+    "updated_at": "2025-07-19T19:49:16.714534+00:00",
+    "website": "https://together.ai/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba19"
+    },
+    "provider_id": "azure",
+    "created_at": "2025-07-19T19:49:16.749000+00:00",
+    "name": "Azure",
+    "updated_at": "2025-07-19T19:49:16.749000+00:00",
+    "website": "https://azure.microsoft.com"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba1b"
+    },
+    "provider_id": "hyperbolic",
+    "created_at": "2025-07-19T19:49:16.780946+00:00",
+    "name": "Hyperbolic",
+    "updated_at": "2025-07-19T19:49:16.780946+00:00",
+    "website": "https://hyperbolic.xyz"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba1d"
+    },
+    "provider_id": "deepinfra",
+    "created_at": "2025-07-19T19:49:16.806529+00:00",
+    "name": "DeepInfra",
+    "updated_at": "2025-07-19T19:49:16.806529+00:00",
+    "website": "https://deepinfra.com/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba1f"
+    },
+    "provider_id": "google",
+    "created_at": "2025-07-19T19:49:16.864633+00:00",
+    "name": "Google",
+    "updated_at": "2025-07-19T19:49:16.864633+00:00",
+    "website": "https://ai.google.dev"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba21"
+    },
+    "provider_id": "fireworks",
+    "created_at": "2025-07-19T19:49:16.921865+00:00",
+    "name": "Fireworks",
+    "updated_at": "2025-07-19T19:49:16.921865+00:00",
+    "website": "https://fireworks.ai/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba23"
+    },
+    "provider_id": "groq",
+    "created_at": "2025-07-19T19:49:16.953587+00:00",
+    "name": "Groq",
+    "updated_at": "2025-07-19T19:49:16.953587+00:00",
+    "website": "https://groq.com/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba25"
+    },
+    "provider_id": "novita",
+    "created_at": "2025-07-19T19:49:16.967182+00:00",
+    "name": "Novita",
+    "updated_at": "2025-07-19T19:49:16.967182+00:00",
+    "website": "https://novita.ai/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba27"
+    },
+    "provider_id": "deepseek",
+    "created_at": "2025-07-19T19:49:16.986078+00:00",
+    "name": "DeepSeek",
+    "updated_at": "2025-07-19T19:49:16.986078+00:00",
+    "website": "https://deepseek.com/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba29"
+    },
+    "provider_id": "xai",
+    "created_at": "2025-07-19T19:49:16.995303+00:00",
+    "name": "xAI",
+    "updated_at": "2025-07-19T19:49:16.995303+00:00",
+    "website": "https://docs.x.ai"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba2b"
+    },
+    "provider_id": "bedrock",
+    "created_at": "2025-07-19T19:49:17.004009+00:00",
+    "name": "Bedrock",
+    "updated_at": "2025-07-19T19:49:17.004009+00:00",
+    "website": "https://aws.amazon.com/bedrock/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba2d"
+    },
+    "provider_id": "lambda",
+    "created_at": "2025-07-19T19:49:17.048564+00:00",
+    "name": "Lambda",
+    "updated_at": "2025-07-19T19:49:17.048564+00:00",
+    "website": "https://lambdalabs.com"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba2f"
+    },
+    "provider_id": "replicate",
+    "created_at": "2025-07-19T19:49:17.064218+00:00",
+    "name": "Replicate",
+    "updated_at": "2025-07-19T19:49:17.064218+00:00",
+    "website": "https://replicate.com/"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba31"
+    },
+    "provider_id": "anthropic",
+    "created_at": "2025-07-19T19:49:17.069874+00:00",
+    "name": "Anthropic",
+    "updated_at": "2025-07-19T19:49:17.069874+00:00",
+    "website": "https://anthropic.com"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba33"
+    },
+    "provider_id": "cerebras",
+    "created_at": "2025-07-19T19:49:17.088130+00:00",
+    "name": "Cerebras",
+    "updated_at": "2025-07-19T19:49:17.088130+00:00",
+    "website": "https://cerebras.ai"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba35"
+    },
+    "provider_id": "zeroeval",
+    "created_at": "2025-07-15T06:36:02.543462+00:00",
+    "name": "ZeroEval",
+    "updated_at": "2025-07-15T06:36:02.543462+00:00",
+    "website": "https://zeroeval.com"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba37"
+    },
+    "provider_id": "mistral",
+    "created_at": "2025-07-19T19:49:17.096952+00:00",
+    "name": "Mistral AI",
+    "updated_at": "2025-07-19T19:49:17.096952+00:00",
+    "website": "https://mistral.ai"
+  },
+  {
+    "_id": {
+      "$oid": "692a90a4a6d7100bb5daba39"
+    },
+    "provider_id": "openai",
+    "created_at": "2025-07-19T19:49:17.121876+00:00",
+    "name": "OpenAI",
+    "updated_at": "2025-07-19T19:49:17.121876+00:00",
+    "website": "https://openai.com"
+  }
+]

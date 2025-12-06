@@ -1,0 +1,4002 @@
+[
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b85f"
+    },
+    "Model": "DeepSeek-4",
+    "Provider": "Deepseek",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 95,
+    "Latency (sec)": 2.74,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1143,
+    "Open-Source": 1,
+    "Price / Million Tokens": 18.81,
+    "Training Dataset Size": 760952565,
+    "Compute Power": 13,
+    "Energy Efficiency": 0.5,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b860"
+    },
+    "Model": "Llama-8",
+    "Provider": "Meta AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 284,
+    "Latency (sec)": 3.21,
+    "Benchmark (MMLU)": 71,
+    "Benchmark (Chatbot Arena)": 1390,
+    "Open-Source": 1,
+    "Price / Million Tokens": 3.98,
+    "Training Dataset Size": 22891342,
+    "Compute Power": 22,
+    "Energy Efficiency": 2.07,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b861"
+    },
+    "Model": "Llama-5",
+    "Provider": "Meta AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 225,
+    "Latency (sec)": 2.95,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1406,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.02,
+    "Training Dataset Size": 827422145,
+    "Compute Power": 21,
+    "Energy Efficiency": 0.95,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b862"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 242,
+    "Latency (sec)": 12.89,
+    "Benchmark (MMLU)": 72,
+    "Benchmark (Chatbot Arena)": 1264,
+    "Open-Source": 1,
+    "Price / Million Tokens": 27.63,
+    "Training Dataset Size": 694305632,
+    "Compute Power": 86,
+    "Energy Efficiency": 3.51,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b863"
+    },
+    "Model": "DeepSeek-8",
+    "Provider": "Deepseek",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 71,
+    "Latency (sec)": 3.8,
+    "Benchmark (MMLU)": 77,
+    "Benchmark (Chatbot Arena)": 1381,
+    "Open-Source": 1,
+    "Price / Million Tokens": 18.52,
+    "Training Dataset Size": 378552278,
+    "Compute Power": 92,
+    "Energy Efficiency": 1.8,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b864"
+    },
+    "Model": "Llama-4",
+    "Provider": "Meta AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 163,
+    "Latency (sec)": 7.04,
+    "Benchmark (MMLU)": 84,
+    "Benchmark (Chatbot Arena)": 1100,
+    "Open-Source": 1,
+    "Price / Million Tokens": 23.91,
+    "Training Dataset Size": 982063894,
+    "Compute Power": 9,
+    "Energy Efficiency": 4.88,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b865"
+    },
+    "Model": "Nova-8",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 88,
+    "Latency (sec)": 17.96,
+    "Benchmark (MMLU)": 92,
+    "Benchmark (Chatbot Arena)": 1053,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.47,
+    "Training Dataset Size": 835961721,
+    "Compute Power": 26,
+    "Energy Efficiency": 3.24,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b866"
+    },
+    "Model": "Claude-6",
+    "Provider": "Anthropic",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 118,
+    "Latency (sec)": 9.58,
+    "Benchmark (MMLU)": 71,
+    "Benchmark (Chatbot Arena)": 1349,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.56,
+    "Training Dataset Size": 533950538,
+    "Compute Power": 9,
+    "Energy Efficiency": 4.13,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b867"
+    },
+    "Model": "Llama-2",
+    "Provider": "Meta AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 44,
+    "Latency (sec)": 13.42,
+    "Benchmark (MMLU)": 63,
+    "Benchmark (Chatbot Arena)": 1400,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.8,
+    "Training Dataset Size": 787144297,
+    "Compute Power": 15,
+    "Energy Efficiency": 0.75,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b868"
+    },
+    "Model": "Nova-6",
+    "Provider": "AWS",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 72,
+    "Latency (sec)": 3.61,
+    "Benchmark (MMLU)": 64,
+    "Benchmark (Chatbot Arena)": 972,
+    "Open-Source": 1,
+    "Price / Million Tokens": 20.58,
+    "Training Dataset Size": 75330621,
+    "Compute Power": 10,
+    "Energy Efficiency": 4.32,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b869"
+    },
+    "Model": "Gemini-5",
+    "Provider": "Google",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 170,
+    "Latency (sec)": 4.01,
+    "Benchmark (MMLU)": 67,
+    "Benchmark (Chatbot Arena)": 1195,
+    "Open-Source": 0,
+    "Price / Million Tokens": 12.94,
+    "Training Dataset Size": 506250032,
+    "Compute Power": 88,
+    "Energy Efficiency": 4.62,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b86a"
+    },
+    "Model": "GPT-6",
+    "Provider": "OpenAI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 163,
+    "Latency (sec)": 1.01,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 916,
+    "Open-Source": 0,
+    "Price / Million Tokens": 6.06,
+    "Training Dataset Size": 347464889,
+    "Compute Power": 42,
+    "Energy Efficiency": 2.49,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b86b"
+    },
+    "Model": "Llama-9",
+    "Provider": "Meta AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 76,
+    "Latency (sec)": 3.54,
+    "Benchmark (MMLU)": 90,
+    "Benchmark (Chatbot Arena)": 1116,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.77,
+    "Training Dataset Size": 510792999,
+    "Compute Power": 72,
+    "Energy Efficiency": 3.07,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b86c"
+    },
+    "Model": "GPT-3",
+    "Provider": "OpenAI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 58,
+    "Latency (sec)": 5.72,
+    "Benchmark (MMLU)": 68,
+    "Benchmark (Chatbot Arena)": 960,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.97,
+    "Training Dataset Size": 492341198,
+    "Compute Power": 24,
+    "Energy Efficiency": 3.85,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b86d"
+    },
+    "Model": "Command-7",
+    "Provider": "Cohere",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 128,
+    "Latency (sec)": 3.7,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 941,
+    "Open-Source": 0,
+    "Price / Million Tokens": 17.48,
+    "Training Dataset Size": 303366535,
+    "Compute Power": 80,
+    "Energy Efficiency": 0.96,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b86e"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 200,
+    "Latency (sec)": 1.96,
+    "Benchmark (MMLU)": 73,
+    "Benchmark (Chatbot Arena)": 924,
+    "Open-Source": 0,
+    "Price / Million Tokens": 8.11,
+    "Training Dataset Size": 79640080,
+    "Compute Power": 49,
+    "Energy Efficiency": 2.56,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b86f"
+    },
+    "Model": "Claude-5",
+    "Provider": "Anthropic",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 61,
+    "Latency (sec)": 2.59,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 938,
+    "Open-Source": 1,
+    "Price / Million Tokens": 23.94,
+    "Training Dataset Size": 130611435,
+    "Compute Power": 26,
+    "Energy Efficiency": 2.05,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b870"
+    },
+    "Model": "Claude-7",
+    "Provider": "Anthropic",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 205,
+    "Latency (sec)": 9.32,
+    "Benchmark (MMLU)": 70,
+    "Benchmark (Chatbot Arena)": 1030,
+    "Open-Source": 1,
+    "Price / Million Tokens": 9.35,
+    "Training Dataset Size": 485902970,
+    "Compute Power": 91,
+    "Energy Efficiency": 0.82,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b871"
+    },
+    "Model": "Llama-9",
+    "Provider": "Meta AI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 242,
+    "Latency (sec)": 4.29,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1397,
+    "Open-Source": 0,
+    "Price / Million Tokens": 13.68,
+    "Training Dataset Size": 777268711,
+    "Compute Power": 37,
+    "Energy Efficiency": 1.9,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b872"
+    },
+    "Model": "DeepSeek-2",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 141,
+    "Latency (sec)": 7.41,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1128,
+    "Open-Source": 0,
+    "Price / Million Tokens": 0.4,
+    "Training Dataset Size": 195565560,
+    "Compute Power": 68,
+    "Energy Efficiency": 0.43,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b873"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 152,
+    "Latency (sec)": 10.17,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1007,
+    "Open-Source": 1,
+    "Price / Million Tokens": 2.22,
+    "Training Dataset Size": 814111181,
+    "Compute Power": 50,
+    "Energy Efficiency": 0.23,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b874"
+    },
+    "Model": "Command-2",
+    "Provider": "Cohere",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 182,
+    "Latency (sec)": 13.87,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1071,
+    "Open-Source": 1,
+    "Price / Million Tokens": 11.81,
+    "Training Dataset Size": 724565603,
+    "Compute Power": 24,
+    "Energy Efficiency": 0.76,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b875"
+    },
+    "Model": "Gemini-9",
+    "Provider": "Google",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 234,
+    "Latency (sec)": 0.98,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1334,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.42,
+    "Training Dataset Size": 758219200,
+    "Compute Power": 19,
+    "Energy Efficiency": 4.82,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b876"
+    },
+    "Model": "Gemini-5",
+    "Provider": "Google",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 240,
+    "Latency (sec)": 16.03,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1377,
+    "Open-Source": 0,
+    "Price / Million Tokens": 18.02,
+    "Training Dataset Size": 432214688,
+    "Compute Power": 60,
+    "Energy Efficiency": 2.79,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b877"
+    },
+    "Model": "Gemini-4",
+    "Provider": "Google",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 254,
+    "Latency (sec)": 12.63,
+    "Benchmark (MMLU)": 74,
+    "Benchmark (Chatbot Arena)": 1001,
+    "Open-Source": 0,
+    "Price / Million Tokens": 8.79,
+    "Training Dataset Size": 926417714,
+    "Compute Power": 39,
+    "Energy Efficiency": 4.83,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b878"
+    },
+    "Model": "Command-7",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 165,
+    "Latency (sec)": 1.82,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1423,
+    "Open-Source": 0,
+    "Price / Million Tokens": 20.86,
+    "Training Dataset Size": 819903422,
+    "Compute Power": 74,
+    "Energy Efficiency": 2.22,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b879"
+    },
+    "Model": "Command-8",
+    "Provider": "Cohere",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 258,
+    "Latency (sec)": 17.5,
+    "Benchmark (MMLU)": 68,
+    "Benchmark (Chatbot Arena)": 1174,
+    "Open-Source": 1,
+    "Price / Million Tokens": 25.81,
+    "Training Dataset Size": 682507887,
+    "Compute Power": 89,
+    "Energy Efficiency": 1.63,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b87a"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 95,
+    "Latency (sec)": 18.43,
+    "Benchmark (MMLU)": 68,
+    "Benchmark (Chatbot Arena)": 943,
+    "Open-Source": 0,
+    "Price / Million Tokens": 23.41,
+    "Training Dataset Size": 330120493,
+    "Compute Power": 18,
+    "Energy Efficiency": 2.58,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b87b"
+    },
+    "Model": "Mistral-1",
+    "Provider": "Mistral AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 28,
+    "Latency (sec)": 1.41,
+    "Benchmark (MMLU)": 69,
+    "Benchmark (Chatbot Arena)": 916,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.24,
+    "Training Dataset Size": 617992916,
+    "Compute Power": 19,
+    "Energy Efficiency": 2.25,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b87c"
+    },
+    "Model": "Command-2",
+    "Provider": "Cohere",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 93,
+    "Latency (sec)": 5.68,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1229,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.44,
+    "Training Dataset Size": 717237199,
+    "Compute Power": 36,
+    "Energy Efficiency": 0.62,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b87d"
+    },
+    "Model": "Nova-4",
+    "Provider": "AWS",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 272,
+    "Latency (sec)": 16.16,
+    "Benchmark (MMLU)": 94,
+    "Benchmark (Chatbot Arena)": 1468,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.19,
+    "Training Dataset Size": 649640676,
+    "Compute Power": 74,
+    "Energy Efficiency": 3.24,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b87e"
+    },
+    "Model": "Gemini-6",
+    "Provider": "Google",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 249,
+    "Latency (sec)": 15.02,
+    "Benchmark (MMLU)": 84,
+    "Benchmark (Chatbot Arena)": 1396,
+    "Open-Source": 1,
+    "Price / Million Tokens": 7.3,
+    "Training Dataset Size": 331608072,
+    "Compute Power": 97,
+    "Energy Efficiency": 1.16,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b87f"
+    },
+    "Model": "Mistral-4",
+    "Provider": "Mistral AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 26,
+    "Latency (sec)": 3.85,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 911,
+    "Open-Source": 1,
+    "Price / Million Tokens": 29.6,
+    "Training Dataset Size": 457913593,
+    "Compute Power": 55,
+    "Energy Efficiency": 3.14,
+    "Quality Rating": 2,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b880"
+    },
+    "Model": "Mistral-2",
+    "Provider": "Mistral AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 193,
+    "Latency (sec)": 4.35,
+    "Benchmark (MMLU)": 70,
+    "Benchmark (Chatbot Arena)": 1217,
+    "Open-Source": 1,
+    "Price / Million Tokens": 4.32,
+    "Training Dataset Size": 423470685,
+    "Compute Power": 69,
+    "Energy Efficiency": 3.29,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b881"
+    },
+    "Model": "Gemini-2",
+    "Provider": "Google",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 160,
+    "Latency (sec)": 7.54,
+    "Benchmark (MMLU)": 61,
+    "Benchmark (Chatbot Arena)": 1491,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.99,
+    "Training Dataset Size": 678040443,
+    "Compute Power": 47,
+    "Energy Efficiency": 0.84,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b882"
+    },
+    "Model": "Gemini-4",
+    "Provider": "Google",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 187,
+    "Latency (sec)": 9.79,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 1115,
+    "Open-Source": 0,
+    "Price / Million Tokens": 18.56,
+    "Training Dataset Size": 684234337,
+    "Compute Power": 49,
+    "Energy Efficiency": 0.4,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b883"
+    },
+    "Model": "Mistral-8",
+    "Provider": "Mistral AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 189,
+    "Latency (sec)": 12.44,
+    "Benchmark (MMLU)": 77,
+    "Benchmark (Chatbot Arena)": 1238,
+    "Open-Source": 1,
+    "Price / Million Tokens": 21.09,
+    "Training Dataset Size": 450873695,
+    "Compute Power": 99,
+    "Energy Efficiency": 3.93,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b884"
+    },
+    "Model": "Mistral-7",
+    "Provider": "Mistral AI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 141,
+    "Latency (sec)": 7.5,
+    "Benchmark (MMLU)": 86,
+    "Benchmark (Chatbot Arena)": 980,
+    "Open-Source": 0,
+    "Price / Million Tokens": 16.81,
+    "Training Dataset Size": 207169125,
+    "Compute Power": 98,
+    "Energy Efficiency": 2.35,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b885"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 213,
+    "Latency (sec)": 9.36,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1384,
+    "Open-Source": 0,
+    "Price / Million Tokens": 0.34,
+    "Training Dataset Size": 292636894,
+    "Compute Power": 33,
+    "Energy Efficiency": 0.39,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b886"
+    },
+    "Model": "Mistral-8",
+    "Provider": "Mistral AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 24,
+    "Latency (sec)": 15.0,
+    "Benchmark (MMLU)": 86,
+    "Benchmark (Chatbot Arena)": 1273,
+    "Open-Source": 1,
+    "Price / Million Tokens": 9.83,
+    "Training Dataset Size": 975805672,
+    "Compute Power": 21,
+    "Energy Efficiency": 4.97,
+    "Quality Rating": 3,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b887"
+    },
+    "Model": "Llama-2",
+    "Provider": "Meta AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 48,
+    "Latency (sec)": 0.93,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 1099,
+    "Open-Source": 1,
+    "Price / Million Tokens": 15.56,
+    "Training Dataset Size": 500200256,
+    "Compute Power": 81,
+    "Energy Efficiency": 0.38,
+    "Quality Rating": 2,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b888"
+    },
+    "Model": "DeepSeek-5",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 184,
+    "Latency (sec)": 5.2,
+    "Benchmark (MMLU)": 83,
+    "Benchmark (Chatbot Arena)": 1436,
+    "Open-Source": 1,
+    "Price / Million Tokens": 2.68,
+    "Training Dataset Size": 674014536,
+    "Compute Power": 22,
+    "Energy Efficiency": 3.51,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b889"
+    },
+    "Model": "Nova-9",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 155,
+    "Latency (sec)": 14.32,
+    "Benchmark (MMLU)": 84,
+    "Benchmark (Chatbot Arena)": 1365,
+    "Open-Source": 1,
+    "Price / Million Tokens": 10.55,
+    "Training Dataset Size": 518732111,
+    "Compute Power": 48,
+    "Energy Efficiency": 4.92,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b88a"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 164,
+    "Latency (sec)": 17.93,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 988,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.04,
+    "Training Dataset Size": 10527148,
+    "Compute Power": 37,
+    "Energy Efficiency": 1.27,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b88b"
+    },
+    "Model": "Llama-1",
+    "Provider": "Meta AI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 236,
+    "Latency (sec)": 10.33,
+    "Benchmark (MMLU)": 65,
+    "Benchmark (Chatbot Arena)": 1167,
+    "Open-Source": 0,
+    "Price / Million Tokens": 2.4,
+    "Training Dataset Size": 139194600,
+    "Compute Power": 15,
+    "Energy Efficiency": 0.8,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b88c"
+    },
+    "Model": "GPT-7",
+    "Provider": "OpenAI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 151,
+    "Latency (sec)": 10.74,
+    "Benchmark (MMLU)": 83,
+    "Benchmark (Chatbot Arena)": 1470,
+    "Open-Source": 1,
+    "Price / Million Tokens": 11.94,
+    "Training Dataset Size": 388715924,
+    "Compute Power": 35,
+    "Energy Efficiency": 0.69,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b88d"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 89,
+    "Latency (sec)": 2.32,
+    "Benchmark (MMLU)": 92,
+    "Benchmark (Chatbot Arena)": 1388,
+    "Open-Source": 0,
+    "Price / Million Tokens": 4.02,
+    "Training Dataset Size": 287932652,
+    "Compute Power": 92,
+    "Energy Efficiency": 1.59,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b88e"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 271,
+    "Latency (sec)": 9.06,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1437,
+    "Open-Source": 1,
+    "Price / Million Tokens": 17.05,
+    "Training Dataset Size": 166253374,
+    "Compute Power": 71,
+    "Energy Efficiency": 0.6,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b88f"
+    },
+    "Model": "Nova-3",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 294,
+    "Latency (sec)": 10.75,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 946,
+    "Open-Source": 1,
+    "Price / Million Tokens": 20.7,
+    "Training Dataset Size": 468722282,
+    "Compute Power": 32,
+    "Energy Efficiency": 3.49,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b890"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 201,
+    "Latency (sec)": 5.0,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1187,
+    "Open-Source": 0,
+    "Price / Million Tokens": 24.03,
+    "Training Dataset Size": 552070115,
+    "Compute Power": 11,
+    "Energy Efficiency": 0.41,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b891"
+    },
+    "Model": "Claude-3",
+    "Provider": "Anthropic",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 186,
+    "Latency (sec)": 5.53,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 915,
+    "Open-Source": 1,
+    "Price / Million Tokens": 6.04,
+    "Training Dataset Size": 646542593,
+    "Compute Power": 10,
+    "Energy Efficiency": 2.6,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b892"
+    },
+    "Model": "GPT-5",
+    "Provider": "OpenAI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 110,
+    "Latency (sec)": 7.67,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1300,
+    "Open-Source": 0,
+    "Price / Million Tokens": 5.07,
+    "Training Dataset Size": 662127644,
+    "Compute Power": 73,
+    "Energy Efficiency": 4.98,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b893"
+    },
+    "Model": "Gemini-7",
+    "Provider": "Google",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 221,
+    "Latency (sec)": 0.6,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 985,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.18,
+    "Training Dataset Size": 65344261,
+    "Compute Power": 78,
+    "Energy Efficiency": 4.09,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b894"
+    },
+    "Model": "Gemini-9",
+    "Provider": "Google",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 38,
+    "Latency (sec)": 6.58,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 1149,
+    "Open-Source": 0,
+    "Price / Million Tokens": 19.11,
+    "Training Dataset Size": 330954893,
+    "Compute Power": 77,
+    "Energy Efficiency": 3.11,
+    "Quality Rating": 2,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b895"
+    },
+    "Model": "Command-7",
+    "Provider": "Cohere",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 58,
+    "Latency (sec)": 4.39,
+    "Benchmark (MMLU)": 79,
+    "Benchmark (Chatbot Arena)": 1290,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.21,
+    "Training Dataset Size": 754617635,
+    "Compute Power": 57,
+    "Energy Efficiency": 1.6,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b896"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 145,
+    "Latency (sec)": 6.68,
+    "Benchmark (MMLU)": 79,
+    "Benchmark (Chatbot Arena)": 1234,
+    "Open-Source": 1,
+    "Price / Million Tokens": 1.0,
+    "Training Dataset Size": 719908101,
+    "Compute Power": 25,
+    "Energy Efficiency": 3.16,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b897"
+    },
+    "Model": "Command-2",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 192,
+    "Latency (sec)": 2.57,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 1418,
+    "Open-Source": 0,
+    "Price / Million Tokens": 28.09,
+    "Training Dataset Size": 808294066,
+    "Compute Power": 2,
+    "Energy Efficiency": 2.68,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b898"
+    },
+    "Model": "GPT-7",
+    "Provider": "OpenAI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 160,
+    "Latency (sec)": 17.83,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 1036,
+    "Open-Source": 1,
+    "Price / Million Tokens": 1.61,
+    "Training Dataset Size": 248546405,
+    "Compute Power": 64,
+    "Energy Efficiency": 2.19,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b899"
+    },
+    "Model": "DeepSeek-8",
+    "Provider": "Deepseek",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 261,
+    "Latency (sec)": 11.95,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 1397,
+    "Open-Source": 1,
+    "Price / Million Tokens": 16.26,
+    "Training Dataset Size": 650253441,
+    "Compute Power": 35,
+    "Energy Efficiency": 0.74,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b89a"
+    },
+    "Model": "Llama-3",
+    "Provider": "Meta AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 239,
+    "Latency (sec)": 13.65,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1376,
+    "Open-Source": 1,
+    "Price / Million Tokens": 21.29,
+    "Training Dataset Size": 52864241,
+    "Compute Power": 7,
+    "Energy Efficiency": 4.44,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b89b"
+    },
+    "Model": "Command-8",
+    "Provider": "Cohere",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 145,
+    "Latency (sec)": 15.83,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 1493,
+    "Open-Source": 1,
+    "Price / Million Tokens": 26.14,
+    "Training Dataset Size": 549388332,
+    "Compute Power": 85,
+    "Energy Efficiency": 2.3,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b89c"
+    },
+    "Model": "Mistral-3",
+    "Provider": "Mistral AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 77,
+    "Latency (sec)": 10.07,
+    "Benchmark (MMLU)": 72,
+    "Benchmark (Chatbot Arena)": 1122,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.44,
+    "Training Dataset Size": 205458056,
+    "Compute Power": 18,
+    "Energy Efficiency": 1.05,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b89d"
+    },
+    "Model": "GPT-3",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 167,
+    "Latency (sec)": 1.92,
+    "Benchmark (MMLU)": 89,
+    "Benchmark (Chatbot Arena)": 1271,
+    "Open-Source": 0,
+    "Price / Million Tokens": 24.06,
+    "Training Dataset Size": 288703414,
+    "Compute Power": 67,
+    "Energy Efficiency": 1.9,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b89e"
+    },
+    "Model": "Llama-3",
+    "Provider": "Meta AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 20,
+    "Latency (sec)": 10.83,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1301,
+    "Open-Source": 1,
+    "Price / Million Tokens": 10.22,
+    "Training Dataset Size": 797174258,
+    "Compute Power": 42,
+    "Energy Efficiency": 2.13,
+    "Quality Rating": 2,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b89f"
+    },
+    "Model": "GPT-5",
+    "Provider": "OpenAI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 209,
+    "Latency (sec)": 11.82,
+    "Benchmark (MMLU)": 78,
+    "Benchmark (Chatbot Arena)": 1342,
+    "Open-Source": 1,
+    "Price / Million Tokens": 24.45,
+    "Training Dataset Size": 510774284,
+    "Compute Power": 39,
+    "Energy Efficiency": 4.15,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a0"
+    },
+    "Model": "Gemini-7",
+    "Provider": "Google",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 210,
+    "Latency (sec)": 14.96,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 1389,
+    "Open-Source": 0,
+    "Price / Million Tokens": 2.45,
+    "Training Dataset Size": 291445738,
+    "Compute Power": 41,
+    "Energy Efficiency": 3.69,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a1"
+    },
+    "Model": "DeepSeek-7",
+    "Provider": "Deepseek",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 136,
+    "Latency (sec)": 8.75,
+    "Benchmark (MMLU)": 89,
+    "Benchmark (Chatbot Arena)": 1172,
+    "Open-Source": 1,
+    "Price / Million Tokens": 26.85,
+    "Training Dataset Size": 539858208,
+    "Compute Power": 75,
+    "Energy Efficiency": 3.87,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a2"
+    },
+    "Model": "Claude-9",
+    "Provider": "Anthropic",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 153,
+    "Latency (sec)": 2.73,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1425,
+    "Open-Source": 0,
+    "Price / Million Tokens": 16.45,
+    "Training Dataset Size": 516393975,
+    "Compute Power": 24,
+    "Energy Efficiency": 0.15,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a3"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 77,
+    "Latency (sec)": 5.82,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1058,
+    "Open-Source": 1,
+    "Price / Million Tokens": 24.53,
+    "Training Dataset Size": 201402013,
+    "Compute Power": 60,
+    "Energy Efficiency": 2.14,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a4"
+    },
+    "Model": "DeepSeek-7",
+    "Provider": "Deepseek",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 63,
+    "Latency (sec)": 7.39,
+    "Benchmark (MMLU)": 89,
+    "Benchmark (Chatbot Arena)": 1051,
+    "Open-Source": 0,
+    "Price / Million Tokens": 13.6,
+    "Training Dataset Size": 191179221,
+    "Compute Power": 46,
+    "Energy Efficiency": 2.46,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a5"
+    },
+    "Model": "GPT-4",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 192,
+    "Latency (sec)": 12.99,
+    "Benchmark (MMLU)": 75,
+    "Benchmark (Chatbot Arena)": 1087,
+    "Open-Source": 1,
+    "Price / Million Tokens": 19.33,
+    "Training Dataset Size": 640370790,
+    "Compute Power": 19,
+    "Energy Efficiency": 0.19,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a6"
+    },
+    "Model": "Llama-4",
+    "Provider": "Meta AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 179,
+    "Latency (sec)": 11.5,
+    "Benchmark (MMLU)": 78,
+    "Benchmark (Chatbot Arena)": 997,
+    "Open-Source": 1,
+    "Price / Million Tokens": 15.82,
+    "Training Dataset Size": 24833272,
+    "Compute Power": 68,
+    "Energy Efficiency": 1.37,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a7"
+    },
+    "Model": "Mistral-5",
+    "Provider": "Mistral AI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 192,
+    "Latency (sec)": 7.25,
+    "Benchmark (MMLU)": 77,
+    "Benchmark (Chatbot Arena)": 1030,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.96,
+    "Training Dataset Size": 336744820,
+    "Compute Power": 90,
+    "Energy Efficiency": 3.83,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a8"
+    },
+    "Model": "DeepSeek-7",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 168,
+    "Latency (sec)": 19.73,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1070,
+    "Open-Source": 1,
+    "Price / Million Tokens": 2.49,
+    "Training Dataset Size": 320443694,
+    "Compute Power": 42,
+    "Energy Efficiency": 0.77,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8a9"
+    },
+    "Model": "Llama-4",
+    "Provider": "Meta AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 99,
+    "Latency (sec)": 12.19,
+    "Benchmark (MMLU)": 73,
+    "Benchmark (Chatbot Arena)": 1082,
+    "Open-Source": 1,
+    "Price / Million Tokens": 1.86,
+    "Training Dataset Size": 559342304,
+    "Compute Power": 32,
+    "Energy Efficiency": 2.72,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8aa"
+    },
+    "Model": "Llama-7",
+    "Provider": "Meta AI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 232,
+    "Latency (sec)": 4.9,
+    "Benchmark (MMLU)": 61,
+    "Benchmark (Chatbot Arena)": 1263,
+    "Open-Source": 0,
+    "Price / Million Tokens": 7.45,
+    "Training Dataset Size": 500298475,
+    "Compute Power": 39,
+    "Energy Efficiency": 1.15,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ab"
+    },
+    "Model": "Claude-3",
+    "Provider": "Anthropic",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 222,
+    "Latency (sec)": 2.22,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 938,
+    "Open-Source": 1,
+    "Price / Million Tokens": 4.83,
+    "Training Dataset Size": 471824025,
+    "Compute Power": 36,
+    "Energy Efficiency": 0.16,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ac"
+    },
+    "Model": "Mistral-2",
+    "Provider": "Mistral AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 271,
+    "Latency (sec)": 3.23,
+    "Benchmark (MMLU)": 89,
+    "Benchmark (Chatbot Arena)": 1426,
+    "Open-Source": 0,
+    "Price / Million Tokens": 26.16,
+    "Training Dataset Size": 627906918,
+    "Compute Power": 97,
+    "Energy Efficiency": 1.28,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ad"
+    },
+    "Model": "Gemini-9",
+    "Provider": "Google",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 248,
+    "Latency (sec)": 5.07,
+    "Benchmark (MMLU)": 63,
+    "Benchmark (Chatbot Arena)": 1396,
+    "Open-Source": 0,
+    "Price / Million Tokens": 6.62,
+    "Training Dataset Size": 272568110,
+    "Compute Power": 36,
+    "Energy Efficiency": 4.88,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ae"
+    },
+    "Model": "Llama-6",
+    "Provider": "Meta AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 183,
+    "Latency (sec)": 3.38,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1415,
+    "Open-Source": 1,
+    "Price / Million Tokens": 29.28,
+    "Training Dataset Size": 839625268,
+    "Compute Power": 3,
+    "Energy Efficiency": 4.03,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8af"
+    },
+    "Model": "Command-4",
+    "Provider": "Cohere",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 246,
+    "Latency (sec)": 3.89,
+    "Benchmark (MMLU)": 67,
+    "Benchmark (Chatbot Arena)": 1248,
+    "Open-Source": 1,
+    "Price / Million Tokens": 10.14,
+    "Training Dataset Size": 560248370,
+    "Compute Power": 73,
+    "Energy Efficiency": 4.8,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b0"
+    },
+    "Model": "Mistral-7",
+    "Provider": "Mistral AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 166,
+    "Latency (sec)": 5.84,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1296,
+    "Open-Source": 1,
+    "Price / Million Tokens": 5.5,
+    "Training Dataset Size": 595202523,
+    "Compute Power": 8,
+    "Energy Efficiency": 2.49,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b1"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 39,
+    "Latency (sec)": 3.63,
+    "Benchmark (MMLU)": 62,
+    "Benchmark (Chatbot Arena)": 1060,
+    "Open-Source": 1,
+    "Price / Million Tokens": 23.7,
+    "Training Dataset Size": 208404732,
+    "Compute Power": 97,
+    "Energy Efficiency": 0.64,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b2"
+    },
+    "Model": "DeepSeek-1",
+    "Provider": "Deepseek",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 66,
+    "Latency (sec)": 17.96,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 915,
+    "Open-Source": 1,
+    "Price / Million Tokens": 19.78,
+    "Training Dataset Size": 853482616,
+    "Compute Power": 70,
+    "Energy Efficiency": 2.79,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b3"
+    },
+    "Model": "GPT-9",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 252,
+    "Latency (sec)": 1.79,
+    "Benchmark (MMLU)": 69,
+    "Benchmark (Chatbot Arena)": 1392,
+    "Open-Source": 1,
+    "Price / Million Tokens": 14.97,
+    "Training Dataset Size": 414501952,
+    "Compute Power": 41,
+    "Energy Efficiency": 2.33,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b4"
+    },
+    "Model": "Claude-9",
+    "Provider": "Anthropic",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 33,
+    "Latency (sec)": 10.59,
+    "Benchmark (MMLU)": 69,
+    "Benchmark (Chatbot Arena)": 1325,
+    "Open-Source": 1,
+    "Price / Million Tokens": 16.68,
+    "Training Dataset Size": 196323711,
+    "Compute Power": 68,
+    "Energy Efficiency": 4.24,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b5"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 162,
+    "Latency (sec)": 8.33,
+    "Benchmark (MMLU)": 78,
+    "Benchmark (Chatbot Arena)": 1007,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.59,
+    "Training Dataset Size": 529462416,
+    "Compute Power": 13,
+    "Energy Efficiency": 0.58,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b6"
+    },
+    "Model": "Claude-7",
+    "Provider": "Anthropic",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 20,
+    "Latency (sec)": 19.65,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1349,
+    "Open-Source": 1,
+    "Price / Million Tokens": 6.89,
+    "Training Dataset Size": 835125186,
+    "Compute Power": 49,
+    "Energy Efficiency": 2.49,
+    "Quality Rating": 3,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b7"
+    },
+    "Model": "Mistral-8",
+    "Provider": "Mistral AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 73,
+    "Latency (sec)": 2.42,
+    "Benchmark (MMLU)": 92,
+    "Benchmark (Chatbot Arena)": 1210,
+    "Open-Source": 0,
+    "Price / Million Tokens": 29.89,
+    "Training Dataset Size": 976215627,
+    "Compute Power": 60,
+    "Energy Efficiency": 0.84,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b8"
+    },
+    "Model": "Claude-9",
+    "Provider": "Anthropic",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 278,
+    "Latency (sec)": 8.08,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1069,
+    "Open-Source": 1,
+    "Price / Million Tokens": 29.25,
+    "Training Dataset Size": 63094533,
+    "Compute Power": 2,
+    "Energy Efficiency": 1.69,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8b9"
+    },
+    "Model": "Mistral-5",
+    "Provider": "Mistral AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 163,
+    "Latency (sec)": 19.4,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 1445,
+    "Open-Source": 1,
+    "Price / Million Tokens": 19.53,
+    "Training Dataset Size": 314474105,
+    "Compute Power": 60,
+    "Energy Efficiency": 3.71,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ba"
+    },
+    "Model": "GPT-3",
+    "Provider": "OpenAI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 31,
+    "Latency (sec)": 17.34,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 1313,
+    "Open-Source": 0,
+    "Price / Million Tokens": 6.03,
+    "Training Dataset Size": 374027178,
+    "Compute Power": 5,
+    "Energy Efficiency": 2.43,
+    "Quality Rating": 3,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8bb"
+    },
+    "Model": "Gemini-8",
+    "Provider": "Google",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 243,
+    "Latency (sec)": 16.38,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 1150,
+    "Open-Source": 1,
+    "Price / Million Tokens": 20.42,
+    "Training Dataset Size": 444408322,
+    "Compute Power": 44,
+    "Energy Efficiency": 1.94,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8bc"
+    },
+    "Model": "DeepSeek-6",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 291,
+    "Latency (sec)": 5.31,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1040,
+    "Open-Source": 1,
+    "Price / Million Tokens": 2.21,
+    "Training Dataset Size": 723563111,
+    "Compute Power": 27,
+    "Energy Efficiency": 2.03,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8bd"
+    },
+    "Model": "Nova-8",
+    "Provider": "AWS",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 175,
+    "Latency (sec)": 3.58,
+    "Benchmark (MMLU)": 67,
+    "Benchmark (Chatbot Arena)": 1173,
+    "Open-Source": 0,
+    "Price / Million Tokens": 0.97,
+    "Training Dataset Size": 722568461,
+    "Compute Power": 32,
+    "Energy Efficiency": 2.35,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8be"
+    },
+    "Model": "GPT-4",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 27,
+    "Latency (sec)": 13.44,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1315,
+    "Open-Source": 1,
+    "Price / Million Tokens": 7.77,
+    "Training Dataset Size": 612459117,
+    "Compute Power": 21,
+    "Energy Efficiency": 3.95,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8bf"
+    },
+    "Model": "GPT-1",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 141,
+    "Latency (sec)": 18.6,
+    "Benchmark (MMLU)": 62,
+    "Benchmark (Chatbot Arena)": 938,
+    "Open-Source": 1,
+    "Price / Million Tokens": 13.91,
+    "Training Dataset Size": 513307113,
+    "Compute Power": 8,
+    "Energy Efficiency": 4.47,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c0"
+    },
+    "Model": "Gemini-4",
+    "Provider": "Google",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 183,
+    "Latency (sec)": 11.22,
+    "Benchmark (MMLU)": 83,
+    "Benchmark (Chatbot Arena)": 928,
+    "Open-Source": 1,
+    "Price / Million Tokens": 26.05,
+    "Training Dataset Size": 40233569,
+    "Compute Power": 72,
+    "Energy Efficiency": 4.78,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c1"
+    },
+    "Model": "Command-7",
+    "Provider": "Cohere",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 109,
+    "Latency (sec)": 11.52,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1376,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.83,
+    "Training Dataset Size": 917049933,
+    "Compute Power": 50,
+    "Energy Efficiency": 3.96,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c2"
+    },
+    "Model": "Gemini-3",
+    "Provider": "Google",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 155,
+    "Latency (sec)": 5.74,
+    "Benchmark (MMLU)": 67,
+    "Benchmark (Chatbot Arena)": 1217,
+    "Open-Source": 1,
+    "Price / Million Tokens": 22.29,
+    "Training Dataset Size": 2012584,
+    "Compute Power": 67,
+    "Energy Efficiency": 1.65,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c3"
+    },
+    "Model": "GPT-5",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 205,
+    "Latency (sec)": 15.44,
+    "Benchmark (MMLU)": 62,
+    "Benchmark (Chatbot Arena)": 1144,
+    "Open-Source": 1,
+    "Price / Million Tokens": 12.79,
+    "Training Dataset Size": 557525666,
+    "Compute Power": 44,
+    "Energy Efficiency": 3.47,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c4"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 197,
+    "Latency (sec)": 3.9,
+    "Benchmark (MMLU)": 92,
+    "Benchmark (Chatbot Arena)": 1171,
+    "Open-Source": 1,
+    "Price / Million Tokens": 10.41,
+    "Training Dataset Size": 182050548,
+    "Compute Power": 58,
+    "Energy Efficiency": 2.24,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c5"
+    },
+    "Model": "GPT-1",
+    "Provider": "OpenAI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 47,
+    "Latency (sec)": 6.61,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 1339,
+    "Open-Source": 1,
+    "Price / Million Tokens": 11.16,
+    "Training Dataset Size": 486864313,
+    "Compute Power": 3,
+    "Energy Efficiency": 1.35,
+    "Quality Rating": 3,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c6"
+    },
+    "Model": "Gemini-2",
+    "Provider": "Google",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 239,
+    "Latency (sec)": 8.62,
+    "Benchmark (MMLU)": 67,
+    "Benchmark (Chatbot Arena)": 1138,
+    "Open-Source": 0,
+    "Price / Million Tokens": 29.63,
+    "Training Dataset Size": 865443815,
+    "Compute Power": 86,
+    "Energy Efficiency": 4.22,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c7"
+    },
+    "Model": "Command-6",
+    "Provider": "Cohere",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 60,
+    "Latency (sec)": 10.25,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1276,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.25,
+    "Training Dataset Size": 82055631,
+    "Compute Power": 70,
+    "Energy Efficiency": 0.29,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c8"
+    },
+    "Model": "DeepSeek-5",
+    "Provider": "Deepseek",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 247,
+    "Latency (sec)": 5.0,
+    "Benchmark (MMLU)": 94,
+    "Benchmark (Chatbot Arena)": 1165,
+    "Open-Source": 1,
+    "Price / Million Tokens": 26.02,
+    "Training Dataset Size": 417430625,
+    "Compute Power": 2,
+    "Energy Efficiency": 4.52,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8c9"
+    },
+    "Model": "Nova-1",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 211,
+    "Latency (sec)": 2.47,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 1258,
+    "Open-Source": 1,
+    "Price / Million Tokens": 17.38,
+    "Training Dataset Size": 984428645,
+    "Compute Power": 87,
+    "Energy Efficiency": 2.36,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ca"
+    },
+    "Model": "GPT-3",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 164,
+    "Latency (sec)": 12.29,
+    "Benchmark (MMLU)": 83,
+    "Benchmark (Chatbot Arena)": 1239,
+    "Open-Source": 0,
+    "Price / Million Tokens": 13.19,
+    "Training Dataset Size": 705490491,
+    "Compute Power": 44,
+    "Energy Efficiency": 3.22,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8cb"
+    },
+    "Model": "Mistral-2",
+    "Provider": "Mistral AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 220,
+    "Latency (sec)": 5.91,
+    "Benchmark (MMLU)": 73,
+    "Benchmark (Chatbot Arena)": 1288,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.77,
+    "Training Dataset Size": 110231828,
+    "Compute Power": 2,
+    "Energy Efficiency": 3.33,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8cc"
+    },
+    "Model": "Llama-6",
+    "Provider": "Meta AI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 231,
+    "Latency (sec)": 11.71,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 1476,
+    "Open-Source": 1,
+    "Price / Million Tokens": 14.63,
+    "Training Dataset Size": 273974140,
+    "Compute Power": 81,
+    "Energy Efficiency": 4.49,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8cd"
+    },
+    "Model": "Nova-7",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 239,
+    "Latency (sec)": 3.26,
+    "Benchmark (MMLU)": 75,
+    "Benchmark (Chatbot Arena)": 902,
+    "Open-Source": 0,
+    "Price / Million Tokens": 26.21,
+    "Training Dataset Size": 392006457,
+    "Compute Power": 35,
+    "Energy Efficiency": 3.22,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ce"
+    },
+    "Model": "Command-7",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 259,
+    "Latency (sec)": 9.73,
+    "Benchmark (MMLU)": 63,
+    "Benchmark (Chatbot Arena)": 1328,
+    "Open-Source": 1,
+    "Price / Million Tokens": 27.03,
+    "Training Dataset Size": 467900728,
+    "Compute Power": 98,
+    "Energy Efficiency": 3.11,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8cf"
+    },
+    "Model": "Claude-8",
+    "Provider": "Anthropic",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 65,
+    "Latency (sec)": 10.75,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1041,
+    "Open-Source": 0,
+    "Price / Million Tokens": 12.68,
+    "Training Dataset Size": 559285931,
+    "Compute Power": 87,
+    "Energy Efficiency": 0.43,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d0"
+    },
+    "Model": "Claude-1",
+    "Provider": "Anthropic",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 54,
+    "Latency (sec)": 1.23,
+    "Benchmark (MMLU)": 73,
+    "Benchmark (Chatbot Arena)": 1275,
+    "Open-Source": 0,
+    "Price / Million Tokens": 8.34,
+    "Training Dataset Size": 640015140,
+    "Compute Power": 30,
+    "Energy Efficiency": 2.64,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d1"
+    },
+    "Model": "DeepSeek-6",
+    "Provider": "Deepseek",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 272,
+    "Latency (sec)": 6.86,
+    "Benchmark (MMLU)": 90,
+    "Benchmark (Chatbot Arena)": 1223,
+    "Open-Source": 0,
+    "Price / Million Tokens": 17.79,
+    "Training Dataset Size": 639288961,
+    "Compute Power": 8,
+    "Energy Efficiency": 0.84,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d2"
+    },
+    "Model": "Nova-5",
+    "Provider": "AWS",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 101,
+    "Latency (sec)": 2.86,
+    "Benchmark (MMLU)": 77,
+    "Benchmark (Chatbot Arena)": 1045,
+    "Open-Source": 0,
+    "Price / Million Tokens": 27.38,
+    "Training Dataset Size": 114448335,
+    "Compute Power": 22,
+    "Energy Efficiency": 3.71,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d3"
+    },
+    "Model": "Command-2",
+    "Provider": "Cohere",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 275,
+    "Latency (sec)": 1.45,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 1192,
+    "Open-Source": 1,
+    "Price / Million Tokens": 6.36,
+    "Training Dataset Size": 344437700,
+    "Compute Power": 44,
+    "Energy Efficiency": 2.61,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d4"
+    },
+    "Model": "Mistral-6",
+    "Provider": "Mistral AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 216,
+    "Latency (sec)": 19.8,
+    "Benchmark (MMLU)": 69,
+    "Benchmark (Chatbot Arena)": 1331,
+    "Open-Source": 0,
+    "Price / Million Tokens": 18.71,
+    "Training Dataset Size": 144421835,
+    "Compute Power": 58,
+    "Energy Efficiency": 3.43,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d5"
+    },
+    "Model": "Claude-1",
+    "Provider": "Anthropic",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 29,
+    "Latency (sec)": 6.58,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 1484,
+    "Open-Source": 0,
+    "Price / Million Tokens": 18.97,
+    "Training Dataset Size": 973749635,
+    "Compute Power": 36,
+    "Energy Efficiency": 0.3,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d6"
+    },
+    "Model": "GPT-6",
+    "Provider": "OpenAI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 261,
+    "Latency (sec)": 16.24,
+    "Benchmark (MMLU)": 92,
+    "Benchmark (Chatbot Arena)": 1298,
+    "Open-Source": 1,
+    "Price / Million Tokens": 22.01,
+    "Training Dataset Size": 463548846,
+    "Compute Power": 69,
+    "Energy Efficiency": 0.52,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d7"
+    },
+    "Model": "Nova-3",
+    "Provider": "AWS",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 270,
+    "Latency (sec)": 5.24,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1243,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.99,
+    "Training Dataset Size": 620144330,
+    "Compute Power": 77,
+    "Energy Efficiency": 3.61,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d8"
+    },
+    "Model": "Command-4",
+    "Provider": "Cohere",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 24,
+    "Latency (sec)": 13.69,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1039,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.49,
+    "Training Dataset Size": 64023119,
+    "Compute Power": 93,
+    "Energy Efficiency": 0.45,
+    "Quality Rating": 2,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8d9"
+    },
+    "Model": "Claude-3",
+    "Provider": "Anthropic",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 138,
+    "Latency (sec)": 15.25,
+    "Benchmark (MMLU)": 78,
+    "Benchmark (Chatbot Arena)": 1086,
+    "Open-Source": 1,
+    "Price / Million Tokens": 27.28,
+    "Training Dataset Size": 212332534,
+    "Compute Power": 31,
+    "Energy Efficiency": 0.45,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8da"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 84,
+    "Latency (sec)": 11.99,
+    "Benchmark (MMLU)": 78,
+    "Benchmark (Chatbot Arena)": 960,
+    "Open-Source": 0,
+    "Price / Million Tokens": 5.43,
+    "Training Dataset Size": 270621669,
+    "Compute Power": 47,
+    "Energy Efficiency": 0.16,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8db"
+    },
+    "Model": "Command-7",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 165,
+    "Latency (sec)": 9.54,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1279,
+    "Open-Source": 1,
+    "Price / Million Tokens": 7.16,
+    "Training Dataset Size": 936931473,
+    "Compute Power": 55,
+    "Energy Efficiency": 4.79,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8dc"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 243,
+    "Latency (sec)": 8.35,
+    "Benchmark (MMLU)": 77,
+    "Benchmark (Chatbot Arena)": 1339,
+    "Open-Source": 1,
+    "Price / Million Tokens": 29.14,
+    "Training Dataset Size": 925626379,
+    "Compute Power": 80,
+    "Energy Efficiency": 3.71,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8dd"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 258,
+    "Latency (sec)": 7.11,
+    "Benchmark (MMLU)": 61,
+    "Benchmark (Chatbot Arena)": 1218,
+    "Open-Source": 1,
+    "Price / Million Tokens": 5.47,
+    "Training Dataset Size": 882817562,
+    "Compute Power": 62,
+    "Energy Efficiency": 1.83,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8de"
+    },
+    "Model": "Nova-7",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 196,
+    "Latency (sec)": 18.6,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 1201,
+    "Open-Source": 1,
+    "Price / Million Tokens": 25.64,
+    "Training Dataset Size": 91299914,
+    "Compute Power": 30,
+    "Energy Efficiency": 1.55,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8df"
+    },
+    "Model": "Gemini-8",
+    "Provider": "Google",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 286,
+    "Latency (sec)": 16.65,
+    "Benchmark (MMLU)": 64,
+    "Benchmark (Chatbot Arena)": 1243,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.79,
+    "Training Dataset Size": 78408332,
+    "Compute Power": 55,
+    "Energy Efficiency": 1.81,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e0"
+    },
+    "Model": "GPT-9",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 82,
+    "Latency (sec)": 19.31,
+    "Benchmark (MMLU)": 79,
+    "Benchmark (Chatbot Arena)": 910,
+    "Open-Source": 1,
+    "Price / Million Tokens": 7.45,
+    "Training Dataset Size": 311027380,
+    "Compute Power": 16,
+    "Energy Efficiency": 3.9,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e1"
+    },
+    "Model": "GPT-2",
+    "Provider": "OpenAI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 236,
+    "Latency (sec)": 2.66,
+    "Benchmark (MMLU)": 70,
+    "Benchmark (Chatbot Arena)": 961,
+    "Open-Source": 0,
+    "Price / Million Tokens": 26.13,
+    "Training Dataset Size": 840960054,
+    "Compute Power": 12,
+    "Energy Efficiency": 3.34,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e2"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 196,
+    "Latency (sec)": 14.67,
+    "Benchmark (MMLU)": 61,
+    "Benchmark (Chatbot Arena)": 1125,
+    "Open-Source": 0,
+    "Price / Million Tokens": 13.39,
+    "Training Dataset Size": 776896778,
+    "Compute Power": 17,
+    "Energy Efficiency": 1.01,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e3"
+    },
+    "Model": "DeepSeek-9",
+    "Provider": "Deepseek",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 117,
+    "Latency (sec)": 18.78,
+    "Benchmark (MMLU)": 62,
+    "Benchmark (Chatbot Arena)": 1052,
+    "Open-Source": 0,
+    "Price / Million Tokens": 15.47,
+    "Training Dataset Size": 32582294,
+    "Compute Power": 16,
+    "Energy Efficiency": 0.95,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e4"
+    },
+    "Model": "Command-1",
+    "Provider": "Cohere",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 124,
+    "Latency (sec)": 3.79,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1463,
+    "Open-Source": 0,
+    "Price / Million Tokens": 10.81,
+    "Training Dataset Size": 630233071,
+    "Compute Power": 12,
+    "Energy Efficiency": 0.58,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e5"
+    },
+    "Model": "Gemini-1",
+    "Provider": "Google",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 118,
+    "Latency (sec)": 1.52,
+    "Benchmark (MMLU)": 71,
+    "Benchmark (Chatbot Arena)": 1470,
+    "Open-Source": 0,
+    "Price / Million Tokens": 17.81,
+    "Training Dataset Size": 633499086,
+    "Compute Power": 8,
+    "Energy Efficiency": 3.34,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e6"
+    },
+    "Model": "Nova-5",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 25,
+    "Latency (sec)": 14.87,
+    "Benchmark (MMLU)": 79,
+    "Benchmark (Chatbot Arena)": 1483,
+    "Open-Source": 0,
+    "Price / Million Tokens": 4.95,
+    "Training Dataset Size": 306246420,
+    "Compute Power": 84,
+    "Energy Efficiency": 3.85,
+    "Quality Rating": 2,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e7"
+    },
+    "Model": "Llama-7",
+    "Provider": "Meta AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 216,
+    "Latency (sec)": 11.57,
+    "Benchmark (MMLU)": 64,
+    "Benchmark (Chatbot Arena)": 1474,
+    "Open-Source": 0,
+    "Price / Million Tokens": 11.76,
+    "Training Dataset Size": 635886363,
+    "Compute Power": 3,
+    "Energy Efficiency": 1.4,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e8"
+    },
+    "Model": "GPT-9",
+    "Provider": "OpenAI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 152,
+    "Latency (sec)": 16.87,
+    "Benchmark (MMLU)": 89,
+    "Benchmark (Chatbot Arena)": 1209,
+    "Open-Source": 0,
+    "Price / Million Tokens": 29.08,
+    "Training Dataset Size": 879108142,
+    "Compute Power": 16,
+    "Energy Efficiency": 0.2,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8e9"
+    },
+    "Model": "Claude-3",
+    "Provider": "Anthropic",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 278,
+    "Latency (sec)": 2.97,
+    "Benchmark (MMLU)": 68,
+    "Benchmark (Chatbot Arena)": 1142,
+    "Open-Source": 0,
+    "Price / Million Tokens": 7.78,
+    "Training Dataset Size": 664501699,
+    "Compute Power": 30,
+    "Energy Efficiency": 0.5,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ea"
+    },
+    "Model": "Nova-3",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 42,
+    "Latency (sec)": 15.95,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1392,
+    "Open-Source": 0,
+    "Price / Million Tokens": 19.72,
+    "Training Dataset Size": 760457578,
+    "Compute Power": 23,
+    "Energy Efficiency": 4.84,
+    "Quality Rating": 3,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8eb"
+    },
+    "Model": "Command-8",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 72,
+    "Latency (sec)": 4.19,
+    "Benchmark (MMLU)": 94,
+    "Benchmark (Chatbot Arena)": 1265,
+    "Open-Source": 1,
+    "Price / Million Tokens": 9.79,
+    "Training Dataset Size": 558765778,
+    "Compute Power": 92,
+    "Energy Efficiency": 1.55,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ec"
+    },
+    "Model": "Mistral-8",
+    "Provider": "Mistral AI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 184,
+    "Latency (sec)": 3.44,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 1229,
+    "Open-Source": 1,
+    "Price / Million Tokens": 23.22,
+    "Training Dataset Size": 258946478,
+    "Compute Power": 5,
+    "Energy Efficiency": 3.87,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ed"
+    },
+    "Model": "GPT-8",
+    "Provider": "OpenAI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 221,
+    "Latency (sec)": 3.45,
+    "Benchmark (MMLU)": 83,
+    "Benchmark (Chatbot Arena)": 1006,
+    "Open-Source": 1,
+    "Price / Million Tokens": 3.97,
+    "Training Dataset Size": 846870499,
+    "Compute Power": 84,
+    "Energy Efficiency": 3.16,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ee"
+    },
+    "Model": "Command-1",
+    "Provider": "Cohere",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 102,
+    "Latency (sec)": 16.33,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 1125,
+    "Open-Source": 0,
+    "Price / Million Tokens": 29.1,
+    "Training Dataset Size": 792246708,
+    "Compute Power": 65,
+    "Energy Efficiency": 1.97,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ef"
+    },
+    "Model": "Nova-4",
+    "Provider": "AWS",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 164,
+    "Latency (sec)": 13.37,
+    "Benchmark (MMLU)": 69,
+    "Benchmark (Chatbot Arena)": 1117,
+    "Open-Source": 1,
+    "Price / Million Tokens": 13.64,
+    "Training Dataset Size": 984434476,
+    "Compute Power": 30,
+    "Energy Efficiency": 1.11,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f0"
+    },
+    "Model": "Mistral-8",
+    "Provider": "Mistral AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 104,
+    "Latency (sec)": 10.56,
+    "Benchmark (MMLU)": 89,
+    "Benchmark (Chatbot Arena)": 1405,
+    "Open-Source": 1,
+    "Price / Million Tokens": 7.12,
+    "Training Dataset Size": 436566133,
+    "Compute Power": 21,
+    "Energy Efficiency": 0.69,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f1"
+    },
+    "Model": "Command-3",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 97,
+    "Latency (sec)": 7.3,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1158,
+    "Open-Source": 1,
+    "Price / Million Tokens": 2.25,
+    "Training Dataset Size": 835721650,
+    "Compute Power": 84,
+    "Energy Efficiency": 3.11,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f2"
+    },
+    "Model": "Nova-9",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 20,
+    "Latency (sec)": 17.57,
+    "Benchmark (MMLU)": 91,
+    "Benchmark (Chatbot Arena)": 1416,
+    "Open-Source": 0,
+    "Price / Million Tokens": 5.13,
+    "Training Dataset Size": 435699137,
+    "Compute Power": 70,
+    "Energy Efficiency": 3.9,
+    "Quality Rating": 3,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f3"
+    },
+    "Model": "Claude-9",
+    "Provider": "Anthropic",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 70,
+    "Latency (sec)": 7.97,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 953,
+    "Open-Source": 0,
+    "Price / Million Tokens": 15.62,
+    "Training Dataset Size": 714488813,
+    "Compute Power": 22,
+    "Energy Efficiency": 3.26,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f4"
+    },
+    "Model": "Llama-2",
+    "Provider": "Meta AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 192,
+    "Latency (sec)": 16.37,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 946,
+    "Open-Source": 0,
+    "Price / Million Tokens": 10.14,
+    "Training Dataset Size": 504121955,
+    "Compute Power": 82,
+    "Energy Efficiency": 2.7,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f5"
+    },
+    "Model": "Nova-2",
+    "Provider": "AWS",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 224,
+    "Latency (sec)": 8.89,
+    "Benchmark (MMLU)": 73,
+    "Benchmark (Chatbot Arena)": 1420,
+    "Open-Source": 0,
+    "Price / Million Tokens": 24.88,
+    "Training Dataset Size": 29205135,
+    "Compute Power": 72,
+    "Energy Efficiency": 0.31,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f6"
+    },
+    "Model": "Gemini-6",
+    "Provider": "Google",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 279,
+    "Latency (sec)": 7.66,
+    "Benchmark (MMLU)": 68,
+    "Benchmark (Chatbot Arena)": 998,
+    "Open-Source": 1,
+    "Price / Million Tokens": 12.96,
+    "Training Dataset Size": 99248148,
+    "Compute Power": 32,
+    "Energy Efficiency": 4.85,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f7"
+    },
+    "Model": "Claude-9",
+    "Provider": "Anthropic",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 53,
+    "Latency (sec)": 9.36,
+    "Benchmark (MMLU)": 61,
+    "Benchmark (Chatbot Arena)": 919,
+    "Open-Source": 1,
+    "Price / Million Tokens": 7.5,
+    "Training Dataset Size": 149877971,
+    "Compute Power": 33,
+    "Energy Efficiency": 4.01,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f8"
+    },
+    "Model": "Command-1",
+    "Provider": "Cohere",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 114,
+    "Latency (sec)": 6.17,
+    "Benchmark (MMLU)": 84,
+    "Benchmark (Chatbot Arena)": 1472,
+    "Open-Source": 1,
+    "Price / Million Tokens": 18.53,
+    "Training Dataset Size": 730656909,
+    "Compute Power": 16,
+    "Energy Efficiency": 1.53,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8f9"
+    },
+    "Model": "Command-1",
+    "Provider": "Cohere",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 91,
+    "Latency (sec)": 15.0,
+    "Benchmark (MMLU)": 68,
+    "Benchmark (Chatbot Arena)": 1389,
+    "Open-Source": 1,
+    "Price / Million Tokens": 21.22,
+    "Training Dataset Size": 246158522,
+    "Compute Power": 76,
+    "Energy Efficiency": 4.9,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8fa"
+    },
+    "Model": "Mistral-5",
+    "Provider": "Mistral AI",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 58,
+    "Latency (sec)": 10.15,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 1318,
+    "Open-Source": 0,
+    "Price / Million Tokens": 5.05,
+    "Training Dataset Size": 771501372,
+    "Compute Power": 38,
+    "Energy Efficiency": 3.05,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8fb"
+    },
+    "Model": "Nova-4",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 173,
+    "Latency (sec)": 4.8,
+    "Benchmark (MMLU)": 63,
+    "Benchmark (Chatbot Arena)": 961,
+    "Open-Source": 0,
+    "Price / Million Tokens": 5.07,
+    "Training Dataset Size": 227844494,
+    "Compute Power": 98,
+    "Energy Efficiency": 2.95,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8fc"
+    },
+    "Model": "Nova-8",
+    "Provider": "AWS",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 269,
+    "Latency (sec)": 18.01,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1044,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.15,
+    "Training Dataset Size": 138656571,
+    "Compute Power": 14,
+    "Energy Efficiency": 3.77,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8fd"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 181,
+    "Latency (sec)": 7.8,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1115,
+    "Open-Source": 1,
+    "Price / Million Tokens": 22.11,
+    "Training Dataset Size": 168296386,
+    "Compute Power": 36,
+    "Energy Efficiency": 4.08,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8fe"
+    },
+    "Model": "GPT-1",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 137,
+    "Latency (sec)": 10.96,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 902,
+    "Open-Source": 0,
+    "Price / Million Tokens": 19.93,
+    "Training Dataset Size": 347700519,
+    "Compute Power": 97,
+    "Energy Efficiency": 3.32,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b8ff"
+    },
+    "Model": "Nova-3",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 278,
+    "Latency (sec)": 18.15,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1059,
+    "Open-Source": 0,
+    "Price / Million Tokens": 14.27,
+    "Training Dataset Size": 263414575,
+    "Compute Power": 23,
+    "Energy Efficiency": 0.73,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b900"
+    },
+    "Model": "Mistral-7",
+    "Provider": "Mistral AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 287,
+    "Latency (sec)": 12.56,
+    "Benchmark (MMLU)": 70,
+    "Benchmark (Chatbot Arena)": 1019,
+    "Open-Source": 1,
+    "Price / Million Tokens": 25.33,
+    "Training Dataset Size": 385042185,
+    "Compute Power": 66,
+    "Energy Efficiency": 1.76,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b901"
+    },
+    "Model": "Mistral-6",
+    "Provider": "Mistral AI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 73,
+    "Latency (sec)": 2.51,
+    "Benchmark (MMLU)": 65,
+    "Benchmark (Chatbot Arena)": 988,
+    "Open-Source": 1,
+    "Price / Million Tokens": 24.18,
+    "Training Dataset Size": 473979971,
+    "Compute Power": 85,
+    "Energy Efficiency": 4.65,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b902"
+    },
+    "Model": "Mistral-3",
+    "Provider": "Mistral AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 255,
+    "Latency (sec)": 18.81,
+    "Benchmark (MMLU)": 77,
+    "Benchmark (Chatbot Arena)": 1228,
+    "Open-Source": 0,
+    "Price / Million Tokens": 17.58,
+    "Training Dataset Size": 934838589,
+    "Compute Power": 2,
+    "Energy Efficiency": 1.2,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b903"
+    },
+    "Model": "Mistral-8",
+    "Provider": "Mistral AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 241,
+    "Latency (sec)": 12.63,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1479,
+    "Open-Source": 0,
+    "Price / Million Tokens": 26.05,
+    "Training Dataset Size": 928460081,
+    "Compute Power": 91,
+    "Energy Efficiency": 1.92,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b904"
+    },
+    "Model": "Claude-2",
+    "Provider": "Anthropic",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 270,
+    "Latency (sec)": 6.83,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1256,
+    "Open-Source": 0,
+    "Price / Million Tokens": 6.21,
+    "Training Dataset Size": 643937953,
+    "Compute Power": 73,
+    "Energy Efficiency": 2.22,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b905"
+    },
+    "Model": "Llama-1",
+    "Provider": "Meta AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 131,
+    "Latency (sec)": 2.96,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 1166,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.4,
+    "Training Dataset Size": 97269328,
+    "Compute Power": 65,
+    "Energy Efficiency": 2.25,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b906"
+    },
+    "Model": "Command-1",
+    "Provider": "Cohere",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 274,
+    "Latency (sec)": 15.92,
+    "Benchmark (MMLU)": 84,
+    "Benchmark (Chatbot Arena)": 1222,
+    "Open-Source": 0,
+    "Price / Million Tokens": 8.13,
+    "Training Dataset Size": 973877484,
+    "Compute Power": 75,
+    "Energy Efficiency": 3.1,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b907"
+    },
+    "Model": "Llama-3",
+    "Provider": "Meta AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 226,
+    "Latency (sec)": 12.48,
+    "Benchmark (MMLU)": 71,
+    "Benchmark (Chatbot Arena)": 1440,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.76,
+    "Training Dataset Size": 702538019,
+    "Compute Power": 67,
+    "Energy Efficiency": 4.72,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b908"
+    },
+    "Model": "Command-3",
+    "Provider": "Cohere",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 248,
+    "Latency (sec)": 10.76,
+    "Benchmark (MMLU)": 82,
+    "Benchmark (Chatbot Arena)": 1094,
+    "Open-Source": 1,
+    "Price / Million Tokens": 15.96,
+    "Training Dataset Size": 314380025,
+    "Compute Power": 52,
+    "Energy Efficiency": 1.28,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b909"
+    },
+    "Model": "Nova-1",
+    "Provider": "AWS",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 85,
+    "Latency (sec)": 17.9,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 1231,
+    "Open-Source": 1,
+    "Price / Million Tokens": 28.1,
+    "Training Dataset Size": 523596792,
+    "Compute Power": 62,
+    "Energy Efficiency": 0.7,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b90a"
+    },
+    "Model": "Nova-1",
+    "Provider": "AWS",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 94,
+    "Latency (sec)": 15.81,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1069,
+    "Open-Source": 1,
+    "Price / Million Tokens": 1.23,
+    "Training Dataset Size": 96655357,
+    "Compute Power": 23,
+    "Energy Efficiency": 1.07,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b90b"
+    },
+    "Model": "Command-5",
+    "Provider": "Cohere",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 122,
+    "Latency (sec)": 3.2,
+    "Benchmark (MMLU)": 86,
+    "Benchmark (Chatbot Arena)": 1420,
+    "Open-Source": 0,
+    "Price / Million Tokens": 3.71,
+    "Training Dataset Size": 778130538,
+    "Compute Power": 26,
+    "Energy Efficiency": 4.45,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b90c"
+    },
+    "Model": "Mistral-3",
+    "Provider": "Mistral AI",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 211,
+    "Latency (sec)": 6.37,
+    "Benchmark (MMLU)": 90,
+    "Benchmark (Chatbot Arena)": 1362,
+    "Open-Source": 1,
+    "Price / Million Tokens": 13.59,
+    "Training Dataset Size": 529337254,
+    "Compute Power": 68,
+    "Energy Efficiency": 3.26,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b90d"
+    },
+    "Model": "Command-9",
+    "Provider": "Cohere",
+    "Context Window": 200000,
+    "Speed (tokens/sec)": 271,
+    "Latency (sec)": 5.12,
+    "Benchmark (MMLU)": 65,
+    "Benchmark (Chatbot Arena)": 939,
+    "Open-Source": 0,
+    "Price / Million Tokens": 28.02,
+    "Training Dataset Size": 777995262,
+    "Compute Power": 82,
+    "Energy Efficiency": 1.5,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b90e"
+    },
+    "Model": "Llama-8",
+    "Provider": "Meta AI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 245,
+    "Latency (sec)": 14.93,
+    "Benchmark (MMLU)": 86,
+    "Benchmark (Chatbot Arena)": 1436,
+    "Open-Source": 0,
+    "Price / Million Tokens": 9.52,
+    "Training Dataset Size": 470037259,
+    "Compute Power": 55,
+    "Energy Efficiency": 4.1,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b90f"
+    },
+    "Model": "Llama-1",
+    "Provider": "Meta AI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 117,
+    "Latency (sec)": 0.86,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1160,
+    "Open-Source": 1,
+    "Price / Million Tokens": 15.24,
+    "Training Dataset Size": 779371753,
+    "Compute Power": 6,
+    "Energy Efficiency": 4.32,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b910"
+    },
+    "Model": "Mistral-5",
+    "Provider": "Mistral AI",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 268,
+    "Latency (sec)": 11.48,
+    "Benchmark (MMLU)": 71,
+    "Benchmark (Chatbot Arena)": 1294,
+    "Open-Source": 0,
+    "Price / Million Tokens": 1.3,
+    "Training Dataset Size": 213908166,
+    "Compute Power": 35,
+    "Energy Efficiency": 4.25,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b911"
+    },
+    "Model": "DeepSeek-3",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 185,
+    "Latency (sec)": 15.3,
+    "Benchmark (MMLU)": 66,
+    "Benchmark (Chatbot Arena)": 1125,
+    "Open-Source": 0,
+    "Price / Million Tokens": 4.49,
+    "Training Dataset Size": 108175916,
+    "Compute Power": 22,
+    "Energy Efficiency": 4.6,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b912"
+    },
+    "Model": "Command-1",
+    "Provider": "Cohere",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 49,
+    "Latency (sec)": 17.56,
+    "Benchmark (MMLU)": 69,
+    "Benchmark (Chatbot Arena)": 1023,
+    "Open-Source": 1,
+    "Price / Million Tokens": 29.6,
+    "Training Dataset Size": 792887102,
+    "Compute Power": 43,
+    "Energy Efficiency": 1.34,
+    "Quality Rating": 1,
+    "Speed Rating": 1,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b913"
+    },
+    "Model": "Command-5",
+    "Provider": "Cohere",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 266,
+    "Latency (sec)": 6.97,
+    "Benchmark (MMLU)": 76,
+    "Benchmark (Chatbot Arena)": 937,
+    "Open-Source": 1,
+    "Price / Million Tokens": 28.96,
+    "Training Dataset Size": 897946854,
+    "Compute Power": 15,
+    "Energy Efficiency": 3.8,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b914"
+    },
+    "Model": "Nova-7",
+    "Provider": "AWS",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 125,
+    "Latency (sec)": 16.46,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1227,
+    "Open-Source": 1,
+    "Price / Million Tokens": 0.2,
+    "Training Dataset Size": 194568798,
+    "Compute Power": 86,
+    "Energy Efficiency": 2.36,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 1
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b915"
+    },
+    "Model": "GPT-3",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 70,
+    "Latency (sec)": 2.39,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1150,
+    "Open-Source": 0,
+    "Price / Million Tokens": 28.56,
+    "Training Dataset Size": 459132887,
+    "Compute Power": 60,
+    "Energy Efficiency": 4.23,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b916"
+    },
+    "Model": "Nova-2",
+    "Provider": "AWS",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 100,
+    "Latency (sec)": 16.96,
+    "Benchmark (MMLU)": 87,
+    "Benchmark (Chatbot Arena)": 1075,
+    "Open-Source": 1,
+    "Price / Million Tokens": 19.19,
+    "Training Dataset Size": 186532752,
+    "Compute Power": 12,
+    "Energy Efficiency": 3.67,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b917"
+    },
+    "Model": "GPT-6",
+    "Provider": "OpenAI",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 152,
+    "Latency (sec)": 2.72,
+    "Benchmark (MMLU)": 61,
+    "Benchmark (Chatbot Arena)": 1353,
+    "Open-Source": 1,
+    "Price / Million Tokens": 26.04,
+    "Training Dataset Size": 289203785,
+    "Compute Power": 49,
+    "Energy Efficiency": 3.9,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b918"
+    },
+    "Model": "Gemini-3",
+    "Provider": "Google",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 157,
+    "Latency (sec)": 8.07,
+    "Benchmark (MMLU)": 60,
+    "Benchmark (Chatbot Arena)": 936,
+    "Open-Source": 0,
+    "Price / Million Tokens": 13.67,
+    "Training Dataset Size": 795650140,
+    "Compute Power": 42,
+    "Energy Efficiency": 3.32,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b919"
+    },
+    "Model": "Nova-8",
+    "Provider": "AWS",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 203,
+    "Latency (sec)": 15.99,
+    "Benchmark (MMLU)": 85,
+    "Benchmark (Chatbot Arena)": 1215,
+    "Open-Source": 1,
+    "Price / Million Tokens": 15.49,
+    "Training Dataset Size": 28286921,
+    "Compute Power": 38,
+    "Energy Efficiency": 0.97,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b91a"
+    },
+    "Model": "Gemini-6",
+    "Provider": "Google",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 292,
+    "Latency (sec)": 3.17,
+    "Benchmark (MMLU)": 88,
+    "Benchmark (Chatbot Arena)": 1492,
+    "Open-Source": 1,
+    "Price / Million Tokens": 14.69,
+    "Training Dataset Size": 720591447,
+    "Compute Power": 82,
+    "Energy Efficiency": 2.77,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b91b"
+    },
+    "Model": "DeepSeek-2",
+    "Provider": "Deepseek",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 88,
+    "Latency (sec)": 4.74,
+    "Benchmark (MMLU)": 80,
+    "Benchmark (Chatbot Arena)": 1013,
+    "Open-Source": 1,
+    "Price / Million Tokens": 20.02,
+    "Training Dataset Size": 914613955,
+    "Compute Power": 45,
+    "Energy Efficiency": 4.92,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b91c"
+    },
+    "Model": "DeepSeek-2",
+    "Provider": "Deepseek",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 53,
+    "Latency (sec)": 14.5,
+    "Benchmark (MMLU)": 70,
+    "Benchmark (Chatbot Arena)": 939,
+    "Open-Source": 0,
+    "Price / Million Tokens": 4.23,
+    "Training Dataset Size": 749689587,
+    "Compute Power": 35,
+    "Energy Efficiency": 4.69,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b91d"
+    },
+    "Model": "Gemini-1",
+    "Provider": "Google",
+    "Context Window": 300000,
+    "Speed (tokens/sec)": 281,
+    "Latency (sec)": 14.46,
+    "Benchmark (MMLU)": 70,
+    "Benchmark (Chatbot Arena)": 1200,
+    "Open-Source": 0,
+    "Price / Million Tokens": 0.95,
+    "Training Dataset Size": 373929493,
+    "Compute Power": 30,
+    "Energy Efficiency": 0.31,
+    "Quality Rating": 1,
+    "Speed Rating": 3,
+    "Price Rating": 2
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b91e"
+    },
+    "Model": "Nova-1",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 72,
+    "Latency (sec)": 12.89,
+    "Benchmark (MMLU)": 94,
+    "Benchmark (Chatbot Arena)": 1123,
+    "Open-Source": 0,
+    "Price / Million Tokens": 9.27,
+    "Training Dataset Size": 240586150,
+    "Compute Power": 88,
+    "Energy Efficiency": 0.91,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b91f"
+    },
+    "Model": "GPT-6",
+    "Provider": "OpenAI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 224,
+    "Latency (sec)": 13.94,
+    "Benchmark (MMLU)": 93,
+    "Benchmark (Chatbot Arena)": 1217,
+    "Open-Source": 0,
+    "Price / Million Tokens": 21.16,
+    "Training Dataset Size": 282488277,
+    "Compute Power": 30,
+    "Energy Efficiency": 0.75,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b920"
+    },
+    "Model": "Nova-7",
+    "Provider": "AWS",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 145,
+    "Latency (sec)": 10.95,
+    "Benchmark (MMLU)": 83,
+    "Benchmark (Chatbot Arena)": 1248,
+    "Open-Source": 1,
+    "Price / Million Tokens": 6.1,
+    "Training Dataset Size": 215821344,
+    "Compute Power": 78,
+    "Energy Efficiency": 3.66,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b921"
+    },
+    "Model": "Llama-7",
+    "Provider": "Meta AI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 254,
+    "Latency (sec)": 5.19,
+    "Benchmark (MMLU)": 81,
+    "Benchmark (Chatbot Arena)": 1014,
+    "Open-Source": 0,
+    "Price / Million Tokens": 20.22,
+    "Training Dataset Size": 530570059,
+    "Compute Power": 6,
+    "Energy Efficiency": 4.11,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b922"
+    },
+    "Model": "Gemini-3",
+    "Provider": "Google",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 62,
+    "Latency (sec)": 7.04,
+    "Benchmark (MMLU)": 64,
+    "Benchmark (Chatbot Arena)": 1222,
+    "Open-Source": 0,
+    "Price / Million Tokens": 29.1,
+    "Training Dataset Size": 186555415,
+    "Compute Power": 67,
+    "Energy Efficiency": 1.15,
+    "Quality Rating": 1,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b923"
+    },
+    "Model": "Gemini-9",
+    "Provider": "Google",
+    "Context Window": 2000000,
+    "Speed (tokens/sec)": 259,
+    "Latency (sec)": 3.8,
+    "Benchmark (MMLU)": 92,
+    "Benchmark (Chatbot Arena)": 1467,
+    "Open-Source": 1,
+    "Price / Million Tokens": 2.86,
+    "Training Dataset Size": 113913164,
+    "Compute Power": 80,
+    "Energy Efficiency": 2.58,
+    "Quality Rating": 3,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b924"
+    },
+    "Model": "Nova-7",
+    "Provider": "AWS",
+    "Context Window": 256000,
+    "Speed (tokens/sec)": 130,
+    "Latency (sec)": 18.19,
+    "Benchmark (MMLU)": 79,
+    "Benchmark (Chatbot Arena)": 939,
+    "Open-Source": 1,
+    "Price / Million Tokens": 20.19,
+    "Training Dataset Size": 571980809,
+    "Compute Power": 7,
+    "Energy Efficiency": 4.22,
+    "Quality Rating": 2,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b925"
+    },
+    "Model": "GPT-4",
+    "Provider": "OpenAI",
+    "Context Window": 128000,
+    "Speed (tokens/sec)": 268,
+    "Latency (sec)": 11.75,
+    "Benchmark (MMLU)": 78,
+    "Benchmark (Chatbot Arena)": 939,
+    "Open-Source": 1,
+    "Price / Million Tokens": 13.34,
+    "Training Dataset Size": 482443470,
+    "Compute Power": 52,
+    "Energy Efficiency": 3.69,
+    "Quality Rating": 2,
+    "Speed Rating": 3,
+    "Price Rating": 3
+  },
+  {
+    "_id": {
+      "$oid": "692a9086c647b1a840d4b926"
+    },
+    "Model": "Llama-4",
+    "Provider": "Meta AI",
+    "Context Window": 1000000,
+    "Speed (tokens/sec)": 170,
+    "Latency (sec)": 8.14,
+    "Benchmark (MMLU)": 94,
+    "Benchmark (Chatbot Arena)": 1188,
+    "Open-Source": 0,
+    "Price / Million Tokens": 26.05,
+    "Training Dataset Size": 865120794,
+    "Compute Power": 14,
+    "Energy Efficiency": 2.76,
+    "Quality Rating": 3,
+    "Speed Rating": 2,
+    "Price Rating": 3
+  }
+]
