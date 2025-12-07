@@ -1,4 +1,3 @@
-
 import dotenv from 'dotenv';
 import path from 'path'; 
 import { fileURLToPath } from 'url';
@@ -14,7 +13,7 @@ console.log('DOTENV is looking for .env at:', envPath); // <-- WATCH THIS OUTPUT
 dotenv.config({ path: envPath });
 
 console.log('✅ Loaded MONGODB_URI:', process.env.MONGODB_URI); 
-console.log('✅ Loaded PORT:', process.env.PORT); // <-- NEW TEST LINE
+console.log('✅ Loaded PORT:', process.env.PORT);
 
 import express from 'express';
 import mongoose from 'mongoose';

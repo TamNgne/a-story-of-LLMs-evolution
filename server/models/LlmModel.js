@@ -39,7 +39,7 @@ const llmSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-    collection: 'LLM Merged Organization and Provider', // Merged collection
+    collection: 'LLMs Merged Organization and Provider', // Merged collection
   }
 );
 

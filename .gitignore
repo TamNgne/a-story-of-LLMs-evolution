@@ -33,7 +33,6 @@ lerna-debug.log*
 
 # Server
 /server/node_modules/
-/server/.env
 
 # Client
 /client/node_modules/

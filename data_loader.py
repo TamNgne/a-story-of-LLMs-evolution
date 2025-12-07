@@ -137,17 +137,17 @@ if __name__ == "__main__":
    
     MONGO_URI = os.getenv("MONGO_URI")
     DATABASE_NAME = os.getenv("DATABASE_NAME")
-
+    print(f"Using Database: {DATABASE_NAME}")
     # Set drop_existing=True if you want to replace old data
 
-    import_json_to_mongodb(
-        uri=MONGO_URI,
-        db_name=DATABASE_NAME,
-        json_folder="mongo_data",
-        drop_existing=False
-    )
+    # import_json_to_mongodb(
+    #     uri=MONGO_URI,
+    #     db_name=DATABASE_NAME,
+    #     json_folder="mongo_data",
+    #     drop_existing=False
+    # )
 
-    merge_and_calculate_scores(
-        uri=MONGO_URI, 
-        db_name=DATABASE_NAME
-    )
+    # merge_and_calculate_scores(
+    #     uri=MONGO_URI, 
+    #     db_name=DATABASE_NAME
+    # )
