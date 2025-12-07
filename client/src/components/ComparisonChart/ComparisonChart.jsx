@@ -62,7 +62,6 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const metrics = [
     { value: 'performance',        label: 'Performance (Quality Rating)' }, // alias cho qualityRating
     { value: 'qualityRating',      label: 'Quality Rating' },
-    { value: 'benchmarkMmlu',      label: 'Benchmark (MMLU)' },
     { value: 'speedRating',        label: 'Speed Rating' },
     { value: 'priceRating',        label: 'Price Rating' },
     { value: 'cost',               label: 'Cost (Price / Million Tokens)' },
