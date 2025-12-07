@@ -21,16 +21,16 @@ Data storytelling for the rise of Large Language Models. Frontend renders intera
 git clone <repository-url>
 cd a-story-of-LLMs-evolution
 ```
+# Create .env in server folder
 
+echo PORT=5001 >> .env
+
+python data_loader.py
 ### Backend
 
 ```bash
 cd server
 npm install
-
-# Create .env here
-
-echo PORT=5001 >> .env
 
 npm run dev
 # http://localhost:5001
