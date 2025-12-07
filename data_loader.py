@@ -4,6 +4,10 @@ from pymongo import MongoClient
 from bson.json_util import loads
 from dotenv import load_dotenv
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ENV_PATH = os.path.join(BASE_DIR, "server", ".env")
+load_dotenv(ENV_PATH)
+
 def import_json_to_mongodb(uri, db_name, json_folder="mongo_data", drop_existing=False):
     # Connect to MongoDB
     client = MongoClient(uri)
@@ -134,8 +138,7 @@ def merge_and_calculate_scores(uri, db_name):
     print(f"🎉 Merging completed! {count} documents upserted into collection: '{merged_coll.name}'")
 
 if __name__ == "__main__":
-   
-    MONGO_URI = os.getenv("MONGO_URI")
+    MONGO_URI = os.getenv("MONGODB_URI")
     DATABASE_NAME = os.getenv("DATABASE_NAME")
 
     # Set drop_existing=True if you want to replace old data
