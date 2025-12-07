@@ -1,6 +1,7 @@
 import express from 'express';
 import LlmModel from '../models/LlmModel.js';
 import BenchmarkModel from '../models/Benchmark.js';
+import ComparisonChartModel from '../models/ConparisionChart.js';
 import PercentageModel from '../models/Percentage.js';
 import PerformanceModel from '../models/LlmPerformance.js';
 
@@ -85,7 +86,52 @@ router.get('/percentage', async (req, res) => {
       message: error.message,
     });
   }
-}); 
+});
+
+// GET /api/comparison - Fetch comparison data
+router.get('/comparison', async (req, res) => {
+  try {
+    const docs = await ComparisonChartModel.find({}).lean();
+
+    const data = docs.map((d) => ({
+      model: d.Model,
+      provider: d.Provider,
+      contextWindow: d['Context Window'],
+      openSource: d['Open-Source'] === 1,
+
+      // Các metric chính cho scatter plot:
+      performance: d['Quality Rating'],
+      cost: d['Price / Million Tokens'],
+      speed: d['Speed (tokens/sec)'],
+      latency: d['Latency (sec)'],
+
+      // Metric phụ
+      benchmarkMmlu: d['Benchmark (MMLU)'],
+      benchmarkArena: d['Benchmark (Chatbot Arena)'],
+      energyEfficiency: d['Energy Efficiency'],
+      qualityRating: d['Quality Rating'],
+      speedRating: d['Speed Rating'],
+      priceRating: d['Price Rating'],
+      trainingDatasetSize: d['Training Dataset Size'],
+      computePower: d['Compute Power'],
+    }));
+
+    console.log(`Successfully processed ${data.length} comparison records`);
+    res.json({
+      success: true,
+      count: data.length,
+      data,
+    });
+  } catch (error) {
+    console.error('Error fetching comparison data:', error);
+    console.error('Error stack:', error.stack);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch comparison data',
+      message: error.message,
+    });
+  }
+});
+
 
 export default router;
-
