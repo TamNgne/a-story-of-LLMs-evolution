@@ -2,6 +2,7 @@ import os
 import json
 from pymongo import MongoClient
 from bson.json_util import loads
+from dotenv import load_dotenv
 
 def import_json_to_mongodb(uri, db_name, json_folder="mongo_data", drop_existing=False):
     # Connect to MongoDB
@@ -134,15 +135,15 @@ def merge_and_calculate_scores(uri, db_name):
 
 if __name__ == "__main__":
    
-    MONGO_URI = "mongodb://localhost:27017"          
-    DATABASE_NAME = "LLM_Database" 
+    MONGO_URI = os.getenv("MONGO_URI")
+    DATABASE_NAME = os.getenv("DATABASE_NAME")
 
     # Set drop_existing=True if you want to replace old data
 
     import_json_to_mongodb(
         uri=MONGO_URI,
         db_name=DATABASE_NAME,
-        json_folder="mongo_exports",
+        json_folder="mongo_data",
         drop_existing=False
     )
 
