@@ -3,7 +3,7 @@ import json
 from pymongo import MongoClient
 from bson.json_util import loads
 
-def import_json_to_mongodb(uri, db_name, json_folder="mongo_exports", drop_existing=False):
+def import_json_to_mongodb(uri, db_name, json_folder="mongo_data", drop_existing=False):
     # Connect to MongoDB
     client = MongoClient(uri)
     db = client[db_name]
@@ -43,7 +43,7 @@ def import_json_to_mongodb(uri, db_name, json_folder="mongo_exports", drop_exist
     print("\n🎉 Import completed successfully!")
 
 
-#create merged collection for organization and provider with avg benchmark score
+
 def merge_and_calculate_scores(uri, db_name): 
     """
     Merges Organization and Provider data, calculates average benchmark scores,
@@ -106,7 +106,7 @@ def merge_and_calculate_scores(uri, db_name):
     # Step 4: Compute avg_benchmark_score for each doc
     print("Step 4: Calculating Average Benchmark Scores")
     for doc in org_docs:
-        # Note: Querying inside a loop can be slow for large datasets. 
+   
         scores = list(perf_coll.find({"model_id": doc["model_id"]}, {"normalized_score": 1, "_id": 0}))
         
         if scores:
@@ -116,7 +116,8 @@ def merge_and_calculate_scores(uri, db_name):
             doc["avg_benchmark_score"] = None 
 
     # Step 5: Insert/update merged collection
-    print("Step 5: Saving to 'LLM Merged Organization and Provider'...")
+    print("Step 5: Saving to 'LLM Merged Organization and Provider'")
+
     # Optional: Clear old merged data to avoid duplicates if re-running
     # merged_coll.drop() 
     
@@ -137,12 +138,14 @@ if __name__ == "__main__":
     DATABASE_NAME = "LLM_Database" 
 
     # Set drop_existing=True if you want to replace old data
-    # import_json_to_mongodb(
-    #     uri=MONGO_URI,
-    #     db_name=DATABASE_NAME,
-    #     json_folder="mongo_exports",
-    #     drop_existing=False
-    # )
+
+    import_json_to_mongodb(
+        uri=MONGO_URI,
+        db_name=DATABASE_NAME,
+        json_folder="mongo_exports",
+        drop_existing=False
+    )
+
     merge_and_calculate_scores(
         uri=MONGO_URI, 
         db_name=DATABASE_NAME
