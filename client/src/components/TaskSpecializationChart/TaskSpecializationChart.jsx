@@ -1,98 +1,181 @@
-// /client/src/components/TaskSpecializationChart/TaskSpecializationChart.jsx
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import styles from './TaskSpecializationChart.module.css';
 
 // --- BACKEND_HOOKUP_POINT ---
-// Mock data, replace with API data
-const MOCK_DATA = [
-  { task: 'Web searching', percentage: 33.3, models: ['GPT - 4', 'DeepSeek - 3', 'Llama - 2', 'GPT - 3', 'Gemini'] },
-  { task: 'Finetuning', percentage: 26.7, models: ['Model A', 'Model B'] },
-  { task: 'Batch inference', percentage: 16.7, models: ['Model C', 'Model D'] },
-  { task: 'Function calling', percentage: 13.3, models: ['Model E', 'Model F'] },
-  { task: 'Structured output', percentage: 6.7, models: ['Model G', 'Model H'] },
-];
 
-const TaskSpecializationChart = () => {
+const TaskSpecializationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const d3Container = useRef(null);
+  const [data, setData] = useState([]);
   const tooltipRef = useRef(null);
 
   useEffect(() => {
-    if (MOCK_DATA.length > 0 && d3Container.current) {
-      const width = 500;
-      const height = 500;
-      const margin = 40;
-      const radius = Math.min(width, height) / 2 - margin;
+    const controller = new AbortController();
+    const fetchData = async () => {
+      try {
+        const res = await fetch(`${apiBaseUrl}/percentage`, { signal: controller.signal });
+        const json = await res.json();
+        if (!res.ok || !json.success) {
+          throw new Error(json.error || 'Failed to fetch percentage data');
+        }
+        const normalized = (json.data || []).map((d) => ({
+          task: d.task,
+          percentage: Number(d.percentage) || 0,
+          models: d.models || [],
+        }));
+        
+        // SORT DATA DESCENDING HERE to ensure colors align with size
+        normalized.sort((a, b) => b.percentage - a.percentage);
+        
+        setData(normalized);
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error('Error fetching percentage data:', err);
+        }
+      }
+    };
 
-      d3.select(d3Container.current).selectAll('*').remove();
+    fetchData();
+    return () => controller.abort();
+  }, [apiBaseUrl]);
 
-      const svg = d3
-        .select(d3Container.current)
-        .attr('width', width)
-        .attr('height', height)
-        .append('g')
-        .attr('transform', `translate(${width / 2}, ${height / 2})`);
+  useEffect(() => {
+    if (!data || data.length === 0 || !d3Container.current) return;
 
-      const color = d3
-        .scaleOrdinal()
-        .domain(MOCK_DATA.map((d) => d.task))
-        .range(['#82E0D9', '#9B59B6', '#546E7A', '#45B39D', '#3498DB']);
+    const width = 800; 
+    const height = 500;
 
-      const pie = d3
-        .pie()
-        .value((d) => d.percentage)
-        .sort(null);
+    // 1. Clear previous chart
+    d3.select(d3Container.current).selectAll('*').remove();
 
-      const dataReady = pie(MOCK_DATA);
+    const svg = d3
+      .select(d3Container.current)
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('preserveAspectRatio', 'xMidYMid meet')
+      .style('width', '100%')
+      .style('height', 'auto')
+      .style('font-family', 'sans-serif');
 
-      const arc = d3.arc().innerRadius(0).outerRadius(radius);
-      const tooltip = d3.select(tooltipRef.current);
+    // 2. Prepare Hierarchy
+    const root = d3.hierarchy({ children: data })
+      .sum((d) => d.percentage)
+      .sort((a, b) => b.value - a.value);
 
-      svg
-        .selectAll('path')
-        .data(dataReady)
-        .enter()
-        .append('path')
-        .attr('d', arc)
-        .attr('fill', (d) => color(d.data.task))
-        .attr('stroke', '#2c2c2c')
-        .style('stroke-width', '3px')
-        .on('mouseover', (event, d) => {
-          tooltip.style('opacity', 1);
-          const [x, y] = d3.pointer(event, d3Container.current.parentElement);
-          tooltip
-            .html(
-              `\n        <strong>${d.data.task}</strong>\n        <ul>\n          ${d.data.models.map((m) => `<li>${m}</li>`).join('')}\n        </ul>\n      `,
-            )
-            .style('left', `${x + 20}px`)
-            .style('top', `${y - 20}px`);
-        })
-        .on('mousemove', (event) => {
-          const [x, y] = d3.pointer(event, d3Container.current.parentElement);
-          tooltip
-            .style('left', `${x + 20}px`)
-            .style('top', `${y - 20}px`);
-        })
-        .on('mouseout', () => {
-          tooltip.style('opacity', 0);
-        });
+    // 3. Layout
+    d3.treemap()
+      .size([width, height])
+      .paddingInner(3)
+      .paddingOuter(2)
+      .round(true)
+      (root);
 
-      svg
-        .selectAll('text')
-        .data(dataReady)
-        .enter()
-        .append('text')
-        .text((d) => `${d.data.task} ${d.data.percentage}%`)
-        .attr('transform', (d) => {
-          const pos = arc.centroid(d);
-          return `translate(${pos})`;
-        })
-        .style('text-anchor', 'middle')
-        .style('font-size', 12)
-        .style('fill', '#fff')
-        .style('font-family', 'Kelvinch');
-    }
-  }, []);
+    // --- UPDATED COLOR LOGIC ---
+    // The specific hex codes from your image, ordered from Darkest -> Lightest
+    const pastelPalette = [
+        "#2f527aff", // Darkest Blue
+        "#3d6a9fff",
+        "#5284bd",
+        "#779ecb",
+        "#9cb8d9",
+        "#c1d3e7"  // Lightest Blue
+    ];
+
+    // Map the sorted data tasks to colors based on their index (rank)
+    // This forces a gradient even if values are identical (e.g. 32.6% vs 32.3%)
+    const colorScale = d3.scaleOrdinal()
+        .domain(data.map(d => d.task)) 
+        .range(pastelPalette);
+
+    const tooltip = d3.select(tooltipRef.current);
+
+    const leaf = svg
+      .selectAll('g')
+      .data(root.leaves())
+      .enter()
+      .append('g')
+      .attr('transform', (d) => `translate(${d.x0},${d.y0})`);
+
+    // --- CLIP PATH DEFINITION ---
+    // This creates an invisible boundary matching each rectangle's size
+    leaf.append("defs")
+      .append("clipPath")
+      .attr("id", (d, i) => `clip-${i}-${d.data.task.replace(/\s+/g, '')}`) // Unique safe ID
+      .append("rect")
+      .attr("width", (d) => Math.max(0, d.x1 - d.x0))
+      .attr("height", (d) => Math.max(0, d.y1 - d.y0));
+
+    // Draw Rects
+    leaf
+      .append('rect')
+      .attr('width', (d) => Math.max(0, d.x1 - d.x0))
+      .attr('height', (d) => Math.max(0, d.y1 - d.y0))
+      .attr('fill', (d) => colorScale(d.data.task))
+      .attr('rx', 6)
+      .attr('ry', 6)
+      .attr('stroke', '#242424')
+      .style('stroke-width', '2px')
+      .style('cursor', 'pointer')
+      .on('mouseover', (event, d) => {
+        d3.select(event.currentTarget).style('filter', 'brightness(1.1)'); // Lighten on hover
+        tooltip.style('opacity', 1);
+        const [x, y] = d3.pointer(event, d3Container.current.parentElement);
+        tooltip
+          .html(
+            `<strong>${d.data.task}</strong>
+             <br/><span style="color:#666; font-size:0.85em">Share: ${d.data.percentage}%</span>
+             <hr style="margin: 8px 0; border-color: #eee"/>
+             <ul style="padding-left: 15px; margin: 0">
+               ${d.data.models.map(m => `<li>${m}</li>`).join('')}
+             </ul>`
+          )
+          .style('left', `${x + 20}px`)
+          .style('top', `${y - 20}px`);
+      })
+      .on('mousemove', (event) => {
+        const [x, y] = d3.pointer(event, d3Container.current.parentElement);
+        tooltip.style('left', `${x + 20}px`).style('top', `${y - 20}px`);
+      })
+      .on('mouseout', (event) => {
+        d3.select(event.currentTarget).style('filter', 'none');
+        tooltip.style('opacity', 0);
+      });
+
+    // --- TEXT HANDLING ---
+    // We group text and apply the clip-path ID we created earlier
+    const textGroup = leaf.append('text')
+      .attr("clip-path", (d, i) => `url(#clip-${i}-${d.data.task.replace(/\s+/g, '')})`)
+      .style('pointer-events', 'none'); 
+
+    // Task Name
+    textGroup
+      .append('tspan')
+      .text((d) => d.data.task)
+      .attr('x', 6)
+      .attr('y', 20)
+      .style('font-size', '16px')
+      .style('font-weight', '600')
+      .style('fill', '#fff')
+      .style('text-shadow', '0 1px 3px rgba(0,0,0,0.4)')
+      .style('display', (d) => {
+         // Strict Hiding: Hide text if width < 60px OR height < 35px
+         return (d.x1 - d.x0) > 60 && (d.y1 - d.y0) > 35 ? 'block' : 'none';
+      });
+
+    // Percentage
+    textGroup
+      .append('tspan')
+      .text((d) => `${d.data.percentage}%`)
+      .attr('x', 6)
+      .attr('y', 38)
+      .style('font-size', '13px')
+      .style('font-weight', 'bold')
+      .style('fill', 'rgba(255,255,255,0.9)')
+      .style('display', (d) => {
+         // Strict Hiding: Needs more vertical space than the title
+         return (d.x1 - d.x0) > 60 && (d.y1 - d.y0) > 50 ? 'block' : 'none';
+      });
+
+  }, [data]);
 
   return (
     <div className={styles.chartWrapper}>

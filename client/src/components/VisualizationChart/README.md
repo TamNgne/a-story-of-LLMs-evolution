@@ -63,7 +63,8 @@ The component expects the primary data (`MOCK_DATA`) to be an array of objects w
   "modelName": "String",
   "releaseDate": "YYYY-MM-DD",
   "performanceScore": Number,
-  "provider": "String" // Optional, for future use
+  "organization": "String", // Required for Organization filter
+  "provider": "String"      // Required for Provider filter
 }
 ```
 

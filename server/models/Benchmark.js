@@ -2,29 +2,32 @@ import mongoose from 'mongoose';
 
 const benchmarkSchema = new mongoose.Schema(
   {
-    // Benchmark data fields
-    llmName: {
+    benchmark_id: {
+      type: String,
+      unique: true,
+      required: true,
+    },
+    name: {
       type: String,
       required: true,
     },
-    benchmarkName: {
+    category: {
       type: String,
-      required: true,
     },
-    score: {
+    max_score: {
       type: Number,
     },
-    metric: {
+    description: {
       type: String,
     },
-    date: {
-      type: Date,
+    modality: {
+      type: String,
     },
-    // Additional fields can be added based on your actual database schema
+    
   },
   {
     timestamps: true,
-    collection: 'Benchmark MD', // Specify the collection name
+    collection: 'Benchmark MD', 
   }
 );
 

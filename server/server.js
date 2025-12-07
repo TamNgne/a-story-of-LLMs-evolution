@@ -1,4 +1,3 @@
-
 import dotenv from 'dotenv';
 import path from 'path'; 
 import { fileURLToPath } from 'url';
@@ -9,12 +8,12 @@ const __dirname = path.dirname(__filename);
 
 // Load .env from the same folder as server.js
 const envPath = path.join(__dirname, '.env'); 
-console.log('DOTENV is looking for .env at:', envPath); // <-- WATCH THIS OUTPUT!
+console.log('DOTENV is looking for .env at:', envPath);
 
 dotenv.config({ path: envPath });
 
 console.log('✅ Loaded MONGODB_URI:', process.env.MONGODB_URI); 
-console.log('✅ Loaded PORT:', process.env.PORT); // <-- NEW TEST LINE
+console.log('✅ Loaded PORT:', process.env.PORT);
 
 import express from 'express';
 import mongoose from 'mongoose';
@@ -51,7 +50,7 @@ mongoose
     });
   })
   .catch((error) => {
-    console.error('❌ MongoDB connection error:', error.message);
+    console.error('MongoDB connection error:', error.message);
     process.exit(1);
   });
 

@@ -1,0 +1,6538 @@
+[
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bd0"
+    },
+    "benchmark_id": "vqav2",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.410411+00:00",
+    "description": "VQAv2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "VQAv2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.410411+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bd2"
+    },
+    "benchmark_id": "humaneval-plus",
+    "category": "code",
+    "created_at": "2025-08-03T22:06:10.921756+00:00",
+    "description": "HumanEval Plus benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEval Plus",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:10.921756+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bd4"
+    },
+    "benchmark_id": "mmbench-video",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.738914+00:00",
+    "description": "MMBench-Video benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "MMBench-Video",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.738914+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bd6"
+    },
+    "benchmark_id": "multipl-e",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:12.311919+00:00",
+    "description": "MultiPL-E is a benchmark for evaluating code generation across multiple programming languages, extending HumanEval to 18+ languages.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MultiPL-E",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.311919+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bd8"
+    },
+    "benchmark_id": "graphwalks-bfs-<128k",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.287324+00:00",
+    "description": "Graphwalks BFS <128k benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Graphwalks BFS <128k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.287324+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bda"
+    },
+    "benchmark_id": "repobench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.152588+00:00",
+    "description": "RepoBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "RepoBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.152588+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bdc"
+    },
+    "benchmark_id": "theoremqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.479157+00:00",
+    "description": "TheoremQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TheoremQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.479157+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bde"
+    },
+    "benchmark_id": "qasper",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.166932+00:00",
+    "description": "Qasper benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Qasper",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.166932+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9be0"
+    },
+    "benchmark_id": "crperelation",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.834739+00:00",
+    "description": "CRPErelation benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CRPErelation",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.834739+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9be2"
+    },
+    "benchmark_id": "scienceqa-visual",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.300722+00:00",
+    "description": "ScienceQA Visual benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "ScienceQA Visual",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.300722+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9be4"
+    },
+    "benchmark_id": "xstest",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.998594+00:00",
+    "description": "XSTest benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "XSTest",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.998594+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9be6"
+    },
+    "benchmark_id": "open-rewrite",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.435616+00:00",
+    "description": "Open-rewrite benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Open-rewrite",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.435616+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9be8"
+    },
+    "benchmark_id": "gsm8k-chat",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:15.101578+00:00",
+    "description": "GSM8K Chat benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GSM8K Chat",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.101578+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bea"
+    },
+    "benchmark_id": "tau-bench-retail",
+    "category": "agents",
+    "created_at": "2025-07-19T19:56:14.965635+00:00",
+    "description": "TAU-bench Retail benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TAU-bench Retail",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.965635+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bec"
+    },
+    "benchmark_id": "odinw",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.902703+00:00",
+    "description": "ODinW benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ODinW",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.902703+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bee"
+    },
+    "benchmark_id": "openbookqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.129348+00:00",
+    "description": "OpenBookQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OpenBookQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.129348+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bf0"
+    },
+    "benchmark_id": "openai-mrcr:-2-needle-256k",
+    "category": "long_context",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "OpenAI-MRCR: 2 needle 256k benchmark (long-context retrieval at 256k tokens)",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OpenAI-MRCR: 2 needle 256k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bf2"
+    },
+    "benchmark_id": "swe-lancer",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.352660+00:00",
+    "description": "SWE-Lancer benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-Lancer",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.352660+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bf4"
+    },
+    "benchmark_id": "mathvista",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:12.069611+00:00",
+    "description": "MathVista benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MathVista",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.069611+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bf6"
+    },
+    "benchmark_id": "mmvetgpt4turbo",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.611567+00:00",
+    "description": "MMVetGPT4Turbo benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMVetGPT4Turbo",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.611567+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bf8"
+    },
+    "benchmark_id": "codegolf-v2.2",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.778275+00:00",
+    "description": "Codegolf v2.2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Codegolf v2.2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.778275+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bfa"
+    },
+    "benchmark_id": "livebench-20241125",
+    "category": "roleplay",
+    "created_at": "2025-08-03T22:06:11.046321+00:00",
+    "description": "LiveBench 20241125 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveBench 20241125",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.046321+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bfc"
+    },
+    "benchmark_id": "mmt-bench",
+    "category": "roleplay",
+    "created_at": "2025-07-19T19:56:14.674184+00:00",
+    "description": "MMT-Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMT-Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.674184+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9bfe"
+    },
+    "benchmark_id": "meld",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.842977+00:00",
+    "description": "Meld benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Meld",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.842977+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c00"
+    },
+    "benchmark_id": "androidworld-sr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.808659+00:00",
+    "description": "AndroidWorld_SR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AndroidWorld_SR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.808659+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c02"
+    },
+    "benchmark_id": "omnimath",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:14.271468+00:00",
+    "description": "OmniMath benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OmniMath",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.271468+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c04"
+    },
+    "benchmark_id": "mmmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.144789+00:00",
+    "description": "MMMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.144789+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c06"
+    },
+    "benchmark_id": "popqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.072897+00:00",
+    "description": "PopQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PopQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.072897+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c08"
+    },
+    "benchmark_id": "mmmu-(val)",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:13.593262+00:00",
+    "description": "MMMU (val) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MMMU (val)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.593262+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c0a"
+    },
+    "benchmark_id": "egoschema",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.915240+00:00",
+    "description": "EgoSchema benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "EgoSchema",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.915240+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c0c"
+    },
+    "benchmark_id": "swe-bench-multilingual",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.340903+00:00",
+    "description": "SWE-bench Multilingual benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-bench Multilingual",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.340903+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c0e"
+    },
+    "benchmark_id": "writingbench",
+    "category": "general",
+    "created_at": "2025-08-03T22:06:11.074130+00:00",
+    "description": "WritingBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "WritingBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.074130+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c10"
+    },
+    "benchmark_id": "erqa",
+    "category": "vision",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "Embodied Reasoning Question Answer (ERQA) - Multi-modal embodied reasoning questions covering spatial reasoning and world knowledge in robotics contexts",
+    "implementation_link": "https://github.com/embodiedreasoning/ERQA",
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "ERQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c12"
+    },
+    "benchmark_id": "complexfuncbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.336577+00:00",
+    "description": "ComplexFuncBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ComplexFuncBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.336577+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c14"
+    },
+    "benchmark_id": "infinitebench-en.qa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.457927+00:00",
+    "description": "InfiniteBench/En.QA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "InfiniteBench/En.QA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.457927+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c16"
+    },
+    "benchmark_id": "mme",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.022505+00:00",
+    "description": "MME benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "MME",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.022505+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c18"
+    },
+    "benchmark_id": "aime-2024",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.941652+00:00",
+    "description": "AIME 2024 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AIME 2024",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.941652+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c1a"
+    },
+    "benchmark_id": "humaneval-average",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.171175+00:00",
+    "description": "HumanEval-Average benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEval-Average",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.171175+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c1c"
+    },
+    "benchmark_id": "eclektic",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.561292+00:00",
+    "description": "ECLeKTic benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ECLeKTic",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.561292+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c1e"
+    },
+    "benchmark_id": "big-bench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.926457+00:00",
+    "description": "BIG-Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BIG-Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.926457+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c20"
+    },
+    "benchmark_id": "frontiermath",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:15.179213+00:00",
+    "description": "FrontierMath benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FrontierMath",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.179213+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c22"
+    },
+    "benchmark_id": "mmvet",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.684742+00:00",
+    "description": "MMVet benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMVet",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.684742+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c24"
+    },
+    "benchmark_id": "if",
+    "category": "general",
+    "created_at": "2025-08-03T22:06:11.089394+00:00",
+    "description": "IF benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "IF",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.089394+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c26"
+    },
+    "benchmark_id": "lsat",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.409871+00:00",
+    "description": "LSAT benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LSAT",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.409871+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c28"
+    },
+    "benchmark_id": "mm-mt-bench",
+    "category": "roleplay",
+    "created_at": "2025-07-19T19:56:14.880812+00:00",
+    "description": "MM-MT-Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MM-MT-Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.880812+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c2a"
+    },
+    "benchmark_id": "mmlu-redux-2.0",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.518552+00:00",
+    "description": "MMLU-redux-2.0 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU-redux-2.0",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.518552+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c2c"
+    },
+    "benchmark_id": "mbpp-evalplus",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.425667+00:00",
+    "description": "MBPP EvalPlus benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP EvalPlus",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.425667+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c2e"
+    },
+    "benchmark_id": "boolq",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.117325+00:00",
+    "description": "BoolQ benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BoolQ",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.117325+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c30"
+    },
+    "benchmark_id": "flenqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.277205+00:00",
+    "description": "FlenQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FlenQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.277205+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c32"
+    },
+    "benchmark_id": "arc-agi-v2",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:13.916360+00:00",
+    "description": "ARC-AGI v2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ARC-AGI v2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.916360+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c34"
+    },
+    "benchmark_id": "humanevalfim-average",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.160562+00:00",
+    "description": "HumanEvalFIM-Average benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEvalFIM-Average",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.160562+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c36"
+    },
+    "benchmark_id": "gpqa-chemistry",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.395806+00:00",
+    "description": "GPQA Chemistry benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GPQA Chemistry",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.395806+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c38"
+    },
+    "benchmark_id": "mmbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.235585+00:00",
+    "description": "MMBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.235585+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c3a"
+    },
+    "benchmark_id": "mmlu-base",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.562710+00:00",
+    "description": "MMLU-Base benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU-Base",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.562710+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c3c"
+    },
+    "benchmark_id": "pope",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.264312+00:00",
+    "description": "POPE benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "POPE",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.264312+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c3e"
+    },
+    "benchmark_id": "mrcr-v2-(8-needle)",
+    "category": "long_context",
+    "created_at": "2025-07-19T19:56:14.010914+00:00",
+    "description": "MRCR v2 (8-needle) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MRCR v2 (8-needle)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.010914+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c40"
+    },
+    "benchmark_id": "mmbench-test",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.607904+00:00",
+    "description": "MMBench_test benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMBench_test",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.607904+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c42"
+    },
+    "benchmark_id": "polymath",
+    "category": "math",
+    "created_at": "2025-08-03T22:06:11.108063+00:00",
+    "description": "PolyMATH benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PolyMATH",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.108063+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c44"
+    },
+    "benchmark_id": "browsecomp-zh",
+    "category": "agents",
+    "created_at": "2025-09-15T00:00:00.000000+00:00",
+    "description": "Chinese version of BrowseComp benchmark for evaluating web browsing and comprehension capabilities",
+    "implementation_link": null,
+    "language": "zh",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BrowseComp-zh",
+    "paper_link": null,
+    "parent_benchmark_id": "browsecomp",
+    "updated_at": "2025-09-15T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c46"
+    },
+    "benchmark_id": "mobileminiwob++-sr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.816755+00:00",
+    "description": "MobileMiniWob++_SR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MobileMiniWob++_SR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.816755+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c48"
+    },
+    "benchmark_id": "vocalsound",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.919198+00:00",
+    "description": "VocalSound benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "VocalSound",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.919198+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c4a"
+    },
+    "benchmark_id": "phibench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.121593+00:00",
+    "description": "PhiBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PhiBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.121593+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c4c"
+    },
+    "benchmark_id": "mlvu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.755571+00:00",
+    "description": "MLVU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MLVU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.755571+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c4e"
+    },
+    "benchmark_id": "wmt24++",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.576712+00:00",
+    "description": "WMT24++ benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "WMT24++",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.576712+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c50"
+    },
+    "benchmark_id": "facts-grounding",
+    "category": "factuality",
+    "created_at": "2025-07-19T19:56:13.260285+00:00",
+    "description": "FACTS Grounding benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FACTS Grounding",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.260285+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c52"
+    },
+    "benchmark_id": "aider-polyglot-edit",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.789839+00:00",
+    "description": "Aider-Polyglot Edit benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Aider-Polyglot Edit",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.789839+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c54"
+    },
+    "benchmark_id": "math",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:11.804258+00:00",
+    "description": "MATH benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MATH",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.804258+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c56"
+    },
+    "benchmark_id": "aime-2025",
+    "category": "math",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "American Invitational Mathematics Examination 2025 - A challenging mathematics competition for high school students.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AIME 2025",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c58"
+    },
+    "benchmark_id": "attaq",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.079764+00:00",
+    "description": "AttaQ benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AttaQ",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.079764+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c5a"
+    },
+    "benchmark_id": "mm-if-eval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.142939+00:00",
+    "description": "MM IF-Eval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MM IF-Eval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.142939+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c5c"
+    },
+    "benchmark_id": "autologi",
+    "category": "reasoning",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "AutoLogi benchmark for evaluating automated logical reasoning capabilities.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AutoLogi",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c5e"
+    },
+    "benchmark_id": "bbh",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.031859+00:00",
+    "description": "BBH benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BBH",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.031859+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c60"
+    },
+    "benchmark_id": "longfact-concepts",
+    "category": "factuality",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "LongFact concepts benchmark for evaluating factual knowledge about concepts",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LongFact Concepts",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c62"
+    },
+    "benchmark_id": "superglue",
+    "category": "language",
+    "created_at": "2025-07-19T19:56:15.382590+00:00",
+    "description": "SuperGLUE benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SuperGLUE",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.382590+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c64"
+    },
+    "benchmark_id": "mrcr-v2",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.963241+00:00",
+    "description": "MRCR v2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MRCR v2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.963241+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c66"
+    },
+    "benchmark_id": "voicebench-avg",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.922519+00:00",
+    "description": "VoiceBench Avg benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "audio",
+    "multilingual": false,
+    "name": "VoiceBench Avg",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.922519+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c68"
+    },
+    "benchmark_id": "zebralogic",
+    "category": "reasoning",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "ZebraLogic benchmark for evaluating logical reasoning capabilities through complex constraint satisfaction problems.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ZebraLogic",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c6a"
+    },
+    "benchmark_id": "activitynet",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.378371+00:00",
+    "description": "ActivityNet benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ActivityNet",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.378371+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c6c"
+    },
+    "benchmark_id": "video-mme",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:13.901883+00:00",
+    "description": "Video-MME benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "Video-MME",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.901883+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c6e"
+    },
+    "benchmark_id": "charadessta",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.760027+00:00",
+    "description": "CharadesSTA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CharadesSTA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.760027+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c70"
+    },
+    "benchmark_id": "evalplus",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:11.793176+00:00",
+    "description": "EvalPlus benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "EvalPlus",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.793176+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c72"
+    },
+    "benchmark_id": "mmlu-french",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.175211+00:00",
+    "description": "MMLU French benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU French",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.175211+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c74"
+    },
+    "benchmark_id": "ocrbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.304601+00:00",
+    "description": "OCRBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OCRBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.304601+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c76"
+    },
+    "benchmark_id": "mmau-speech",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.863540+00:00",
+    "description": "MMAU Speech benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "audio",
+    "multilingual": false,
+    "name": "MMAU Speech",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.863540+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c78"
+    },
+    "benchmark_id": "mega-tydi-qa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.192871+00:00",
+    "description": "MEGA TyDi QA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MEGA TyDi QA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.192871+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c7a"
+    },
+    "benchmark_id": "vqav2-(val)",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:13.647852+00:00",
+    "description": "VQAv2 (val) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "VQAv2 (val)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.647852+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c7c"
+    },
+    "benchmark_id": "ai2-reasoning-challenge-(arc)",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:15.419158+00:00",
+    "description": "AI2 Reasoning Challenge (ARC) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AI2 Reasoning Challenge (ARC)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.419158+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c7e"
+    },
+    "benchmark_id": "ojbench",
+    "category": "code",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "OJBench is a comprehensive benchmark for evaluating coding proficiency through online judge problems.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OJBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c80"
+    },
+    "benchmark_id": "vatex",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.909879+00:00",
+    "description": "VATEX benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "VATEX",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.909879+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c82"
+    },
+    "benchmark_id": "factscore",
+    "category": "factuality",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "FActScore benchmark for evaluating factual accuracy in generated text",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FActScore",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c84"
+    },
+    "benchmark_id": "graphwalks-parents-<128k",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.303643+00:00",
+    "description": "Graphwalks parents <128k benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Graphwalks parents <128k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.303643+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c86"
+    },
+    "benchmark_id": "mbpp-plus",
+    "category": "code",
+    "created_at": "2025-08-03T22:06:11.143382+00:00",
+    "description": "MBPP Plus benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP Plus",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.143382+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c88"
+    },
+    "benchmark_id": "covost2",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.958237+00:00",
+    "description": "CoVoST2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CoVoST2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.958237+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c8a"
+    },
+    "benchmark_id": "mmau-music",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.851711+00:00",
+    "description": "MMAU Music benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMAU Music",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.851711+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c8c"
+    },
+    "benchmark_id": "bfcl",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.763704+00:00",
+    "description": "BFCL benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BFCL",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.763704+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c8e"
+    },
+    "benchmark_id": "terminus",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.355994+00:00",
+    "description": "Terminus benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Terminus",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.355994+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c90"
+    },
+    "benchmark_id": "ifeval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:12.241350+00:00",
+    "description": "IFEval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "IFEval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.241350+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c92"
+    },
+    "benchmark_id": "swe-dev",
+    "category": "code",
+    "created_at": "2025-09-15T00:00:00.000000+00:00",
+    "description": "SWE-Dev benchmark that overwrites original repository files and deletes test files that exercise the functions the agent is expected to generate, eliminating indirect hints about the desired implementation",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-Dev",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-15T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c94"
+    },
+    "benchmark_id": "mega-xstorycloze",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.212479+00:00",
+    "description": "MEGA XStoryCloze benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MEGA XStoryCloze",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.212479+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c96"
+    },
+    "benchmark_id": "mega-udpos",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.198318+00:00",
+    "description": "MEGA UDPOS benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MEGA UDPOS",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.198318+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c98"
+    },
+    "benchmark_id": "mega-xcopa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.205296+00:00",
+    "description": "MEGA XCOPA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MEGA XCOPA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.205296+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c9a"
+    },
+    "benchmark_id": "mmau",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.846435+00:00",
+    "description": "MMAU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMAU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.846435+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c9c"
+    },
+    "benchmark_id": "usamo25",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.067604+00:00",
+    "description": "USAMO25 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "USAMO25",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.067604+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9c9e"
+    },
+    "benchmark_id": "cfeval",
+    "category": "code",
+    "created_at": "2025-09-15T00:00:00.000000+00:00",
+    "description": "CFEval benchmark for evaluating code generation and problem-solving capabilities",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 10000.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CFEval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-15T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ca0"
+    },
+    "benchmark_id": "translation-en\u2192set1-comet22",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.959436+00:00",
+    "description": "Translation en\u2192Set1 COMET22 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Translation en\u2192Set1 COMET22",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.959436+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ca2"
+    },
+    "benchmark_id": "creative-writing-v3",
+    "category": "general",
+    "created_at": "2025-08-03T22:06:11.157942+00:00",
+    "description": "Creative Writing v3 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Creative Writing v3",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.157942+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ca4"
+    },
+    "benchmark_id": "polymath-en",
+    "category": "math",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "PolyMath English benchmark for evaluating mathematical problem-solving abilities.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PolyMath-en",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ca6"
+    },
+    "benchmark_id": "gpqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.588605+00:00",
+    "description": "GPQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GPQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.588605+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ca8"
+    },
+    "benchmark_id": "vibe-eval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.871369+00:00",
+    "description": "Vibe-Eval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Vibe-Eval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.871369+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9caa"
+    },
+    "benchmark_id": "humaneval-mul",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.032472+00:00",
+    "description": "HumanEval-Mul benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEval-Mul",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.032472+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cac"
+    },
+    "benchmark_id": "internal-api-instruction-following-(hard)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.222560+00:00",
+    "description": "Internal API instruction following (hard) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Internal API instruction following (hard)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.222560+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cae"
+    },
+    "benchmark_id": "livecodebench-v5-24.12-25.2",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:12.066180+00:00",
+    "description": "LiveCodeBench v5 24.12-25.2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveCodeBench v5 24.12-25.2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.066180+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cb0"
+    },
+    "benchmark_id": "terminal-bench",
+    "category": "code",
+    "created_at": "2025-07-28T00:00:00.000000+00:00",
+    "description": "Terminal-Bench evaluates a model's ability to perform coding tasks through terminal commands. Uses the Terminus framework for evaluation with standard function calling.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Terminal-Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-28T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cb2"
+    },
+    "benchmark_id": "multi-swe-bench",
+    "category": "code",
+    "created_at": "2025-09-15T00:00:00.000000+00:00",
+    "description": "Multi-SWE-Bench benchmark for evaluating software engineering capabilities across multiple repositories",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multi-SWE-Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-15T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cb4"
+    },
+    "benchmark_id": "hmmt25",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.061281+00:00",
+    "description": "HMMT25 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HMMT25",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.061281+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cb6"
+    },
+    "benchmark_id": "openai-mmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.043675+00:00",
+    "description": "OpenAI MMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OpenAI MMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.043675+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cb8"
+    },
+    "benchmark_id": "mtvqa",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.587333+00:00",
+    "description": "MTVQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MTVQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.587333+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cba"
+    },
+    "benchmark_id": "agieval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.970928+00:00",
+    "description": "AGIEval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AGIEval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.970928+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cbc"
+    },
+    "benchmark_id": "ds-fim-eval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.053854+00:00",
+    "description": "DS-FIM-Eval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "DS-FIM-Eval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.053854+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cbe"
+    },
+    "benchmark_id": "gorilla-benchmark-api-bench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.383584+00:00",
+    "description": "Gorilla Benchmark API Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Gorilla Benchmark API Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.383584+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cc0"
+    },
+    "benchmark_id": "mathvista-mini",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:13.654470+00:00",
+    "description": "MathVista-Mini benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MathVista-Mini",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.654470+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cc2"
+    },
+    "benchmark_id": "swe-bench-verified-(agentic-coding)",
+    "category": "agents",
+    "created_at": "2025-07-19T19:56:12.331440+00:00",
+    "description": "SWE-bench Verified (Agentic Coding) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-bench Verified (Agentic Coding)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.331440+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cc4"
+    },
+    "benchmark_id": "realworldqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.595271+00:00",
+    "description": "RealWorldQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "RealWorldQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.595271+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cc6"
+    },
+    "benchmark_id": "multipl-e-mbpp",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.353635+00:00",
+    "description": "Multipl-E MBPP benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multipl-E MBPP",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.353635+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cc8"
+    },
+    "benchmark_id": "acebench",
+    "category": "agents",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "AceBench for evaluating agent capabilities in tool use and complex task completion.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AceBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cca"
+    },
+    "benchmark_id": "scienceqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.255251+00:00",
+    "description": "ScienceQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ScienceQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.255251+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ccc"
+    },
+    "benchmark_id": "hiddenmath",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:13.424873+00:00",
+    "description": "HiddenMath benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HiddenMath",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.424873+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cce"
+    },
+    "benchmark_id": "bfcl-v2",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.444045+00:00",
+    "description": "BFCL v2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BFCL v2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.444045+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cd0"
+    },
+    "benchmark_id": "livecodebench",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.292229+00:00",
+    "description": "LiveCodeBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveCodeBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.292229+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cd2"
+    },
+    "benchmark_id": "charxiv-d",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.325204+00:00",
+    "description": "CharXiv-D benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CharXiv-D",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.325204+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cd4"
+    },
+    "benchmark_id": "screenspot-pro",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.776671+00:00",
+    "description": "ScreenSpot Pro benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ScreenSpot Pro",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.776671+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cd6"
+    },
+    "benchmark_id": "ocrbench-v2-(en)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.926330+00:00",
+    "description": "OCRBench-V2 (en) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OCRBench-V2 (en)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.926330+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cd8"
+    },
+    "benchmark_id": "mbpp-++-base-version",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.341560+00:00",
+    "description": "MBPP ++ base version benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP ++ base version",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.341560+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cda"
+    },
+    "benchmark_id": "livecodebench-v5",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.759330+00:00",
+    "description": "LiveCodeBench v5 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveCodeBench v5",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.759330+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cdc"
+    },
+    "benchmark_id": "cluewsc",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.233189+00:00",
+    "description": "CLUEWSC benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CLUEWSC",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.233189+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cde"
+    },
+    "benchmark_id": "docvqatest",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.579372+00:00",
+    "description": "DocVQAtest benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "DocVQAtest",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.579372+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ce0"
+    },
+    "benchmark_id": "mimic-cxr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.017221+00:00",
+    "description": "MIMIC CXR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MIMIC CXR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.017221+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ce2"
+    },
+    "benchmark_id": "nexus",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.391550+00:00",
+    "description": "Nexus benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Nexus",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.391550+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ce4"
+    },
+    "benchmark_id": "mmlu-redux",
+    "category": "factuality",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "MMLU-Redux is an improved version of MMLU with refined questions and evaluation methodology.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU-Redux",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ce6"
+    },
+    "benchmark_id": "nih-multi-needle",
+    "category": "long_context",
+    "created_at": "2025-07-19T19:56:14.465778+00:00",
+    "description": "NIH/Multi-needle benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "NIH/Multi-needle",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.465778+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ce8"
+    },
+    "benchmark_id": "dermmcqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.024498+00:00",
+    "description": "DermMCQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "DermMCQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.024498+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cea"
+    },
+    "benchmark_id": "humanity's-last-exam",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.507693+00:00",
+    "description": "Humanity's Last Exam benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Humanity's Last Exam",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.507693+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cec"
+    },
+    "benchmark_id": "multichallenge",
+    "category": "general",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "Multi-Challenge benchmark for evaluating diverse capabilities across multiple task types.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multi-Challenge",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cee"
+    },
+    "benchmark_id": "tldr9+-(test)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.439927+00:00",
+    "description": "TLDR9+ (test) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TLDR9+ (test)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.439927+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cf0"
+    },
+    "benchmark_id": "swe-lancer-(ic-diamond-subset)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.359574+00:00",
+    "description": "SWE-Lancer (IC-Diamond subset) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-Lancer (IC-Diamond subset)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.359574+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cf2"
+    },
+    "benchmark_id": "humaneval+",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.062352+00:00",
+    "description": "HumanEval+ benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEval+",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.062352+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cf4"
+    },
+    "benchmark_id": "mmlu-stem",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.495405+00:00",
+    "description": "MMLU-STEM benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU-STEM",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.495405+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cf6"
+    },
+    "benchmark_id": "humaneval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:12.595263+00:00",
+    "description": "HumanEval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.595263+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cf8"
+    },
+    "benchmark_id": "crag",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.741280+00:00",
+    "description": "CRAG benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CRAG",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.741280+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cfa"
+    },
+    "benchmark_id": "repoqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.180278+00:00",
+    "description": "RepoQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "RepoQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.180278+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cfc"
+    },
+    "benchmark_id": "bfcl-v3",
+    "category": "general",
+    "created_at": "2025-08-03T22:06:11.216985+00:00",
+    "description": "BFCL-v3 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BFCL-v3",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.216985+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9cfe"
+    },
+    "benchmark_id": "browsecomp",
+    "category": "agents",
+    "created_at": "2025-07-28T00:00:00.000000+00:00",
+    "description": "BrowseComp is a challenging benchmark for web browsing that consists of complicated questions that expect short answers, requiring complex reasoning and multi-turn tool usage.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BrowseComp",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-28T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d00"
+    },
+    "benchmark_id": "videommmu",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.007381+00:00",
+    "description": "VideoMMMU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "VideoMMMU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.007381+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d02"
+    },
+    "benchmark_id": "mmbench-v1.1",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.868950+00:00",
+    "description": "MMBench-V1.1 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMBench-V1.1",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.868950+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d04"
+    },
+    "benchmark_id": "mme-realworld",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.877676+00:00",
+    "description": "MME-RealWorld benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "MME-RealWorld",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.877676+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d06"
+    },
+    "benchmark_id": "livecodebench(01-09)",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.049594+00:00",
+    "description": "LiveCodeBench(01-09) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveCodeBench(01-09)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.049594+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d08"
+    },
+    "benchmark_id": "translation-set1\u2192en-spbleu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.967240+00:00",
+    "description": "Translation Set1\u2192en spBleu benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Translation Set1\u2192en spBleu",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.967240+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d0a"
+    },
+    "benchmark_id": "ocrbench-v2",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.898625+00:00",
+    "description": "OCRBench_V2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OCRBench_V2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.898625+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d0c"
+    },
+    "benchmark_id": "lvbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.724041+00:00",
+    "description": "LVBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LVBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.724041+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d0e"
+    },
+    "benchmark_id": "c-eval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:11.917478+00:00",
+    "description": "C-Eval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "C-Eval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.917478+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d10"
+    },
+    "benchmark_id": "cnmo-2024",
+    "category": "math",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "China Mathematical Olympiad 2024 - A challenging mathematics competition.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CNMO 2024",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d12"
+    },
+    "benchmark_id": "mlvu-m",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.931298+00:00",
+    "description": "MLVU-M benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MLVU-M",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.931298+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d14"
+    },
+    "benchmark_id": "finqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.734486+00:00",
+    "description": "FinQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FinQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.734486+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d16"
+    },
+    "benchmark_id": "lbpp-(v2)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.053535+00:00",
+    "description": "LBPP (v2) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LBPP (v2)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.053535+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d18"
+    },
+    "benchmark_id": "physicsfinals",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.981919+00:00",
+    "description": "PhysicsFinals benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PhysicsFinals",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.981919+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d1a"
+    },
+    "benchmark_id": "winogrande",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:11.370408+00:00",
+    "description": "Winogrande benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Winogrande",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.370408+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d1c"
+    },
+    "benchmark_id": "arc",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:13.967150+00:00",
+    "description": "Arc benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Arc",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.967150+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d1e"
+    },
+    "benchmark_id": "bird-sql-(dev)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.410905+00:00",
+    "description": "Bird-SQL (dev) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Bird-SQL (dev)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.410905+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d20"
+    },
+    "benchmark_id": "triviaqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.563587+00:00",
+    "description": "TriviaQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TriviaQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.563587+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d22"
+    },
+    "benchmark_id": "multi-if",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.638787+00:00",
+    "description": "Multi-IF benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multi-IF",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.638787+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d24"
+    },
+    "benchmark_id": "omnibench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.906402+00:00",
+    "description": "OmniBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OmniBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.906402+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d26"
+    },
+    "benchmark_id": "video-mme-(long,-no-subtitles)",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:15.374053+00:00",
+    "description": "Video-MME (long, no subtitles) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "Video-MME (long, no subtitles)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.374053+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d28"
+    },
+    "benchmark_id": "mm-mind2web",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.753488+00:00",
+    "description": "MM-Mind2Web benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MM-Mind2Web",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.753488+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d2a"
+    },
+    "benchmark_id": "tau2-airline",
+    "category": "agents",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "Tau2 Airline benchmark for evaluating agent capabilities in airline domain interactions.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Tau2 Airline",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d2c"
+    },
+    "benchmark_id": "arc-c",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:11.052939+00:00",
+    "description": "ARC-C benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ARC-C",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.052939+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d2e"
+    },
+    "benchmark_id": "docvqa",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:12.825214+00:00",
+    "description": "DocVQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "DocVQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.825214+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d30"
+    },
+    "benchmark_id": "bfcl-v3-multiturn",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.962161+00:00",
+    "description": "BFCL_v3_MultiTurn benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BFCL_v3_MultiTurn",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.962161+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d32"
+    },
+    "benchmark_id": "mbpp+",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.501855+00:00",
+    "description": "MBPP+ benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP+",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.501855+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d34"
+    },
+    "benchmark_id": "natural2code",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.518784+00:00",
+    "description": "Natural2Code benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Natural2Code",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.518784+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d36"
+    },
+    "benchmark_id": "graphwalks-parents->128k",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.316836+00:00",
+    "description": "Graphwalks parents >128k benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Graphwalks parents >128k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.316836+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d38"
+    },
+    "benchmark_id": "longfact-objects",
+    "category": "factuality",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "LongFact objects benchmark for evaluating factual knowledge about objects",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LongFact Objects",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d3a"
+    },
+    "benchmark_id": "translation-set1\u2192en-comet22",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.974744+00:00",
+    "description": "Translation Set1\u2192en COMET22 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Translation Set1\u2192en COMET22",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.974744+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d3c"
+    },
+    "benchmark_id": "gsm8k",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:11.397385+00:00",
+    "description": "GSM8k benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GSM8k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.397385+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d3e"
+    },
+    "benchmark_id": "aime",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.057279+00:00",
+    "description": "AIME benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AIME",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.057279+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d40"
+    },
+    "benchmark_id": "musiccaps",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.892085+00:00",
+    "description": "MusicCaps benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MusicCaps",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.892085+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d42"
+    },
+    "benchmark_id": "crux-o",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.635245+00:00",
+    "description": "CRUX-O benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CRUX-O",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.635245+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d44"
+    },
+    "benchmark_id": "textvqa",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:12.875287+00:00",
+    "description": "TextVQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "TextVQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.875287+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d46"
+    },
+    "benchmark_id": "longbench-v2",
+    "category": "long_context",
+    "created_at": "2025-07-19T19:56:15.029281+00:00",
+    "description": "LongBench v2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LongBench v2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.029281+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d48"
+    },
+    "benchmark_id": "mbpp",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:13.453370+00:00",
+    "description": "MBPP benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.453370+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d4a"
+    },
+    "benchmark_id": "api-bank",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.374447+00:00",
+    "description": "API-Bank benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "API-Bank",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.374447+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d4c"
+    },
+    "benchmark_id": "ruler",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.175181+00:00",
+    "description": "RULER benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "RULER",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.175181+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d4e"
+    },
+    "benchmark_id": "cruxeval-output-cot",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.555432+00:00",
+    "description": "CRUXEval-Output-CoT benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CRUXEval-Output-CoT",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.555432+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d50"
+    },
+    "benchmark_id": "mega-mlqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.187404+00:00",
+    "description": "MEGA MLQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MEGA MLQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.187404+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d52"
+    },
+    "benchmark_id": "healthbench",
+    "category": "general",
+    "created_at": "2025-08-05T19:56:13.424873+00:00",
+    "description": "HealthBench",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HealthBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-05T19:56:13.424873+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d54"
+    },
+    "benchmark_id": "global-mmlu-lite",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.534515+00:00",
+    "description": "Global-MMLU-Lite benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Global-MMLU-Lite",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.534515+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d56"
+    },
+    "benchmark_id": "fleurs",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.943695+00:00",
+    "description": "FLEURS benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FLEURS",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.943695+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d58"
+    },
+    "benchmark_id": "mmlu-pro",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.408351+00:00",
+    "description": "MMLU-Pro benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU-Pro",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.408351+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d5a"
+    },
+    "benchmark_id": "frames",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.954436+00:00",
+    "description": "FRAMES benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FRAMES",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.954436+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d5c"
+    },
+    "benchmark_id": "vqa-rad",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.031802+00:00",
+    "description": "VQA-Rad benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "VQA-Rad",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.031802+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d5e"
+    },
+    "benchmark_id": "big-bench-extra-hard",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.279517+00:00",
+    "description": "BIG-Bench Extra Hard benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BIG-Bench Extra Hard",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.279517+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d60"
+    },
+    "benchmark_id": "video-mmew-sub",
+    "category": "vision",
+    "created_at": "2025-08-03T22:06:11.276310+00:00",
+    "description": "Video-MMEw sub benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "Video-MMEw sub",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.276310+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d62"
+    },
+    "benchmark_id": "translation-en\u2192set1-spbleu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.936891+00:00",
+    "description": "Translation en\u2192Set1 spBleu benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Translation en\u2192Set1 spBleu",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.936891+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d64"
+    },
+    "benchmark_id": "bigcodebench-full",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.508830+00:00",
+    "description": "BigCodeBench-Full benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BigCodeBench-Full",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.508830+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d66"
+    },
+    "benchmark_id": "tempcompass",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.748364+00:00",
+    "description": "TempCompass benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TempCompass",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.748364+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d68"
+    },
+    "benchmark_id": "amc-2022-23",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.992903+00:00",
+    "description": "AMC_2022_23 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AMC_2022_23",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.992903+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d6a"
+    },
+    "benchmark_id": "math-(cot)",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:14.366159+00:00",
+    "description": "MATH (CoT) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MATH (CoT)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.366159+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d6c"
+    },
+    "benchmark_id": "mmstar",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.660584+00:00",
+    "description": "MMStar benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMStar",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.660584+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d6e"
+    },
+    "benchmark_id": "summscreenfd",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.229354+00:00",
+    "description": "SummScreenFD benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SummScreenFD",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.229354+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d70"
+    },
+    "benchmark_id": "squality",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.712415+00:00",
+    "description": "SQuALITY benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SQuALITY",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.712415+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d72"
+    },
+    "benchmark_id": "humaneval-er",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:12.704744+00:00",
+    "description": "HumanEval-ER benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HumanEval-ER",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.704744+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d74"
+    },
+    "benchmark_id": "intergps",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.259321+00:00",
+    "description": "InterGPS benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "InterGPS",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.259321+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d76"
+    },
+    "benchmark_id": "browsecomp-long-128k",
+    "category": "long_context",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "BrowseComp long-context (128k) variant",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BrowseComp Long Context 128k",
+    "paper_link": null,
+    "parent_benchmark_id": "browsecomp",
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d78"
+    },
+    "benchmark_id": "arc-agi",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:15.187761+00:00",
+    "description": "ARC-AGI benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ARC-AGI",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.187761+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d7a"
+    },
+    "benchmark_id": "social-iqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.155825+00:00",
+    "description": "Social IQa benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Social IQa",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.155825+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d7c"
+    },
+    "benchmark_id": "infinitebench-en.mc",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.461508+00:00",
+    "description": "InfiniteBench/En.MC benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "InfiniteBench/En.MC",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.461508+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d7e"
+    },
+    "benchmark_id": "instruct-humaneval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.105488+00:00",
+    "description": "Instruct HumanEval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Instruct HumanEval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.105488+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d80"
+    },
+    "benchmark_id": "aider",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.566857+00:00",
+    "description": "Aider benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Aider",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.566857+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d82"
+    },
+    "benchmark_id": "tydiqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.470500+00:00",
+    "description": "TydiQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TydiQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.470500+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d84"
+    },
+    "benchmark_id": "bigcodebench",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.048433+00:00",
+    "description": "BigCodeBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BigCodeBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.048433+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d86"
+    },
+    "benchmark_id": "mmmu-(validation)",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:15.118197+00:00",
+    "description": "MMMU (validation) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MMMU (validation)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.118197+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d88"
+    },
+    "benchmark_id": "nmos",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.895373+00:00",
+    "description": "NMOS benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "NMOS",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.895373+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d8a"
+    },
+    "benchmark_id": "alpacaeval-2.0",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.038178+00:00",
+    "description": "AlpacaEval 2.0 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AlpacaEval 2.0",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.038178+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d8c"
+    },
+    "benchmark_id": "multilf",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.628191+00:00",
+    "description": "MultiLF benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MultiLF",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.628191+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d8e"
+    },
+    "benchmark_id": "nq",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.088246+00:00",
+    "description": "NQ benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "NQ",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.088246+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d90"
+    },
+    "benchmark_id": "mmmuval",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.575948+00:00",
+    "description": "MMMUval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MMMUval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.575948+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d92"
+    },
+    "benchmark_id": "ai2d",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.618926+00:00",
+    "description": "AI2D benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AI2D",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.618926+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d94"
+    },
+    "benchmark_id": "include",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.724387+00:00",
+    "description": "Include benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Include",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.724387+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d96"
+    },
+    "benchmark_id": "livecodebench-v6",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:11.785682+00:00",
+    "description": "LiveCodeBench v6 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveCodeBench v6",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.785682+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d98"
+    },
+    "benchmark_id": "charxiv-r",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.191553+00:00",
+    "description": "CharXiv-R benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CharXiv-R",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.191553+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d9a"
+    },
+    "benchmark_id": "omnibench-music",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.911093+00:00",
+    "description": "OmniBench Music benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OmniBench Music",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.911093+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d9c"
+    },
+    "benchmark_id": "xlsum-english",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.092213+00:00",
+    "description": "XLSum English benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "XLSum English",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.092213+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9d9e"
+    },
+    "benchmark_id": "android-control-high-em",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.792498+00:00",
+    "description": "Android Control High_EM benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Android Control High_EM",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.792498+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9da0"
+    },
+    "benchmark_id": "big-bench-hard",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.222809+00:00",
+    "description": "BIG-Bench Hard benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BIG-Bench Hard",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.222809+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9da2"
+    },
+    "benchmark_id": "global-mmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.747524+00:00",
+    "description": "Global-MMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Global-MMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.747524+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9da4"
+    },
+    "benchmark_id": "mrcr-1m-(pointwise)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.912789+00:00",
+    "description": "MRCR 1M (pointwise) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MRCR 1M (pointwise)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.912789+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9da6"
+    },
+    "benchmark_id": "tau-bench",
+    "category": "agents",
+    "created_at": "2025-07-19T19:56:15.219001+00:00",
+    "description": "Tau-bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Tau-bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.219001+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9da8"
+    },
+    "benchmark_id": "mgsm",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:13.669061+00:00",
+    "description": "MGSM benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MGSM",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.669061+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9daa"
+    },
+    "benchmark_id": "natural-questions",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.178778+00:00",
+    "description": "Natural Questions benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Natural Questions",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.178778+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dac"
+    },
+    "benchmark_id": "french-mmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.134340+00:00",
+    "description": "French MMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "French MMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.134340+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dae"
+    },
+    "benchmark_id": "musr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.708705+00:00",
+    "description": "MuSR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MuSR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.708705+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9db0"
+    },
+    "benchmark_id": "alignbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.542033+00:00",
+    "description": "AlignBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AlignBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.542033+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9db2"
+    },
+    "benchmark_id": "slakevqa",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.027646+00:00",
+    "description": "SlakeVQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "SlakeVQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.027646+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9db4"
+    },
+    "benchmark_id": "graphwalks-bfs->128k",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.295876+00:00",
+    "description": "Graphwalks BFS >128k benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Graphwalks BFS >128k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.295876+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9db6"
+    },
+    "benchmark_id": "piqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.133817+00:00",
+    "description": "PIQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PIQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.133817+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9db8"
+    },
+    "benchmark_id": "scicode",
+    "category": "code",
+    "created_at": "2025-07-28T00:00:00.000000+00:00",
+    "description": "SciCode benchmark for evaluating scientific coding capabilities",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SciCode",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-28T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dba"
+    },
+    "benchmark_id": "ocrbench-v2-(zh)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.944963+00:00",
+    "description": "OCRBench-V2 (zh) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OCRBench-V2 (zh)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.944963+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dbc"
+    },
+    "benchmark_id": "swe-bench-verified-(agentless)",
+    "category": "agents",
+    "created_at": "2025-07-19T19:56:12.328122+00:00",
+    "description": "SWE-bench Verified (Agentless) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-bench Verified (Agentless)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.328122+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dbe"
+    },
+    "benchmark_id": "olympiadbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.821916+00:00",
+    "description": "OlympiadBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OlympiadBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.821916+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dc0"
+    },
+    "benchmark_id": "math-500",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:12.027850+00:00",
+    "description": "MATH-500 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MATH-500",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.027850+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dc2"
+    },
+    "benchmark_id": "sat-math",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:15.414463+00:00",
+    "description": "SAT Math benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SAT Math",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.414463+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dc4"
+    },
+    "benchmark_id": "hallusion-bench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.689507+00:00",
+    "description": "Hallusion Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Hallusion Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.689507+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dc6"
+    },
+    "benchmark_id": "hmmt-2025",
+    "category": "math",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "Harvard-MIT Mathematics Tournament 2025 - A prestigious mathematics competition for high school students.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HMMT 2025",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dc8"
+    },
+    "benchmark_id": "cybersecurity-ctfs",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.387055+00:00",
+    "description": "Cybersecurity CTFs benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Cybersecurity CTFs",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.387055+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dca"
+    },
+    "benchmark_id": "aitz-em",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.785085+00:00",
+    "description": "AITZ_EM benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AITZ_EM",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.785085+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dcc"
+    },
+    "benchmark_id": "vqav2-(test)",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.430940+00:00",
+    "description": "VQAv2 (test) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "VQAv2 (test)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.430940+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dce"
+    },
+    "benchmark_id": "medxpertqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.040381+00:00",
+    "description": "MedXpertQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MedXpertQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.040381+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dd0"
+    },
+    "benchmark_id": "hle",
+    "category": "reasoning",
+    "created_at": "2025-07-28T00:00:00.000000+00:00",
+    "description": "HLE (Higher Level Evaluation) benchmark for evaluating complex reasoning capabilities. For GLM-4.5, only text-based questions were evaluated.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HLE",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-28T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dd2"
+    },
+    "benchmark_id": "functionalmath",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:13.987516+00:00",
+    "description": "FunctionalMATH benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "FunctionalMATH",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.987516+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dd4"
+    },
+    "benchmark_id": "videomme-w-sub.",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.723259+00:00",
+    "description": "VideoMME w sub. benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "VideoMME w sub.",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.723259+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dd6"
+    },
+    "benchmark_id": "wmt23",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.934606+00:00",
+    "description": "WMT23 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "WMT23",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.934606+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dd8"
+    },
+    "benchmark_id": "longvideobench",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.730349+00:00",
+    "description": "LongVideoBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "LongVideoBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.730349+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dda"
+    },
+    "benchmark_id": "pointgrounding",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.914897+00:00",
+    "description": "PointGrounding benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PointGrounding",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.914897+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9ddc"
+    },
+    "benchmark_id": "stem",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.559354+00:00",
+    "description": "STEM benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "STEM",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.559354+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dde"
+    },
+    "benchmark_id": "mmlu-prox",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.738623+00:00",
+    "description": "MMLU-ProX benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU-ProX",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.738623+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9de0"
+    },
+    "benchmark_id": "mt-bench",
+    "category": "roleplay",
+    "created_at": "2025-07-19T19:56:14.516415+00:00",
+    "description": "MT-Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MT-Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.516415+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9de2"
+    },
+    "benchmark_id": "mmmu",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:12.130105+00:00",
+    "description": "MMMU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MMMU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.130105+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9de4"
+    },
+    "benchmark_id": "livebench",
+    "category": "general",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "LiveBench is a dynamic benchmark updated regularly to prevent contamination and evaluate current capabilities.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "LiveBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9de6"
+    },
+    "benchmark_id": "govreport",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.218809+00:00",
+    "description": "GovReport benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GovReport",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.218809+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9de8"
+    },
+    "benchmark_id": "swe-bench-verified-(multiple-attempts)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.336780+00:00",
+    "description": "SWE-bench Verified (Multiple Attempts) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-bench Verified (Multiple Attempts)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.336780+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dea"
+    },
+    "benchmark_id": "groundui-1k",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.758595+00:00",
+    "description": "GroundUI-1K benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GroundUI-1K",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.758595+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dec"
+    },
+    "benchmark_id": "tau2-telecom",
+    "category": "agents",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "Tau2 Telecom benchmark for evaluating agent capabilities in telecom domain interactions.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Tau2 Telecom",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dee"
+    },
+    "benchmark_id": "collie",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.250323+00:00",
+    "description": "COLLIE benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "COLLIE",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.250323+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9df0"
+    },
+    "benchmark_id": "cc-ocr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.652986+00:00",
+    "description": "CC-OCR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CC-OCR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.652986+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9df2"
+    },
+    "benchmark_id": "videomme-w-o-sub.",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.715184+00:00",
+    "description": "VideoMME w/o sub. benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "video",
+    "multilingual": false,
+    "name": "VideoMME w/o sub.",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.715184+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9df4"
+    },
+    "benchmark_id": "openai-mrcr:-2-needle-1m",
+    "category": "long_context",
+    "created_at": "2025-07-19T19:56:15.280285+00:00",
+    "description": "OpenAI-MRCR: 2 needle 1M benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OpenAI-MRCR: 2 needle 1M",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.280285+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9df6"
+    },
+    "benchmark_id": "tau-bench-airline",
+    "category": "agents",
+    "created_at": "2025-07-19T19:56:14.993213+00:00",
+    "description": "TAU-bench Airline benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TAU-bench Airline",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.993213+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9df8"
+    },
+    "benchmark_id": "mathvision",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:14.695583+00:00",
+    "description": "MathVision benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MathVision",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.695583+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dfa"
+    },
+    "benchmark_id": "spider",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.156791+00:00",
+    "description": "Spider benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Spider",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.156791+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dfc"
+    },
+    "benchmark_id": "multilingual-mgsm-(cot)",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:14.402248+00:00",
+    "description": "Multilingual MGSM (CoT) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multilingual MGSM (CoT)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.402248+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9dfe"
+    },
+    "benchmark_id": "screenspot",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.766976+00:00",
+    "description": "ScreenSpot benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ScreenSpot",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.766976+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e00"
+    },
+    "benchmark_id": "muirbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.888428+00:00",
+    "description": "MuirBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MuirBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.888428+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e02"
+    },
+    "benchmark_id": "mvbench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.615534+00:00",
+    "description": "MVBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MVBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.615534+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e04"
+    },
+    "benchmark_id": "openai-mrcr:-2-needle-128k",
+    "category": "long_context",
+    "created_at": "2025-07-19T19:56:15.266878+00:00",
+    "description": "OpenAI-MRCR: 2 needle 128k benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OpenAI-MRCR: 2 needle 128k",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.266878+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e06"
+    },
+    "benchmark_id": "tau2-retail",
+    "category": "agents",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "Tau2 Retail benchmark for evaluating agent capabilities in retail domain interactions.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Tau2 Retail",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e08"
+    },
+    "benchmark_id": "commonsenseqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.129679+00:00",
+    "description": "CommonSenseQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CommonSenseQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.129679+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e0a"
+    },
+    "benchmark_id": "chartqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.783541+00:00",
+    "description": "ChartQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "ChartQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.783541+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e0c"
+    },
+    "benchmark_id": "osworld-screenshot-only",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.109647+00:00",
+    "description": "OSWorld Screenshot-only benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OSWorld Screenshot-only",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.109647+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e0e"
+    },
+    "benchmark_id": "visualwebbench",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:12.747583+00:00",
+    "description": "VisualWebBench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "VisualWebBench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.747583+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e10"
+    },
+    "benchmark_id": "osworld",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.935426+00:00",
+    "description": "OSWorld benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OSWorld",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.935426+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e12"
+    },
+    "benchmark_id": "cmmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.941108+00:00",
+    "description": "CMMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CMMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.941108+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e14"
+    },
+    "benchmark_id": "mmmu-pro",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.282252+00:00",
+    "description": "MMMU-Pro benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "MMMU-Pro",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.282252+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e16"
+    },
+    "benchmark_id": "gpqa-diamond",
+    "category": "reasoning",
+    "created_at": "2025-09-15T00:00:00.000000+00:00",
+    "description": "GPQA-Diamond is the diamond (hardest) subset of the Graduate-Level Google-Proof Q&A benchmark, testing expert-level reasoning in physics, biology, and chemistry",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GPQA-Diamond",
+    "paper_link": null,
+    "parent_benchmark_id": "gpqa",
+    "updated_at": "2025-09-15T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e18"
+    },
+    "benchmark_id": "arc-e",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:13.192662+00:00",
+    "description": "ARC-E benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "ARC-E",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.192662+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e1a"
+    },
+    "benchmark_id": "mmlu-(cot)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.330830+00:00",
+    "description": "MMLU (CoT) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU (CoT)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.330830+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e1c"
+    },
+    "benchmark_id": "aime25",
+    "category": "general",
+    "created_at": "2025-08-03T22:06:11.410207+00:00",
+    "description": "AIME25 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AIME25",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.410207+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e1e"
+    },
+    "benchmark_id": "arena-hard-v2",
+    "category": "general",
+    "created_at": "2025-08-03T22:06:11.411643+00:00",
+    "description": "Arena-Hard v2 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Arena-Hard v2",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-03T22:06:11.411643+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e20"
+    },
+    "benchmark_id": "multichallenge-(o3-mini-grader)",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.235758+00:00",
+    "description": "MultiChallenge (o3-mini grader) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MultiChallenge (o3-mini grader)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.235758+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e22"
+    },
+    "benchmark_id": "cruxeval-o",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.146592+00:00",
+    "description": "CruxEval-O benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CruxEval-O",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.146592+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e24"
+    },
+    "benchmark_id": "browsecomp-long-256k",
+    "category": "long_context",
+    "created_at": "2025-07-24T12:00:00.000000+00:00",
+    "description": "BrowseComp long-context (256k) variant",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BrowseComp Long Context 256k",
+    "paper_link": null,
+    "parent_benchmark_id": "browsecomp",
+    "updated_at": "2025-07-24T12:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e26"
+    },
+    "benchmark_id": "pathmcqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.036453+00:00",
+    "description": "PathMCQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PathMCQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.036453+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e28"
+    },
+    "benchmark_id": "drop",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.981569+00:00",
+    "description": "DROP benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "DROP",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.981569+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e2a"
+    },
+    "benchmark_id": "multipl-e-humaneval",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.345081+00:00",
+    "description": "Multipl-E HumanEval benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multipl-E HumanEval",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.345081+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e2c"
+    },
+    "benchmark_id": "covost2-en-zh",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.825578+00:00",
+    "description": "CoVoST2 en-zh benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CoVoST2 en-zh",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.825578+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e2e"
+    },
+    "benchmark_id": "mmlu-chat",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.095600+00:00",
+    "description": "MMLU Chat benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU Chat",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.095600+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e30"
+    },
+    "benchmark_id": "scale-multichallenge",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.205789+00:00",
+    "description": "Scale MultiChallenge benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Scale MultiChallenge",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.205789+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e32"
+    },
+    "benchmark_id": "infovqatest",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:14.583939+00:00",
+    "description": "InfoVQAtest benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "InfoVQAtest",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.583939+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e34"
+    },
+    "benchmark_id": "wild-bench",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.122112+00:00",
+    "description": "Wild Bench benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Wild Bench",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.122112+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e36"
+    },
+    "benchmark_id": "mrcr-1m",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.954336+00:00",
+    "description": "MRCR 1M benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MRCR 1M",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.954336+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e38"
+    },
+    "benchmark_id": "blink",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.326398+00:00",
+    "description": "BLINK benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BLINK",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.326398+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e3a"
+    },
+    "benchmark_id": "perceptiontest",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.708910+00:00",
+    "description": "PerceptionTest benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "PerceptionTest",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.708910+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e3c"
+    },
+    "benchmark_id": "cbnsl",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:12.590999+00:00",
+    "description": "CBNSL benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CBNSL",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:12.590999+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e3e"
+    },
+    "benchmark_id": "gsm-8k-(cot)",
+    "category": "math",
+    "created_at": "2025-07-19T19:56:14.360381+00:00",
+    "description": "GSM-8K (CoT) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GSM-8K (CoT)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.360381+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e40"
+    },
+    "benchmark_id": "simpleqa",
+    "category": "factuality",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "SimpleQA benchmark for evaluating factual accuracy on straightforward questions.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SimpleQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e42"
+    },
+    "benchmark_id": "ds-arena-code",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.057744+00:00",
+    "description": "DS-Arena-Code benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "DS-Arena-Code",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.057744+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e44"
+    },
+    "benchmark_id": "giantsteps-tempo",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.838584+00:00",
+    "description": "GiantSteps Tempo benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GiantSteps Tempo",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.838584+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e46"
+    },
+    "benchmark_id": "arena-hard",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.079874+00:00",
+    "description": "Arena Hard benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Arena Hard",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.079874+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e48"
+    },
+    "benchmark_id": "mmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.200416+00:00",
+    "description": "MMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.200416+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e4a"
+    },
+    "benchmark_id": "supergpqa",
+    "category": "reasoning",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "SuperGPQA benchmark for evaluating advanced graduate-level scientific reasoning.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SuperGPQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e4c"
+    },
+    "benchmark_id": "chexpert-cxr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.021015+00:00",
+    "description": "CheXpert CXR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CheXpert CXR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.021015+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e4e"
+    },
+    "benchmark_id": "aa-index",
+    "category": "reasoning",
+    "created_at": "2025-07-28T00:00:00.000000+00:00",
+    "description": "AA-Index (Estimated) is a composite benchmark index for evaluating model performance across multiple reasoning tasks.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "AA-Index",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-28T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e50"
+    },
+    "benchmark_id": "truthfulqa",
+    "category": "factuality",
+    "created_at": "2025-07-19T19:56:11.339268+00:00",
+    "description": "TruthfulQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "TruthfulQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.339268+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e52"
+    },
+    "benchmark_id": "multilingual-mmlu",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.139086+00:00",
+    "description": "Multilingual MMLU benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Multilingual MMLU",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.139086+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e54"
+    },
+    "benchmark_id": "swe-bench-verified",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.812805+00:00",
+    "description": "SWE-Bench Verified benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "SWE-Bench Verified",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.812805+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e56"
+    },
+    "benchmark_id": "gpqa-physics",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.400663+00:00",
+    "description": "GPQA Physics benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GPQA Physics",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.400663+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e58"
+    },
+    "benchmark_id": "vcr-en-easy",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.592175+00:00",
+    "description": "VCR_en_easy benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "VCR_en_easy",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.592175+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e5a"
+    },
+    "benchmark_id": "gpqa-biology",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.391187+00:00",
+    "description": "GPQA Biology benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "GPQA Biology",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.391187+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e5c"
+    },
+    "benchmark_id": "healthbench-hard",
+    "category": "general",
+    "created_at": "2025-08-05T19:56:13.424873+00:00",
+    "description": "HealthBench Hard",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HealthBench Hard",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-08-05T19:56:13.424873+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e5e"
+    },
+    "benchmark_id": "hellaswag",
+    "category": "reasoning",
+    "created_at": "2025-07-19T19:56:11.145630+00:00",
+    "description": "HellaSwag benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "HellaSwag",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.145630+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e60"
+    },
+    "benchmark_id": "cruxeval-input-cot",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.551746+00:00",
+    "description": "CRUXEval-Input-CoT benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CRUXEval-Input-CoT",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.551746+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e62"
+    },
+    "benchmark_id": "common-voice-15",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.830793+00:00",
+    "description": "Common Voice 15 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 100.0,
+    "modality": "audio",
+    "multilingual": false,
+    "name": "Common Voice 15",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.830793+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e64"
+    },
+    "benchmark_id": "aider-polyglot",
+    "category": "code",
+    "created_at": "2025-09-05T00:00:00.000000+00:00",
+    "description": "Aider-Polyglot benchmark for evaluating code editing and generation across multiple programming languages.",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Aider-Polyglot",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-09-05T00:00:00.000000+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e66"
+    },
+    "benchmark_id": "android-control-low-em",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.800337+00:00",
+    "description": "Android Control Low_EM benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Android Control Low_EM",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.800337+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e68"
+    },
+    "benchmark_id": "osworld-extended",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.113488+00:00",
+    "description": "OSWorld Extended benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "OSWorld Extended",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.113488+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e6a"
+    },
+    "benchmark_id": "qmsum",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.223595+00:00",
+    "description": "QMSum benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "QMSum",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.223595+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e6c"
+    },
+    "benchmark_id": "mbpp-evalplus-(base)",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.421722+00:00",
+    "description": "MBPP EvalPlus (base) benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP EvalPlus (base)",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.421722+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e6e"
+    },
+    "benchmark_id": "mbpp-pass@1",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:15.138778+00:00",
+    "description": "MBPP pass@1 benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MBPP pass@1",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.138778+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e70"
+    },
+    "benchmark_id": "uniform-bar-exam",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:15.404860+00:00",
+    "description": "Uniform Bar Exam benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "Uniform Bar Exam",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:15.404860+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e72"
+    },
+    "benchmark_id": "bigcodebench-hard",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.512684+00:00",
+    "description": "BigCodeBench-Hard benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "BigCodeBench-Hard",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.512684+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e74"
+    },
+    "benchmark_id": "codeforces",
+    "category": "code",
+    "created_at": "2025-07-19T19:56:14.624663+00:00",
+    "description": "CodeForces benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 3000.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CodeForces",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.624663+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e76"
+    },
+    "benchmark_id": "infovqa",
+    "category": "vision",
+    "created_at": "2025-07-19T19:56:13.601294+00:00",
+    "description": "InfoVQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "multimodal",
+    "multilingual": false,
+    "name": "InfoVQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.601294+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e78"
+    },
+    "benchmark_id": "infographicsqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.417669+00:00",
+    "description": "InfographicsQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "InfographicsQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.417669+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e7a"
+    },
+    "benchmark_id": "mmau-sound",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:14.859503+00:00",
+    "description": "MMAU Sound benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MMAU Sound",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:14.859503+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e7c"
+    },
+    "benchmark_id": "csimpleqa",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:11.931358+00:00",
+    "description": "CSimpleQA benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "CSimpleQA",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:11.931358+00:00",
+    "verified": false
+  },
+  {
+    "_id": {
+      "$oid": "692a9080a6d7100bb5da9e7e"
+    },
+    "benchmark_id": "mrcr",
+    "category": "general",
+    "created_at": "2025-07-19T19:56:13.887445+00:00",
+    "description": "MRCR benchmark",
+    "implementation_link": null,
+    "language": "en",
+    "max_score": 1.0,
+    "modality": "text",
+    "multilingual": false,
+    "name": "MRCR",
+    "paper_link": null,
+    "parent_benchmark_id": null,
+    "updated_at": "2025-07-19T19:56:13.887445+00:00",
+    "verified": false
+  }
+]
