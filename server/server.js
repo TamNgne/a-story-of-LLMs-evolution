@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // Load .env from the same folder as server.js
 const envPath = path.join(__dirname, '.env'); 
-console.log('DOTENV is looking for .env at:', envPath); // <-- WATCH THIS OUTPUT!
+console.log('DOTENV is looking for .env at:', envPath);
 
 dotenv.config({ path: envPath });
 
@@ -50,7 +50,7 @@ mongoose
     });
   })
   .catch((error) => {
-    console.error('❌ MongoDB connection error:', error.message);
+    console.error('MongoDB connection error:', error.message);
     process.exit(1);
   });
 

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const comparisionChartSchema = new mongoose.Schema(
+const LLMOverallInfoSchema = new mongoose.Schema(
   {
     // Thông tin nhận diện model
     Model: {
@@ -78,6 +78,6 @@ const comparisionChartSchema = new mongoose.Schema(
 );
 
 // Model name: ComparisonChart, collection: "LLM overall info"
-const ComparisonChartModel = mongoose.model('ComparisonChart', comparisionChartSchema);
+const LLMOverallInfoModel = mongoose.model('LLMOverallInfo', LLMOverallInfoSchema);
 
-export default ComparisonChartModel;
+export default LLMOverallInfoModel;

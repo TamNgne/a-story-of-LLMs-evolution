@@ -1,16 +1,16 @@
 import express from 'express';
 import LlmModel from '../models/LlmModel.js';
 import BenchmarkModel from '../models/Benchmark.js';
-import ComparisonChartModel from '../models/ConparisionChart.js';
 import PercentageModel from '../models/Percentage.js';
 import PerformanceModel from '../models/LlmPerformance.js';
+import LLMOverallInfoModel from '../models/LLMOverallInfo.js';
 
 const router = express.Router();
 
 // GET /api/llms - Fetch all LLM documents
 router.get('/llms', async (req, res) => {
   try {
-    const llms = await LlmModel.find({}).sort({ released_date: 1 });
+    const llms = await LlmModel.find({}).sort({ release_date: 1 });
     res.json({
       success: true,
       count: llms.length,
@@ -91,30 +91,7 @@ router.get('/percentage', async (req, res) => {
 // GET /api/comparison - Fetch comparison data
 router.get('/comparison', async (req, res) => {
   try {
-    const docs = await ComparisonChartModel.find({}).lean();
-
-    const data = docs.map((d) => ({
-      model: d.Model,
-      provider: d.Provider,
-      contextWindow: d['Context Window'],
-      openSource: d['Open-Source'] === 1,
-
-      // Các metric chính cho scatter plot:
-      performance: d['Quality Rating'],
-      cost: d['Price / Million Tokens'],
-      speed: d['Speed (tokens/sec)'],
-      latency: d['Latency (sec)'],
-
-      // Metric phụ
-      benchmarkMmlu: d['Benchmark (MMLU)'],
-      benchmarkArena: d['Benchmark (Chatbot Arena)'],
-      energyEfficiency: d['Energy Efficiency'],
-      qualityRating: d['Quality Rating'],
-      speedRating: d['Speed Rating'],
-      priceRating: d['Price Rating'],
-      trainingDatasetSize: d['Training Dataset Size'],
-      computePower: d['Compute Power'],
-    }));
+    const data = await LLMOverallInfoModel.find({});
 
     console.log(`Successfully processed ${data.length} comparison records`);
     res.json({
@@ -132,6 +109,5 @@ router.get('/comparison', async (req, res) => {
     });
   }
 });
-
 
 export default router;
