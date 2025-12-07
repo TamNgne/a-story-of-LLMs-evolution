@@ -73,11 +73,11 @@ const comparisionChartSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-    collection: 'Comparison Chart', // Specify the collection name
+    collection: 'LLM overall info', // Specify the collection name
   }
 );
 
-// Model name: ComparisonChart, collection: "Comparison Chart"
+// Model name: ComparisonChart, collection: "LLM overall info"
 const ComparisonChartModel = mongoose.model('ComparisonChart', comparisionChartSchema);
 
 export default ComparisonChartModel;

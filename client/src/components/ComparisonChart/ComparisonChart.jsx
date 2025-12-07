@@ -2,9 +2,8 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from 'd3';
 import styles from './ComparisonChart.module.css';
-import { useComparisonData } from '../../hooks/useData';
 
-const ComparisonChart = () => {
+const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const d3Container = useRef(null);
   const tooltipRef = useRef(null);
 
@@ -17,7 +16,47 @@ const ComparisonChart = () => {
   const [pendingY, setPendingY] = useState('performance');
   const [pendingProvider, setPendingProvider] = useState('all');
 
-  const { data: comparisonData, loading, error } = useComparisonData();
+  // State cho API data
+  const [comparisonData, setComparisonData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Fetch data từ API
+  useEffect(() => {
+    const fetchComparisonData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        // Fetch data từ server API endpoint
+        const response = await fetch(`${apiBaseUrl}/comparison`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const json = await response.json();
+        
+        // Handle both array and object response formats
+        const data = Array.isArray(json) ? json : (json.data || json);
+        
+        if (Array.isArray(data) && data.length > 0) {
+          setComparisonData(data);
+        } else if (json.success && json.data) {
+          setComparisonData(json.data);
+        } else {
+          throw new Error('Invalid response format or empty data');
+        }
+      } catch (err) {
+        console.error("Error fetching comparison data:", err);
+        setError(err.message || 'Failed to fetch comparison data');
+        setComparisonData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchComparisonData();
+  }, [apiBaseUrl]);
 
   // Danh sách
   const metrics = [
@@ -56,9 +95,11 @@ const ComparisonChart = () => {
     return comparisonData.filter((d) => d.provider === selectedProvider);
   }, [comparisonData, selectedProvider]);
 
-  // Vẽ chart
+  // Vẽ chart - chỉ sử dụng dữ liệu từ API
   useEffect(() => {
-    if (!filteredData || filteredData.length === 0 || !d3Container.current) return;
+    // Chỉ render chart khi có dữ liệu thực từ API
+    if (!filteredData || filteredData.length === 0 || !d3Container.current || loading) return;
+    if (error) return; // Không render nếu có lỗi
 
     // Xoá chart cũ
     d3.select(d3Container.current).selectAll('*').remove();
@@ -74,8 +115,16 @@ const ComparisonChart = () => {
       .append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    const xExtent = d3.extent(filteredData, (d) => d[xAxis]);
-    const yExtent = d3.extent(filteredData, (d) => d[yAxis]);
+    // Lọc dữ liệu hợp lệ (loại bỏ null/undefined)
+    const validData = filteredData.filter((d) => 
+      d[xAxis] != null && d[yAxis] != null && 
+      !isNaN(d[xAxis]) && !isNaN(d[yAxis])
+    );
+
+    if (validData.length === 0) return;
+
+    const xExtent = d3.extent(validData, (d) => d[xAxis]);
+    const yExtent = d3.extent(validData, (d) => d[yAxis]);
 
     const x = d3
       .scaleLinear()
@@ -131,11 +180,11 @@ const ComparisonChart = () => {
 
     const tooltip = d3.select(tooltipRef.current);
 
-    // Vẽ các chấm
+    // Vẽ các chấm - chỉ sử dụng dữ liệu hợp lệ từ API
     svg
       .append('g')
       .selectAll('circle')
-      .data(filteredData)
+      .data(validData)
       .join('circle')
       .attr('cx', (d) => x(d[xAxis]))
       .attr('cy', (d) => y(d[yAxis]))
@@ -165,7 +214,7 @@ const ComparisonChart = () => {
         d3.select(event.currentTarget).style('fill', '#999').style('opacity', 0.8);
         tooltip.style('opacity', 0);
       });
-  }, [filteredData, xAxis, yAxis]);
+  }, [filteredData, xAxis, yAxis, loading, error]);
 
   return (
     <div className={styles.chartWrapper}>
@@ -229,12 +278,25 @@ const ComparisonChart = () => {
         </div>
       </div>
 
-      {loading && <div className={styles.status}>Loading comparison data...</div>}
-      {error && <div className={styles.error}>Failed to load data: {error}</div>}
+      {loading && <div className={styles.status}>Loading comparison data from API...</div>}
+      {error && (
+        <div className={styles.error}>
+          Failed to load data from API: {error}
+          <br />
+          <small>Please ensure the server is running and MongoDB is connected.</small>
+        </div>
+      )}
+      {!loading && !error && (!comparisonData || comparisonData.length === 0) && (
+        <div className={styles.status}>No data available from API.</div>
+      )}
 
       <div className={styles.chartContainer}>
-        <svg ref={d3Container} />
-        <div className={styles.tooltip} ref={tooltipRef} />
+        {!loading && !error && comparisonData && comparisonData.length > 0 && (
+          <>
+            <svg ref={d3Container} />
+            <div className={styles.tooltip} ref={tooltipRef} />
+          </>
+        )}
       </div>
     </div>
   );
