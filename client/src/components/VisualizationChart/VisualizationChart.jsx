@@ -1,77 +1,43 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from 'd3';
 import styles from './VisualizationChart.module.css';
+import MultiSelectDropdown from '../BenchmarkDashboard/MultiSelectDropdown';
 
 const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const d3Container = useRef(null);
   const [data, setData] = useState([]);
-  const [selectedOrganization, setSelectedOrganization] = useState('All');
-  const [selectedProvider, setSelectedProvider] = useState('All');
+
+  // Multi-select state (empty array = All)
+  const [selectedOrganizations, setSelectedOrganizations] = useState([]);
+  const [selectedProviders, setSelectedProviders] = useState([]);
 
   const filteredData = useMemo(() => {
     return data.filter(d => {
-      const matchOrg = selectedOrganization === 'All' || d.organization_id === selectedOrganization;
-      const matchProv = selectedProvider === 'All' || d.provider_id === selectedProvider;
+      const matchOrg = selectedOrganizations.length === 0 || selectedOrganizations.includes(d.organization_id);
+      const matchProv = selectedProviders.length === 0 || selectedProviders.includes(d.provider_id);
       return matchOrg && matchProv;
     });
-  }, [data, selectedOrganization, selectedProvider]);
-
-  // Extract unique organizations and providers for filters
-  // const organizations = useMemo(() => {
-  //   const orgs = new Set(data.map(d => d.organization_id).filter(Boolean));
-  //   return ['All', ...Array.from(orgs).sort()];
-  // }, [data]);
-
-  // const providers = useMemo(() => {
-  //   const provs = new Set(data.map(d => d.provider_id).filter(Boolean));
-  //   return ['All', ...Array.from(provs).sort()];
-  // }, [data]);
-
+  }, [data, selectedOrganizations, selectedProviders]);
 
   const availableProviders = useMemo(() => {
-    if (selectedOrganization === 'All') {
-      return [...new Set(data.map(d => d.provider_id).filter(Boolean))];
+    // If no orgs selected, show all providers.
+    if (selectedOrganizations.length === 0) {
+      return [...new Set(data.map(d => d.provider_id).filter(Boolean))].sort();
     }
-    const filteredByOrg = data.filter(d => d.organization_id === selectedOrganization);
-    return [...new Set(filteredByOrg.map(d => d.provider_id).filter(Boolean))]; 
-  }, [data, selectedOrganization]);
+    // Else show providers present in selected orgs.
+    const filteredByOrg = data.filter(d => selectedOrganizations.includes(d.organization_id));
+    return [...new Set(filteredByOrg.map(d => d.provider_id).filter(Boolean))].sort();
+  }, [data, selectedOrganizations]);
 
   const availableOrganizations = useMemo(() => {
-    if (selectedProvider === 'All') {
-      return [...new Set(data.map(d => d.organization_id).filter(Boolean))];
+    // If no providers selected, show all orgs.
+    if (selectedProviders.length === 0) {
+      return [...new Set(data.map(d => d.organization_id).filter(Boolean))].sort();
     }
-    const filteredByProv = data.filter(d => d.provider_id === selectedProvider);
-    return [...new Set(filteredByProv.map(d => d.organization_id).filter(Boolean))]; 
-  }, [data, selectedProvider]);
-
-  // const sotaData = useMemo(() => {
-  //   if (!filteredData || filteredData.length === 0) return [];
-
-  //   const sortedData = [...filteredData].sort((a, b) => a.releaseDate - b.releaseDate);
-  //   const trend = [];
-  //   let currentMaxScore = -1;
-
-  //   sortedData.forEach(d => {
-  //     if (d.performanceScore >= currentMaxScore) {
-  //       currentMaxScore = d.performanceScore;
-  //       trend.push(d);
-  //     }
-  //   });
-
-  //   return trend;
-  // }, [filteredData]);
-
-  useEffect(() => {
-    if (selectedOrganization !== 'All' && !availableOrganizations.includes(selectedOrganization)) {
-      setSelectedOrganization('All');
-    }
-  }, [availableOrganizations, selectedOrganization]);
-
-  useEffect(() => {
-    if (selectedProvider !== 'All' && !availableProviders.includes(selectedProvider)) {
-      setSelectedProvider('All');
-    }
-  }, [availableProviders, selectedProvider]);
+    // Else show orgs present in selected providers.
+    const filteredByProv = data.filter(d => selectedProviders.includes(d.provider_id));
+    return [...new Set(filteredByProv.map(d => d.organization_id).filter(Boolean))].sort();
+  }, [data, selectedProviders]);
 
   useEffect(() => {
     const fetchLLMData = async () => {
@@ -86,7 +52,7 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             releaseDate: new Date(d.release_date),
             performanceScore: parseFloat(d.avg_benchmark_score),
             modelName: d.name,
-           
+
             organization: d.organization_id || 'Unknown',
             provider: d.provider_id || 'Unknown',
           }));
@@ -146,23 +112,6 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         .call(d3.axisLeft(y))
         .attr('class', styles.axis);
 
-      // // --- TREND LINE ---
-      // const line = d3.line()
-      //   .x(d => x(d.releaseDate))
-      //   .y(d => y(d.performanceScore))
-
-      // svg.append('path')
-      //   .datum(sotaData)
-      //   .attr('class', styles.trendLine)
-      //   .attr('fill', 'none')
-      //   .attr('stroke', '#ff6b6b')
-      //   .attr('stroke-width', 2.5)
-      //   .attr('d', line);
-
-      // const isOnTrendLine = (model) => {
-      //   return sotaData.some(s => s.modelName === model.modelName && s.releaseDate.getTime() === model.releaseDate.getTime());
-      // };
-
       // --- Tooltip ---
       const tooltipDiv = d3.select('body').append('div')
         .attr('class', `llm-tooltip ${styles.tooltip}`)
@@ -202,8 +151,6 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         });
 
       // --- Labels ---
-      // const modelsOnTrendLine = filteredData.filter(isOnTrendLine);
-      // const labels = svg.selectAll('.modelLabel').data(modelsOnTrendLine);
       const labels = svg.selectAll('.modelLabel').data(filteredData, d => d.modelName);
 
       labels.enter()
@@ -225,7 +172,6 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       const formatScrubberDate = d3.timeFormat('%Y-%m');
       const maxDateVal = d3.max(filteredData, d => d.releaseDate);
       const startingX = maxDateVal ? x(maxDateVal) : width;
-      const timeWindow = 30 * 24 * 60 * 60 * 1000;
 
       const scrubber = svg.append('g')
         .attr('class', styles.scrubber)
@@ -257,13 +203,13 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         const isSameMonthYear = (dDate, cDate) => {
           const d1 = new Date(dDate);
           const d2 = new Date(cDate);
-          return d1.getMonth() === d2.getMonth() && 
-                 d1.getFullYear() === d2.getFullYear();
+          return d1.getMonth() === d2.getMonth() &&
+            d1.getFullYear() === d2.getFullYear();
         };
 
         dots.attr('opacity', d => (isSameMonthYear(d.releaseDate, currentDate) ? 1.0 : 0.2));
 
-        svg.selectAll(`.${styles.modelLabel ||'modelLabel'}`)
+        svg.selectAll(`.${styles.modelLabel || 'modelLabel'}`)
           .attr('opacity', d => (isSameMonthYear(d.releaseDate, currentDate) ? 1.0 : 0))
           .raise();
       };
@@ -271,7 +217,6 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       const dragged = (event) => {
         const constrainedX = Math.max(0, Math.min(width, event.x));
         const currentDate = x.invert(constrainedX);
-        
 
         scrubber.attr('transform', `translate(${constrainedX}, 0)`);
         scrubberText.text(formatScrubberDate(currentDate));
@@ -293,32 +238,22 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
     <div className={styles.chartContainer}>
       <div className={styles.filterContainer}>
         <div className={styles.filterGroup}>
-          <label htmlFor="org-filter">Organization:</label>
-          <select
-            id="org-filter"
-            value={selectedOrganization}
-            onChange={(e) => setSelectedOrganization(e.target.value)}
-            className={styles.filterSelect}
-          >
-            <option value="All">All</option>
-            {availableOrganizations.map(org => (
-              <option key={org} value={org}>{org}</option>
-            ))}
-          </select>
+          <label><strong>Organization:</strong> </label>
+          <MultiSelectDropdown
+            options={availableOrganizations}
+            selected={selectedOrganizations}
+            onChange={setSelectedOrganizations}
+            placeholder="Select Organizations..."
+          />
         </div>
         <div className={styles.filterGroup}>
-          <label htmlFor="prov-filter">Provider:</label>
-          <select
-            id="prov-filter"
-            value={selectedProvider}
-            onChange={(e) => setSelectedProvider(e.target.value)}
-            className={styles.filterSelect}
-          >
-            <option value="All">All</option>
-            {availableProviders.map(prov => (
-              <option key={prov} value={prov}>{prov}</option>
-            ))}
-          </select>
+          <label><strong>Provider:</strong> </label>
+          <MultiSelectDropdown
+            options={availableProviders}
+            selected={selectedProviders}
+            onChange={setSelectedProviders}
+            placeholder="Select Providers..."
+          />
         </div>
       </div>
       <div className={styles.chartWrapper}>

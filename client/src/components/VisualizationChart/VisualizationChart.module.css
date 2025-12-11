@@ -13,11 +13,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: '#1e1e1e';
-  /* Match landing page */
+  background-color: #FFFFFF;
   border-radius: 8px;
-  border: 1px solid #333;
+  border: 1px solid #E5E7EB;
   padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .filterContainer {
@@ -33,15 +33,16 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #f0f0f0;
+  color: #374151;
+  /* Gray-700 */
   font-family: 'Kelvinch', sans-serif;
   font-size: 14px;
 }
 
 .filterSelect {
-  background-color: #2a2a2a;
-  color: #f0f0f0;
-  border: 1px solid #555;
+  background-color: #FFFFFF;
+  color: #111827;
+  border: 1px solid #D1D5DB;
   border-radius: 4px;
   padding: 5px 10px;
   font-family: 'Kelvinch', sans-serif;
@@ -51,31 +52,30 @@
 }
 
 .filterSelect:focus {
-  border-color: #61dafb;
+  border-color: #3B82F6;
 }
 
 .d3Svg {
   width: 100%;
   height: auto;
   overflow: visible;
-  /* Ensure rotated tick labels aren't clipped */
 }
 
 .axis path,
 .axis line {
-  stroke: #555;
+  stroke: #E5E7EB;
 }
 
 .axis text {
-  fill: #f0f0f0;
+  fill: #4B5563;
+  /* Gray-600 */
   font-family: 'Kelvinch', sans-serif;
   font-size: 12px;
 }
 
 .modelDot {
-  fill: #4e89ae;
-  /* A nice blue color for dots */
-  stroke: #f0f0f0;
+  fill: #3B82F6;
+  stroke: #FFFFFF;
   stroke-width: 1.5px;
   transition: opacity 0.3s ease;
   cursor: pointer;
@@ -83,19 +83,19 @@
 
 .modelDot:hover {
   stroke-width: 2.5px;
-  stroke: #61dafb;
+  stroke: #2563EB;
 }
 
 .trendLine {
   fill: none;
-  stroke: #9b8adb;
-  /* Light purple */
+  stroke: #8B5CF6;
+  /* Violet */
   stroke-width: 2.5px;
   opacity: 0.7;
 }
 
 .modelLabel {
-  fill: #9b8adb;
+  fill: #111827;
   font-family: 'Kelvinch', sans-serif;
   font-size: 11px;
   font-weight: bold;
@@ -104,26 +104,26 @@
 
 /* Scrubber styles */
 .scrubberLine {
-  stroke: #00bcd4;
+  stroke: #06B6D4;
   stroke-width: 1px;
   stroke-dasharray: 3 3;
 }
 
 .scrubberHandle {
-  fill: #00bcd4;
-  stroke: #ffffff;
+  fill: #06B6D4;
+  stroke: #FFFFFF;
   stroke-width: 2px;
 }
 
 .tooltip {
-  background-color: #2a2a2a;
-  border: 1px solid #555;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
   border-radius: 6px;
   padding: 10px 12px;
   font-family: 'Kelvinch', sans-serif;
   font-size: 12px;
-  color: #f0f0f0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: #111827;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   pointer-events: none;
   line-height: 1.6;
