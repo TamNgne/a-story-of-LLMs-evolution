@@ -2,15 +2,16 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at top center, #1a1a1a 0%, #0a0a0a 100%);
+  background: #F8FAFC;
+  /* Consistently matte */
 }
 
 .App-header {
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   padding: 16px 32px;
-  color: white;
-  border-bottom: 1px solid #333;
+  color: #1A202C;
+  border-bottom: 1px solid #E2E8F0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -20,7 +21,7 @@
 
 .App-header nav a {
   padding: 8px 16px;
-  color: #a0a0a0;
+  color: #4A5568;
   border-radius: 6px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -28,13 +29,13 @@
 }
 
 .App-header nav a:hover {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.05);
+  color: #1A202C;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .App-header nav a.active {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #1A202C;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -46,19 +47,19 @@ main {
 }
 
 .chart-container {
-  background: #141414;
+  background: #FFFFFF;
   border-radius: 12px;
   padding: 24px;
-  border: 1px solid #2c2c2c;
+  border: 1px solid #E2E8F0;
   margin-bottom: 32px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .chart-container h2 {
   margin-bottom: 24px;
-  color: #fff;
+  color: #1A202C;
   font-size: 1.25rem;
-  border-bottom: 1px solid #2c2c2c;
+  border-bottom: 1px solid #E2E8F0;
   padding-bottom: 12px;
 }
 

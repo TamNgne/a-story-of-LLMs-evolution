@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import * as d3 from 'd3';
 import styles from './BenchmarkDashboard.module.css';
-import { use } from 'react';
-
+import MultiSelectDropdown from './MultiSelectDropdown'; // Import custom component
 
 const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const d3Container = useRef(null);
 
-  const [rawData, setRawData] = useState([null]);
+  const [rawData, setRawData] = useState(null);
 
   const [description, setDescription] = useState('Hover over a model (outer ring) to see the score.');
 
@@ -53,13 +52,13 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
           }
         });
 
-   
+
         setAvailableOrgs(Array.from(orgSet).sort());
         setAvailableYears(Array.from(yearSet).sort((a, b) => b - a)); // Descending years
 
         const categories = {};
         benchmark.forEach(b => {
-          
+
           if (!categories[b.category]) categories[b.category] = [];
 
           const models = performance
@@ -69,11 +68,11 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
               return {
                 name: p.model_id,
                 value: p.normalized_score,
-                ...details, 
+                ...details,
                 description: details.description || 'N/A',
-                scorecard_blog_link: details.source_scorecard_blog_link ||'N/A',
-                weights_link: details.source_weights_link ||'N/A',
-                api_ref: details.source_api_ref ||'N/A',
+                scorecard_blog_link: details.source_scorecard_blog_link || 'N/A',
+                weights_link: details.source_weights_link || 'N/A',
+                api_ref: details.source_api_ref || 'N/A',
                 release_year: details.release_date ? new Date(details.release_date).getFullYear() : 'N/A'
               };
             });
@@ -99,7 +98,7 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       } catch (error) {
         console.error("Error fetching data:", error);
       }
-    };  
+    };
 
     fetchData();
   }, [apiBaseUrl]);
@@ -128,25 +127,25 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
           }
           return { ...child, children: validModels };
         }
-        return processChildren(child);  
+        return processChildren(child);
       });
       const nonEmptyChildren = filteredChildren.filter(c => c.children && c.children.length > 0);
-      return { ...node, children: nonEmptyChildren};
+      return { ...node, children: nonEmptyChildren };
     };
 
-    return processChildren(rawData); 
-  }, [rawData, filters]); 
+    return processChildren(rawData);
+  }, [rawData, filters]);
 
   const categoryColor = useMemo(
-    () => d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, 12)),
+    () => d3.scaleOrdinal(d3.schemeSet3),
     []
   );
 
   const modelColor = useMemo(
     () =>
-    d3.scaleLinear()
-      .domain([0, 100])
-      .range(["#b3c6ff", "#001f7f"]),
+      d3.scaleLinear()
+        .domain([0, 100])
+        .range(["#E2E8F0", "#63B3ED"]), // Light gray to Light Blue
     []
   );
   //render sunburst chart
@@ -183,22 +182,30 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
     // Create the SVG container.
     const svg = d3.select(d3Container.current)
       .attr("viewBox", [-width / 2, -height / 2, width, width])
-      .style("font", "18px sans-serif");
+      .style("font", "18px 'Inter', sans-serif"); // Use Inter
 
     // Append the arcs.
     const path = svg.append("g")
       .selectAll("path")
       .data(root.descendants().slice(1))
       .join("path")
-      .attr("fill", d => { 
-          if (!d.children) {
-              return modelColor(d.value || 0);
-          }
-          // If it is Category/Benchmark, use Rainbow scale based on top parent
-          while (d.depth > 1) d = d.parent; 
-          return categoryColor(d.data.name);
+      .attr("fill", d => {
+        if (!d.children) {
+          // Gradient Coloring: Inherit Hue from Parent Category, Saturation based on Score
+          let ancestor = d;
+          while (ancestor.depth > 1) ancestor = ancestor.parent;
+          const parentColor = categoryColor(ancestor.data.name);
+
+          // Interpolate between white/light-gray and parent color based on normalized score (0-100)
+          const normalizedScore = Math.min(Math.max(d.value / 100, 0), 1);
+          return d3.interpolateRgb("#F1F5F9", parentColor)(normalizedScore);
+        }
+        // If it is Category/Benchmark, use Rainbow scale based on top parent
+        let ancestor = d;
+        while (ancestor.depth > 1) ancestor = ancestor.parent;
+        return categoryColor(ancestor.data.name);
       })
-      .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
+      .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 1.0) : 0) // Models (no children) should be opaque (1.0) for better color visibility
       .attr("pointer-events", d => arcVisible(d.current) ? "auto" : "none")
       .attr("d", d => arc(d.current));
 
@@ -218,7 +225,7 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .selectAll("text")
       .data(root.descendants().slice(1))
       .join("text")
-      .attr("fill", "white")
+      .attr("fill", "#1E293B") // Dark Slate Text (High Contrast)
       .attr("dy", "0.35em")
       .attr("fill-opacity", d => +labelVisible(d.current))
       .attr("transform", d => labelTransform(d.current))
@@ -236,65 +243,36 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       const isModel = !d.children;
       const isBenchmark = d.depth === 2;
       const isCategory = d.depth === 1;
-      
+
       if (isModel) {
-          const m = d.data;
-          setDescription(`
+        const m = d.data;
+        // Cleaned Description: No links, just key info
+        setDescription(`
                           <strong>Model:</strong> ${m.name}<br/>
                           <strong>Release Date:</strong> ${formatDate(new Date(m.release_date)) || "N/A"}<br/>
                           <strong>Organization:</strong> ${m.organization || "N/A"}<br/>
                           <strong>Provider:</strong> ${m.provider || "N/A"}<br/>
                           <strong>Description:</strong><br/>${m.description || "No description"}<br/><br/>
                           <strong>Score:</strong>
-                          <span style="font-weight:bold; font-size:1.2em">${m.value}</span><br/>
-                          <a href="${m.scorecard_blog_link || "#"}" target="_blank">Scorecard</a> •
-                          <a href="${m.weights_link || "#"}" target="_blank">Weights</a>
-                          <a href="${m.api_ref}" target="_blank">API Reference</a> 
+                          <span style="font-weight:bold; font-size:1.2em; color: #1D4ED8;">${m.value}</span>
                         `);
 
       } else if (isBenchmark) {
-          const b = d.data;
-          setDescription(`
+        const b = d.data;
+        setDescription(`
           <strong>Benchmark:</strong> ${b.name}<br/>
           <strong>Description:</strong> ${b.description}<br/>
           <strong>Max Score:</strong> ${b.max_score || "N/A"}<br/>
           <strong>Modality:</strong> ${b.modality || "General"}
 `     );
       } else if (isCategory) {
-          setDescription(`
+        setDescription(`
           <strong>Category:</strong> ${d.data.name}<br/>
-          Click to zoom in.
+          Click to zoom in. (Click the center of the circle to zoom out)
       `);
       }
     });
 
-    // ("mouseover", (event, d) => {
-
-    //   const isModel = !d.children;
-    //   const isBenchmark = d.depth === 2;
-    //   const isCategory = d.depth === 1;
-
-    //   if (isModel) {
-    //     setDescription(`
-    //     <strong>Model:</strong> ${d.data.name}<br/>
-    //     <strong>Score:</strong>
-    //     <span style="color:#4caf50; font-size:1.2em">${d.value}</span>
-    //   `);
-
-    //   } else if (isBenchmark) {
-    //     setDescription(`
-    //     <strong>Benchmark: </strong> ${d.data.name}<br/>
-    //     <strong>Description: </strong>${d.data.description}<br/>
-    //     <strong>Max Score: </strong> ${b.max_score || "N/A"}<br/>
-    //     <strong>Modality: </strong>${d.data.modality}<br/>
-    //     `);
-    //   } else if (isCategory) {
-    //     setDescription(`
-    //     <strong>Category: </strong> ${d.data.name}<br/>
-    //     Click to zoom in.
-    //   `);
-    //   }
-    // });
 
     // Handle zoom on click.
     function clicked(event, p) {
@@ -317,7 +295,7 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
         .filter(function (d) {
           return +this.getAttribute("fill-opacity") || arcVisible(d.target);
         })
-        .attr("fill-opacity", d => arcVisible(d.target) ? (d.children ? 0.6 : 0.4) : 0)
+        .attr("fill-opacity", d => arcVisible(d.target) ? (d.children ? 0.6 : 1.0) : 0)
         .attr("pointer-events", d => arcVisible(d.target) ? "auto" : "none")
         .attrTween("d", d => () => arc(d.current));
 
@@ -340,21 +318,20 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
     }
 
-  }, [data, categoryColor, modelColor]);
+  }, [data, categoryColor]);
 
   //Handlers render
   const toggleYear = (year) => {
-      setFilters(prev => {
-          const newYears = prev.years.includes(year) 
-             ? prev.years.filter(y => y !== year)
-             : [...prev.years, year];
-          return { ...prev, years: newYears };
-      });
+    setFilters(prev => {
+      const newYears = prev.years.includes(year)
+        ? prev.years.filter(y => y !== year)
+        : [...prev.years, year];
+      return { ...prev, years: newYears };
+    });
   };
 
-  const handleOrgChange = (e) => {
-      const selected = Array.from(e.target.selectedOptions, option => option.value);
-      setFilters(prev => ({ ...prev, orgs: selected }));
+  const handleOrgChange = (selectedOrgs) => {
+    setFilters(prev => ({ ...prev, orgs: selectedOrgs }));
   };
 
   return (
@@ -364,50 +341,53 @@ const BenchmarkDashboard = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       </div>
 
       <div className={styles.filterContainer}>
-          <div className={styles.filterGroup}>
-            <label><strong>Show Top:</strong> </label>
-            
-            <select 
-              value = {filters.topK} 
-              onChange={(e) => setFilters({...filters, topK: e.target.value === 'All' ? 'All' : Number(e.target.value)})}
-              className={styles.filterSelect}
-            >
-              <option value={5}>Top 5</option>
-              <option value={10}>Top 10</option>
-              <option value={20}>Top 20</option>
-              <option value="All">All Models</option>
-            </select>
-          </div>
+        <div className={styles.filterGroup}>
+          <label><strong>Show Top:</strong> </label>
 
-          <div className={styles.filterGroup}>
-            <label><strong>Release Year:</strong> </label>
+          <select
+            value={filters.topK}
+            onChange={(e) => setFilters({ ...filters, topK: e.target.value === 'All' ? 'All' : Number(e.target.value) })}
+            className={styles.filterSelect}
+          >
+            <option value={5}>Top 5</option>
+            <option value={10}>Top 10</option>
+            <option value={20}>Top 20</option>
+            <option value="All">All Models</option>
+          </select>
+        </div>
+
+        <div className={styles.filterGroup}>
+          <label><strong>Release Year:</strong> </label>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             {availableYears.map(year => (
-                <label key={year} style={{marginLeft: '5px', cursor: 'pointer'}}>
-                    <input 
-                        type="checkbox" 
-                        checked={filters.years.includes(year)}
-                        onChange={() => toggleYear(year)}
-                    /> {year}
-                </label>
+              <label key={year} className={styles.checkboxLabel}>
+                <input
+                  type="checkbox"
+                  checked={filters.years.includes(year)}
+                  onChange={() => toggleYear(year)}
+                /> {year}
+              </label>
             ))}
           </div>
+        </div>
 
-          <div className={styles.filterGroup}>
-            <label><strong>Organization:</strong> </label>
-            <select multiple onChange={handleOrgChange} style={{height: '60px', verticalAlign: 'top'}}>
-                {availableOrgs.map(org => (
-                    <option key={org} value={org}>{org}</option>
-                ))}
-            </select>
-          </div>
+        <div className={styles.filterGroup}>
+          <label><strong>Organization:</strong> </label>
+          <MultiSelectDropdown
+            options={availableOrgs}
+            selected={filters.orgs}
+            onChange={handleOrgChange}
+            placeholder="Select Organizations..."
+          />
+        </div>
       </div>
 
       <div className={styles.content}>
         <div className={styles.chartArea}>
-          {data && data.children.length === 0 
-             ? <p style={{textAlign:'center', marginTop: '50px'}}>No models match these filters.</p>
-             : <svg ref={d3Container} className={styles.sunburstSvg} />
-           }
+          {data && data.children && data.children.length === 0
+            ? <p style={{ textAlign: 'center', marginTop: '50px' }}>No models match these filters.</p>
+            : <svg ref={d3Container} className={styles.sunburstSvg} />
+          }
         </div>
         <aside className={styles.descriptionPanel}>
           <h3>Details</h3>

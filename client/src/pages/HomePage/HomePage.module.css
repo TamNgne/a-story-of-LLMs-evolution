@@ -8,10 +8,10 @@
 
 .mainTitle {
   font-family: 'Kelvinch', sans-serif;
-  font-size: 3.5rem; /* Large font size */
-  font-weight: normal;
-  color: #ffffff;
+  font-size: 3.5rem;
+  /* Large font size */
+  font-weight: 700;
+  color: #111827;
   text-align: center;
   margin-bottom: 40px;
 }
-

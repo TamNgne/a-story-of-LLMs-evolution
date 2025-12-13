@@ -14,9 +14,6 @@ const Header = () => {
         <Link to="/playground" className={styles.navLink}>
           Playground
         </Link>
-        <Link to="/news" className={styles.navLink}>
-          News
-        </Link>
         <Link to="/about" className={styles.navLink}>
           About us
         </Link>
