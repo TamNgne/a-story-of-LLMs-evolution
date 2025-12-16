@@ -7,14 +7,10 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
   const d3Container = useRef(null);
   const tooltipRef = useRef(null);
 
+  // Bỏ hết mấy cái pending..., dùng trực tiếp state chính luôn
   const [xAxis, setXAxis] = useState('cost');
   const [yAxis, setYAxis] = useState('performance');
   const [selectedProvider, setSelectedProvider] = useState('all');
-
-  // Lựa chọn hiện tại trong dropdown
-  const [pendingX, setPendingX] = useState('cost');
-  const [pendingY, setPendingY] = useState('performance');
-  const [pendingProvider, setPendingProvider] = useState('all');
 
   // State cho API data
   const [comparisonData, setComparisonData] = useState(null);
@@ -27,22 +23,33 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       try {
         setLoading(true);
         setError(null);
-        // Fetch data từ server API endpoint
         const response = await fetch(`${apiBaseUrl}/comparison`);
-        
+
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const json = await response.json();
-        
-        // Handle both array and object response formats
-        const data = Array.isArray(json) ? json : (json.data || json);
-        
-        if (Array.isArray(data) && data.length > 0) {
-          setComparisonData(data);
-        } else if (json.success && json.data) {
-          setComparisonData(json.data);
+        const rawData = Array.isArray(json) ? json : (json.data || json);
+
+        if (Array.isArray(rawData) && rawData.length > 0) {
+          const mappedData = rawData.map(item => ({
+            ...item,
+            model: item['Model'],
+            provider: item['Provider'],
+            performance: item['Quality Rating'],
+            qualityRating: item['Quality Rating'],
+            speedRating: item['Speed Rating'],
+            priceRating: item['Price Rating'],
+            cost: item['Price / Million Tokens'],
+            speed: item['Speed (tokens/sec)'],
+            latency: item['Latency (sec)'],
+            contextWindow: item['Context Window'],
+            trainingDatasetSize: item['Training Dataset Size'],
+            computePower: item['Compute Power'],
+            energyEfficiency: item['Energy Efficiency']
+          }));
+          setComparisonData(mappedData);
         } else {
           throw new Error('Invalid response format or empty data');
         }
@@ -58,47 +65,39 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
     fetchComparisonData();
   }, [apiBaseUrl]);
 
-  // Danh sách
+  // Danh sách metrics
   const metrics = [
-    { value: 'performance',        label: 'Performance (Quality Rating)' }, // alias cho qualityRating
-    { value: 'qualityRating',      label: 'Quality Rating' },
-    { value: 'speedRating',        label: 'Speed Rating' },
-    { value: 'priceRating',        label: 'Price Rating' },
-    { value: 'cost',               label: 'Cost (Price / Million Tokens)' },
-    { value: 'speed',              label: 'Speed (tokens/sec)' },
-    { value: 'latency',            label: 'Latency (sec)' },
-    { value: 'contextWindow',      label: 'Context Window (tokens)' },
-    { value: 'trainingDatasetSize',label: 'Training Dataset Size' },
-    { value: 'computePower',       label: 'Compute Power' },
-    { value: 'energyEfficiency',   label: 'Energy Efficiency' },
+    { value: 'performance', label: 'Performance (Quality Rating)' },
+    { value: 'qualityRating', label: 'Quality Rating' },
+    { value: 'speedRating', label: 'Speed Rating' },
+    { value: 'priceRating', label: 'Price Rating' },
+    { value: 'cost', label: 'Cost (Price / Million Tokens)' },
+    { value: 'speed', label: 'Speed (tokens/sec)' },
+    { value: 'latency', label: 'Latency (sec)' },
+    { value: 'contextWindow', label: 'Context Window (tokens)' },
+    { value: 'trainingDatasetSize', label: 'Training Dataset Size' },
+    { value: 'computePower', label: 'Compute Power' },
+    { value: 'energyEfficiency', label: 'Energy Efficiency' },
   ];
 
-  // Build
-  const handleBuild = () => {
-    setXAxis(pendingX);
-    setYAxis(pendingY);
-    setSelectedProvider(pendingProvider);
-  };
-
-  // Lấy danh sách providers duy nhất từ data
+  // Lấy danh sách providers duy nhất
   const providers = useMemo(() => {
     if (!comparisonData || comparisonData.length === 0) return [];
     const uniqueProviders = [...new Set(comparisonData.map((d) => d.provider).filter(Boolean))];
     return uniqueProviders.sort();
   }, [comparisonData]);
 
-  // Lọc data theo provider
+  // Lọc data theo provider (tự động chạy lại khi selectedProvider đổi)
   const filteredData = useMemo(() => {
     if (!comparisonData || comparisonData.length === 0) return [];
     if (selectedProvider === 'all') return comparisonData;
     return comparisonData.filter((d) => d.provider === selectedProvider);
   }, [comparisonData, selectedProvider]);
 
-  // Vẽ chart - chỉ sử dụng dữ liệu từ API
+  // Vẽ chart
   useEffect(() => {
-    // Chỉ render chart khi có dữ liệu thực từ API
     if (!filteredData || filteredData.length === 0 || !d3Container.current || loading) return;
-    if (error) return; // Không render nếu có lỗi
+    if (error) return;
 
     // Xoá chart cũ
     d3.select(d3Container.current).selectAll('*').remove();
@@ -114,9 +113,8 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
-    // Lọc dữ liệu hợp lệ (loại bỏ null/undefined)
-    const validData = filteredData.filter((d) => 
-      d[xAxis] != null && d[yAxis] != null && 
+    const validData = filteredData.filter((d) =>
+      d[xAxis] != null && d[yAxis] != null &&
       !isNaN(d[xAxis]) && !isNaN(d[yAxis])
     );
 
@@ -142,19 +140,24 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .append('g')
       .attr('transform', `translate(0,${height})`)
       .call(d3.axisBottom(x).tickSize(0).tickPadding(10))
-      .attr('color', '#a0a0a0')
+      .attr('color', '#9CA3AF')
       .select('.domain')
-      .attr('stroke', '#fff')
+      .attr('stroke', '#E5E7EB')
       .attr('stroke-width', 2);
 
     // Trục Y
     svg
       .append('g')
       .call(d3.axisLeft(y).tickSize(0).tickPadding(10))
-      .attr('color', '#a0a0a0')
+      .attr('color', '#9CA3AF')
       .select('.domain')
-      .attr('stroke', '#fff')
+      .attr('stroke', '#E5E7EB')
       .attr('stroke-width', 2);
+
+    // Axis text styling
+    svg.selectAll('.tick text')
+      .style('fill', '#6B7280')
+      .style('font-size', '12px');
 
     // Nhãn trục X
     svg
@@ -163,8 +166,9 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .attr('x', width / 2)
       .attr('y', height + 35)
       .text(metrics.find((m) => m.value === xAxis)?.label)
-      .style('fill', '#fff')
-      .style('font-size', '14px');
+      .style('fill', '#374151')
+      .style('font-size', '14px')
+      .style('font-weight', '500');
 
     // Nhãn trục Y
     svg
@@ -174,12 +178,12 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .attr('y', -35)
       .attr('x', -height / 2)
       .text(metrics.find((m) => m.value === yAxis)?.label)
-      .style('fill', '#fff')
-      .style('font-size', '14px');
+      .style('fill', '#374151')
+      .style('font-size', '14px')
+      .style('font-weight', '500');
 
     const tooltip = d3.select(tooltipRef.current);
 
-    // Vẽ các chấm - chỉ sử dụng dữ liệu hợp lệ từ API
     svg
       .append('g')
       .selectAll('circle')
@@ -187,14 +191,17 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .join('circle')
       .attr('cx', (d) => x(d[xAxis]))
       .attr('cy', (d) => y(d[yAxis]))
-      .attr('r', 12)
-      .style('fill', '#999')
-      .style('opacity', 0.8)
+      .attr('r', 8)
+      .style('fill', '#3B82F6')
+      .style('opacity', 0.6)
       .style('cursor', 'pointer')
       .on('mouseover', (event, d) => {
-        d3.select(event.currentTarget).style('fill', '#fff').style('opacity', 1);
-        const [px, py] = d3.pointer(event, d3Container.current.parentElement);
+        d3.select(event.currentTarget)
+          .style('fill', '#2563EB')
+          .style('opacity', 1)
+          .attr('r', 10);
 
+        const [px, py] = d3.pointer(event, d3Container.current.parentElement);
         const xLabel = metrics.find((m) => m.value === xAxis)?.label;
         const yLabel = metrics.find((m) => m.value === yAxis)?.label;
 
@@ -210,10 +217,13 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
           .style('top', `${py - 15}px`);
       })
       .on('mouseout', (event) => {
-        d3.select(event.currentTarget).style('fill', '#999').style('opacity', 0.8);
+        d3.select(event.currentTarget)
+          .style('fill', '#3B82F6')
+          .style('opacity', 0.6)
+          .attr('r', 8);
         tooltip.style('opacity', 0);
       });
-  }, [filteredData, xAxis, yAxis, loading, error]);
+  }, [filteredData, xAxis, yAxis, loading, error]); // Render lại khi state xAxis/yAxis đổi
 
   return (
     <div className={styles.chartWrapper}>
@@ -226,8 +236,8 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             <label className={styles.label}></label>
             <select
               className={styles.select}
-              value={pendingY}
-              onChange={(e) => setPendingY(e.target.value)}
+              value={yAxis} // Dùng thẳng state thật
+              onChange={(e) => setYAxis(e.target.value)} // Update thẳng state thật
             >
               {metrics.map((m) => (
                 <option key={`y-${m.value}`} value={m.value}>
@@ -240,8 +250,8 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             <label className={styles.label}></label>
             <select
               className={styles.select}
-              value={pendingX}
-              onChange={(e) => setPendingX(e.target.value)}
+              value={xAxis} // Dùng thẳng state thật
+              onChange={(e) => setXAxis(e.target.value)} // Update thẳng state thật
             >
               {metrics.map((m) => (
                 <option key={`x-${m.value}`} value={m.value}>
@@ -250,21 +260,15 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
               ))}
             </select>
           </div>
-          <button
-            className={styles.buildButton}
-            onClick={handleBuild}
-            disabled={loading || !comparisonData}
-          >
-            Build
-          </button>
+          {/* Đã xóa nút Build */}
         </div>
         <div className={styles.providerFilter}>
           <div className={styles.controlGroup}>
             <label className={styles.label}>     Provider:</label>
             <select
               className={styles.select}
-              value={pendingProvider}
-              onChange={(e) => setPendingProvider(e.target.value)}
+              value={selectedProvider} // Dùng thẳng state thật
+              onChange={(e) => setSelectedProvider(e.target.value)} // Update thẳng state thật
             >
               <option value="all">All Provider</option>
               {providers.map((provider) => (
