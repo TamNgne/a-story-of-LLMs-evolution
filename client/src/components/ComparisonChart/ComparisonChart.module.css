@@ -1,22 +1,22 @@
 .chartWrapper {
-  background-color: #1a1a1a;
+  background-color: #FFFFFF;
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid #333;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
 }
 
 .header {
   margin-bottom: 20px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #E5E7EB;
   padding-bottom: 16px;
 }
 
 .title {
   font-family: 'Kelvinch', serif;
   font-size: 1.5rem;
-  color: #fff;
+  color: #111827;
   margin: 0 0 16px 0;
 }
 
@@ -40,16 +40,17 @@
 }
 
 .label {
-  color: #fff;  /* đổi từ #a0a0a0 sang #fff */
+  color: #374151;
+  /* Gray-700 */
   font-size: 0.9rem;
-  font-weight: bold;  /* thêm dòng này */
-  margin-right: 8px;  /* thêm khoảng cách */
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 .select {
-  background-color: #2c2c2c;
-  color: #fff;
-  border: 1px solid #444;
+  background-color: #FFFFFF;
+  color: #111827;
+  border: 1px solid #D1D5DB;
   padding: 6px 12px;
   border-radius: 6px;
   font-family: inherit;
@@ -58,8 +59,28 @@
 }
 
 .select:hover {
-  border-color: #666;
-  background-color: #363636;
+  border-color: #3B82F6;
+  background-color: #F9FAFB;
+}
+
+.buildButton {
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.buildButton:hover {
+  background-color: #2563EB;
+}
+
+.buildButton:disabled {
+  background-color: #9CA3AF;
+  cursor: not-allowed;
 }
 
 .chartContainer {
@@ -79,22 +100,35 @@
   border-radius: 8px;
   pointer-events: none;
   font-size: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: opacity 0.2s;
   z-index: 10;
   min-width: 150px;
-  border: 1px solid #ddd;
+  border: 1px solid #E5E7EB;
 }
 
 .tooltip h4 {
   margin: 0 0 8px 0;
   font-size: 16px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #E5E7EB;
   padding-bottom: 4px;
+  color: #111827;
 }
 
 .tooltip p {
   margin: 4px 0;
   font-size: 13px;
-  color: #444;
+  color: #4B5563;
+}
+
+.status {
+  text-align: center;
+  padding: 20px;
+  color: #6B7280;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  color: #EF4444;
 }
