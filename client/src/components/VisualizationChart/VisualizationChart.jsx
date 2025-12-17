@@ -200,6 +200,7 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       // --- Update Highlight Logic --- 
       const updateHighlight = (currentDate) => {
 
+        // Helper check cùng tháng/năm
         const isSameMonthYear = (dDate, cDate) => {
           const d1 = new Date(dDate);
           const d2 = new Date(cDate);
@@ -207,10 +208,20 @@ const VisualizationChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
             d1.getFullYear() === d2.getFullYear();
         };
 
-        dots.attr('opacity', d => (isSameMonthYear(d.releaseDate, currentDate) ? 1.0 : 0.2));
+        const modelsInCurrentMonth = filteredData.filter(d => isSameMonthYear(d.releaseDate, currentDate));
+
+        let bestModel = null;
+        if (modelsInCurrentMonth.length > 0) {
+          bestModel = modelsInCurrentMonth.reduce((prev, current) =>
+            (prev.performanceScore > current.performanceScore) ? prev : current
+          );
+        }
+
+        dots.attr('opacity', d => (d === bestModel ? 1.0 : 0.2));
 
         svg.selectAll(`.${styles.modelLabel || 'modelLabel'}`)
-          .attr('opacity', d => (isSameMonthYear(d.releaseDate, currentDate) ? 1.0 : 0))
+          .attr('opacity', d => (d === bestModel ? 1.0 : 0))
+          .attr('font-weight', d => (d === bestModel ? 'bold' : 'normal'))
           .raise();
       };
 
