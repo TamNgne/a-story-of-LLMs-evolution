@@ -102,8 +102,8 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
     // Xoá chart cũ
     d3.select(d3Container.current).selectAll('*').remove();
 
-    const margin = { top: 20, right: 30, bottom: 40, left: 50 };
-    const width = 800 - margin.left - margin.right;
+    const margin = { top: 20, right: 30, bottom: 40, left: 120 };
+    const width = 1000 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
     const svg = d3
@@ -175,7 +175,7 @@ const ComparisonChart = ({ apiBaseUrl = "http://localhost:5001/api" }) => {
       .append('text')
       .attr('text-anchor', 'middle')
       .attr('transform', 'rotate(-90)')
-      .attr('y', -35)
+      .attr('y', -85)
       .attr('x', -height / 2)
       .text(metrics.find((m) => m.value === yAxis)?.label)
       .style('fill', '#374151')
